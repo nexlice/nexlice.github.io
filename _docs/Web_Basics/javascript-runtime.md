@@ -116,7 +116,7 @@ package.json에는 이 프로그램을 실행시키기 위해 필요한 모듈�
 `underscore`, `react`같은 것들이다.  
 
 ---
-## --save
+## save option
 이 옵션과 함께 설치하면 자동으로 `dependencies`에 추가 된다.  
 하지만 `npm5`부터는 `--save` 옵션을 기본 옵션으로 적용한다.  
 즉, `--save`를 사용하지 않아도 `dependencies`에 항목이 추가된다.  

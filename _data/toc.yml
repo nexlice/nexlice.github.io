@@ -1,40 +1,40 @@
 - title: "Web basics"
-  url: "docs/Web Basics/web-basics"
+  url: "docs/Web_Basics/web-basics"
   links:
     - title: "HTML"
-      url: "docs/Web Basics/html"
+      url: "docs/Web_Basics/html"
       children:
       # 만약 children이 없으면 컴파일이 안됨.
         - title: Achievement Goals
-          url: "docs/Web Basics/html#achievement-goals"
+          url: "docs/Web_Basics/html#achievement-goals"
         - title: html, CSS, and JavaScript
-          url: "docs/Web Basics/html#html-css-and-javascript"
+          url: "docs/Web_Basics/html#html-css-and-javascript"
         - title: HTML Basics
-          url: "docs/Web Basics/html#html-basics"
+          url: "docs/Web_Basics/html#html-basics"
         - title: tag, content, attribute, and element
-          url: "docs/Web Basics/html#dizzy-things"
+          url: "docs/Web_Basics/html#dizzy-things"
         - title: Markdown and Markup
-          url: "docs/Web Basics/html#markdown-and-markup"
+          url: "docs/Web_Basics/html#markdown-and-markup"
     - title: "CSS"
-      url: "docs/Web Basics/css"
+      url: "docs/Web_Basics/css"
       children:
         - title: Achievement Goals
-          url: "docs/Web Basics/css#achievement-goals"
+          url: "docs/Web_Basics/css#achievement-goals"
         - title: Introduction
-          url: "docs/Web Basics/css#introduction"
+          url: "docs/Web_Basics/css#introduction"
         - title: CSS Basics
-          url: "docs/Web Basics/css#css-basics"
+          url: "docs/Web_Basics/css#css-basics"
         - title: Practice
-          url: "docs/Web Basics/css#practice"
+          url: "docs/Web_Basics/css#practice"
 
 - title: "CLI Commands"
-  url: "docs/Web Basics/cli-commands"
+  url: "docs/Web_Basics/cli-commands"
 
 - title: "Package Manager"
-  url: "docs/Web Basics/package-manager"
+  url: "docs/Web_Basics/package-manager"
 
 - title: "JavaScript Runtime"
-  url: "docs/Web Basics/javascript-runtime"
+  url: "docs/Web_Basics/javascript-runtime"
           
 
 # - title: Documentation
