@@ -1,40 +1,40 @@
 - title: "Web basics"
-  url: "docs/Web_Basics/Web-basics"
+  url: "docs/Web Basics/web-basics"
   links:
     - title: "HTML"
-      url: "docs/Web_Basics/HTML"
+      url: "docs/Web Basics/html"
       children:
       # 만약 children이 없으면 컴파일이 안됨.
         - title: Achievement Goals
-          url: "docs/Web_Basics/HTML#achievement-goals"
-        - title: HTML, CSS, and JavaScript
-          url: "docs/Web_Basics/HTML#html-css-and-javascript"
+          url: "docs/Web Basics/html#achievement-goals"
+        - title: html, CSS, and JavaScript
+          url: "docs/Web Basics/html#html-css-and-javascript"
         - title: HTML Basics
-          url: "docs/Web_Basics/HTML#html-basics"
+          url: "docs/Web Basics/html#html-basics"
         - title: tag, content, attribute, and element
-          url: "docs/Web_Basics/HTML#dizzy-things"
+          url: "docs/Web Basics/html#dizzy-things"
         - title: Markdown and Markup
-          url: "docs/Web_Basics/HTML#Markdown-and-Markup"
+          url: "docs/Web Basics/html#markdown-and-markup"
     - title: "CSS"
-      url: "docs/Web_Basics/CSS"
+      url: "docs/Web Basics/css"
       children:
         - title: Achievement Goals
-          url: "docs/Web_Basics/CSS#achievement-goals"
+          url: "docs/Web Basics/css#achievement-goals"
         - title: Introduction
-          url: "docs/Web_Basics/CSS#introduction"
+          url: "docs/Web Basics/css#introduction"
         - title: CSS Basics
-          url: "docs/Web_Basics/CSS#css-basics"
+          url: "docs/Web Basics/css#css-basics"
         - title: Practice
-          url: "docs/Web_Basics/CSS#practice"
+          url: "docs/Web Basics/css#practice"
 
 - title: "CLI Commands"
-  url: "docs/Web_Basics/CLI-commands"
+  url: "docs/Web Basics/cli-commands"
 
 - title: "Package Manager"
-  url: "docs/Web_Basics/Package-Manager"
+  url: "docs/Web Basics/package-manager"
 
 - title: "JavaScript Runtime"
-  url: "docs/Web_Basics/javascript-runtime"
+  url: "docs/Web Basics/javascript-runtime"
           
 
 # - title: Documentation
