@@ -27,7 +27,6 @@ description: Learn about package manager!
 이런 단점을 보완하기 위해서 생긴 도구가 바로, **패키지 매니저**이다.  
 
 ---
-
 ## What does a package manager do?
 패키지 매니저는 패키지의 설치, 변경, 삭제 등 관리를 편리하게 해주는 도구이다.  
 스마트폰으로 비유하자면 앱스토어와 그 역할이 비슷하다.  
@@ -43,7 +42,7 @@ Homebrew는 맥의 패키지 매니저이다.
 
 ---
 
-### 잘 쓰던게 안되던데?
+#### 잘 쓰던게 안되던데?
 어떤 명령어가 안되는 이유에는 여러가지가 있다.  
 그중 필자가 겪은 에러로는 `invalid active developer path`이다.  
 이는 맥 os를 업데이트 해줬을 때 일어나는데,  
@@ -111,12 +110,16 @@ Homebrew installation에 새로운 formulae의 source를 추가하고, 해당 so
 
 [내용 출처 :  Stack Overflow](https://stackoverflow.com/questions/46403937/what-is-the-difference-between-brew-install-x-and-brew-cask-install-x)  
 
-## 우분투의 패키지 매니저 apt
-apt는 Advanced Package Tool의 이니셜이다.
+---
 
-## wget
-wget은 url을 통해서 파일을 다운로드 받게 해주는 프로그램이다.
+## apt
+apt는 Advanced Package Tool의 이니셜로, 우분투의 패키지 매니저이다.  
 
+---
+## wget  
+wget은 url을 통해서 파일을 다운로드 받게 해주는 프로그램이다.  
+
+---
 ## brew vs pip
 `pip`은 파이썬을 위한 packager이다.  
 `pip`을 통해서는 `python-things`만 설치 가능해야한다.  

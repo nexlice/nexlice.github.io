@@ -21,6 +21,8 @@ HTML은 Hyper Text Markup language의 이니셜이다.
 - 읽기 쉬운, 의미있는 HTML 문서를 작성할 수 있는가?  
 - HTML5 semantic tag란 무엇인가?  
 
+---
+
 ## HTML CSS and JavaScript
 HTML은 웹 페이지의 구조를 표현한다.  
 
@@ -37,6 +39,8 @@ CSS는 웹페이지의 스타일을 담당하며, JavaScript는 유저와 상호
 
 HTML 그 자체는 정적이다. HTML은 한번 웹페이지에 렌더링 되면 사용자가 변경하기 어렵다.  
 이러한 뼈대만 있는 HTML에 동적인 기능을 넣어주는게 JavaScript이다.  
+
+---
 
 ## HTML Basics
 HTML은 웹페이지의 틀을 만드는 언어이다. 매우 많은 종류의 tag들의 집합이다.  
@@ -164,17 +168,21 @@ HTML은 태그를 열고 닫는 구조이다. 즉, 트리구조이다. 때문에
     </body>
 </html>
 ```
-
+---
 ### img  
 특이하게 이미지 태그는 닫는 태그가 없다.  
 ```javascript
 <img src="https://i.imgur.com/JVAj4t0.jpg">
 ```  
+---
+
 ### a
 링크 삽입을 할 떄에, 새 창에 링크가 나타나도록 하고 싶으면 target 옵션을 달아준다. target 옵션을 달아주지 않으면 해당 태그가 있는, 현재 내 창에서 이동한다.
 ```html
 <a href="https://codestates.com" target = "_blank">코드스테이츠</a>
 ```
+
+---
 ### Annotation
 주석은 위에서 미리 보았듯 다음과 같이 표현한다.
 ```html
@@ -182,6 +190,8 @@ HTML은 태그를 열고 닫는 구조이다. 즉, 트리구조이다. 때문에
 ```
 중요한 점은 ```<!--``` 부분을 중첩해서 쓰지 않아야한다는 점이다.  
 nested 주석의 닫는 태그를 첫번째 주석의 종료 태그로 인식하기 때문이다.
+
+---
 
 ### ul, li
 ul, li 는 리스트를 나타내며, 한쌍이다.
@@ -211,7 +221,7 @@ ul태그를 쓰면 점이 찍히고 ol(ordered list)로 하면 숫자가 찍힌�
     </body>
 </html>
 ```
-
+---
 ### input, textarea
 HTML은 input, textarea에서 type 속성을 받아 다양한 입력 폼을 지원한다.
 
@@ -239,9 +249,11 @@ input 태그도 img 태그와 같이 닫는 태그가 없어서 헷갈리는데,
 
 textarea는 항상 열고 닫는 태그를 따로 해야한다. 줄바꿈이 가능하다.
 
+---
 ### p
 태그에서 p는 paragraph를 의미한다. div와 기능으로는 같지만, 개발자가 보기 쉽도록 의미를 부여한 셈이다.
 
+---
 ### button
 button 태그의 예시는 아래와 같다.  
 기능 추가는 JavaScript에서 구현하는 것으로 생각하고 (관심사 분리), 우선은 구조에만 집중하자.
@@ -250,12 +262,14 @@ button 태그의 예시는 아래와 같다.
 <button>Submit</button>
 <div class = "name">nexlice</div>
 ```
+---
 ## Dizzy Things
 - tag : div 따위의 것들
 - contents : 태그와 태그 사이에 들어있는 것.  
 - attribute : 태그 안에 넣는 class="name" 따위의 것들
 - element : 태그로 감싼 한 덩어리; 태그 + 콘텐츠 (+ 속성) = 요소 (element)  
 
+---
 ## Markdown and Markup
 
 Markdown은 Markup 아래에 있는 언어의 일종이다. 정의를 살피면 다음과 같다.
