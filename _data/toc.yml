@@ -1,0 +1,77 @@
+- title: "Web basics"
+  url: "docs/Web_Basics/Web-basics"
+  links:
+    - title: "HTML"
+      url: "docs/Web_Basics/HTML"
+      children:
+      # 만약 children이 없으면 컴파일이 안됨.
+        - title: Achievement Goals
+          url: "docs/Web_Basics/HTML#achievement-goals"
+        - title: HTML, CSS, and JavaScript
+          url: "docs/Web_Basics/HTML#html-css-and-javascript"
+        - title: HTML Basics
+          url: "docs/Web_Basics/HTML#html-basics"
+        - title: tag, content, attribute, and element
+          url: "docs/Web_Basics/HTML#dizzy-things"
+        - title: Markdown and Markup
+          url: "docs/Web_Basics/HTML#Markdown-and-Markup"
+    - title: "CSS"
+      url: "docs/Web_Basics/CSS"
+      children:
+        - title: Achievement Goals
+          url: "docs/Web_Basics/CSS#achievement-goals"
+        - title: Introduction
+          url: "docs/Web_Basics/CSS#introduction"
+        - title: CSS Basics
+          url: "docs/Web_Basics/CSS#css-basics"
+        - title: Practice
+          url: "docs/Web_Basics/CSS#practice"
+
+- title: "CLI"
+  url: "docs/Web_Basics/CLI-commands"
+
+
+- title: "Package Manager"
+  url: "docs/Web_Basics/Package-Manager"
+
+  # children :
+  #   - title : ls
+  #     url: "docs/Web_Basics/CLI-commands#ls"
+  #   - title : touch
+  #     url: "docs/Web_Basics/CLI-commands#touch"
+  #   - title : -rf
+  #     url: "docs/Web_Basics/CLI-commands#'-rf'"
+  #   - title : ls
+  #     url: "docs/Web_Basics/CLI-commands#ls"
+  #   - title : Alternatives to cat
+  #     url: "docs/Web_Basics/CLI-commands#alternatives-to-cat"
+  #   - title : mkdir
+  #     url: "docs/Web_Basics/CLI-commands#mkdir"
+          
+
+# - title: Documentation
+#   url: docs
+#   links:
+#     - title: "Getting Started"
+#       url: "docs/getting-started"
+#       children:
+#         - title: Features
+#           url: "docs/getting-started#getting-started"
+#         - title: Development
+#           url: "docs/getting-started#development"
+#         - title: Customization
+#           url: "docs/getting-started#customization"
+#     - title: Versioning
+#       url: "docs/versioning"
+#     - title: "About"
+#       url: "about"
+#     - title: "News"
+#       url: "news"
+
+# - title: "Extras"
+#   url: "docs/extras"
+#   links:
+#     - title: Quizzes
+#       url: "docs/extras/example-quiz"
+#     - title: Tags Page
+#       url: "tags"
