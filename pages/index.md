@@ -20,6 +20,7 @@ permalink: /
 
 본래 영어로 번역한 글도 올릴 계획이었으나 너무 방대한 양으로 일단 미루는 중...  
 
+>   이 블로그는 [vsoch님의 Docsy Jekyll](https://vsoch.github.io/docsy-jekyll/)의 포맷을 그대로 사용하였음을 알립니다.  
 
 <!-- ---
 layout: page
