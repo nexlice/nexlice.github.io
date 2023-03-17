@@ -9,7 +9,9 @@ tags:
  - npm
 description: Learn about Javadcript Runtime!
 ---
+
 >   본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다.  
+
 # Runtime
 런타임이란 프로그래밍 언어가 구동되는 환경이다.  
 어떤 프로그램이 동작할 때, 프로그램이 동작하는 곳을 런타임이라 한다.  
