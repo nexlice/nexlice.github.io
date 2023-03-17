@@ -2,12 +2,12 @@
 title: JavaScript Runtime
 tags: 
  - JavaScript
- - javasScript Run Time
+ - javasScript Runtime
  - node.js
  - module
  - nvm
  - npm
-description: Learn about Javadcript Runtime!
+description: Learn about JavaScript Runtime!
 ---
 
 >   본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다.  
