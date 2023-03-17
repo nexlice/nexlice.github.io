@@ -34,23 +34,7 @@
   url: "docs/Web_Basics/Package-Manager"
 
 - title: "JavaScript Runtime"
-  url: "docs/Web_Basics/JavaScriptRuntime"
-
-  
-
-  # children :
-  #   - title : ls
-  #     url: "docs/Web_Basics/CLI-commands#ls"
-  #   - title : touch
-  #     url: "docs/Web_Basics/CLI-commands#touch"
-  #   - title : -rf
-  #     url: "docs/Web_Basics/CLI-commands#'-rf'"
-  #   - title : ls
-  #     url: "docs/Web_Basics/CLI-commands#ls"
-  #   - title : Alternatives to cat
-  #     url: "docs/Web_Basics/CLI-commands#alternatives-to-cat"
-  #   - title : mkdir
-  #     url: "docs/Web_Basics/CLI-commands#mkdir"
+  url: "docs/Web_Basics/javascript-runtime"
           
 
 # - title: Documentation
