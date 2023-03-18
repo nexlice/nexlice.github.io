@@ -31,6 +31,11 @@
       children:
         - title: Achievement Goals
           url: "docs/Web_Basics/dom#achievement-goals"
+        - title: Applying JavsScript to HTML
+          url: "docs/Web_Basics/dom#applying-javascript-to-html"
+        - title: Why DOM?
+          url: "docs/Web_Basics/dom#why-dom?
+          
 
 - title: "CLI Commands"
   url: "docs/Web_Basics/cli-commands"

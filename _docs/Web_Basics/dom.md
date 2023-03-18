@@ -50,8 +50,7 @@ description: Learn about basic git commands!
 ---
 
 ### Locations of `<script>`
-- `<head>`에 존재하는 `<script>`  
-
+- `<head>`에 존재하는 `<script>` 는 다음과 같이 한다.  
 
 ```html
 <!DOCTYPE html>
@@ -68,7 +67,7 @@ description: Learn about basic git commands!
 </html>
 ```
 
-- `<body>`가 끝나기 전에 추가하는 `<script>`  
+- `<body>`가 끝나기 전에 추가하는 `<script>` 
 
 ```html
 <!DOCTYPE html>
@@ -85,8 +84,9 @@ description: Learn about basic git commands!
 </html>
 ```
 
-두 방식 모두 myScriptFile.js내의 첫 번쨰 console.log를 성공적으로 출력하지만,
-두번쨰 console.log의 경우 제대로 출력하지 못하는 예시가 있다.
+두가지 호출 방식에는 어떤 차이점이 있을까?  
+`<script>` 요소를 만나면, 웹브라우저는 `HTML`해석을 잠시 멈춘다고 하였다.  
+아래 `JavaScript`코드를 잠시 확인하자.  
 
 ```javascript
 console.log('welcome JavaScript');
@@ -94,12 +94,16 @@ console.log('welcome JavaScript');
 let msgElement = document.querySelector('#msg');
 console.log(msgElement);
 ```
+두 방식 모두 `myScriptFile.js`내의 첫 번쨰 console.log를 성공적으로 출력하지만,  
+두번째 console.log의 경우, `<head>`에 추가한 `<script>`는 제대로 출력하지 못한다.  
+따라서 모든 `HTML` 요소가 파싱된 이후, `<body>`의 끝 부분에 `JavaScript`와 연동하는 것을 권장한다.  
 
-흩믈을 분석하기 위해서 자바스크립트와 돔을 활영하여 흩믈에 접근하고 조작한다.
-조건문이나 반복문을 사용할 수 있고, 정보를 저장할 수 있다.
-하지만 흩믈에서는 이 모든게 불가능하다
+## Why DOM?
 
-html을 열고 개발자 도구로 살펴보자.
+`HTML`을 분석하기 위해서 `JavaScript`와 `DOM`을 활용하여 `HTML`에 접근하고 조작한다.  
+조건문이나 반복문을 사용할 수 있고, 정보를 저장할 수 있지만, `HTML`에서는 이 모든 게 불가능하다.  
+
+`HTML`을 열고 개발자 도구로 살펴보자.  
 ```html
 <html>
     <body>
@@ -123,8 +127,6 @@ html을 열고 개발자 도구로 살펴보자.
     </body>
 </html>
 ```
-
-
 # 자식 엘리먼트 찾기
 개발자 도구의 콘솔로 가면 자바스크립트를 사용할 수 있다.
 
