@@ -26,6 +26,11 @@
           url: "docs/Web_Basics/css#css-basics"
         - title: Practice
           url: "docs/Web_Basics/css#practice"
+    - title: "DOM"
+      url: "docs/Web_Basics/dom"
+      children:
+        - title: Achievement Goals
+          url: "docs/Web_Basics/dom#achievement-goals"
 
 - title: "CLI Commands"
   url: "docs/Web_Basics/cli-commands"
