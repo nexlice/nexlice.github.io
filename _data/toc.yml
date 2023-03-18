@@ -29,12 +29,17 @@
     - title: "DOM"
       url: "docs/Web_Basics/dom"
       children:
-        - title: Achievement Goals
-          url: "docs/Web_Basics/dom#achievement-goals"
+        - title: Achievement Goals - DOM Introduction
+          url: "docs/Web_Basics/dom#achievement-goals-(intro)"
         - title: Applying JavsScript to HTML
           url: "docs/Web_Basics/dom#applying-javascript-to-html"
         - title: Using DOM
           url: "docs/Web_Basics/dom#using-dom"
+        - title: Handling HTMl with DOM
+          url: "docs/Web_Basics/dom#handling-html-with-dom"
+        - title: Achievement Goals - DOM Application
+          url: "docs/Web_Basics/dom#achievement-goals-(crud)"
+          
           
 
 - title: "CLI Commands"

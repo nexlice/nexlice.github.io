@@ -9,7 +9,7 @@ tags:
 description: Learn about basic git commands!
 ---
 
-# DOM
+# DOM Introduction
 `DOM`은 프로그래머 관점에서 바라 본 `HTML`이다.  
 `DOM`을 이해하고 조작할 수 있다면, `HTML`을 단순한 문서에서 웹 앱으로 업그레이드 할 수 있다.  
 `DOM`은 브라우저 환경에서 `JavaScript`를 이용해 `HTML`을 조작할 수 있다.  
@@ -27,7 +27,7 @@ description: Learn about basic git commands!
 
 ---
 
-## Achievement Goals
+## Achievement Goals (Intro)
 - `DOM`의 개념을 이해하기
 - `DOM`의 구조를 파악하고, `HTML`과 `DOM`이 어떻게 닮아있는지 확인한다.
 - `HTML`에서 `JavaScript`파일을 불러올 때 주의점에 대해 이해한다.
@@ -128,10 +128,14 @@ console.log(msgElement);
     </body>
 </html>
 ```
+
+---
 ### Implementation of DOM
 개발자 도구의 콘솔로 가면 `JavaScript`를 사용할 수 있다.  
 자바스크립트에서 `DOM`은 `document` 객체에 구현되어있다.  
 브라우저에서 작동되는 `JabaScript` 코드에서는 어디에서나 `document` 객체를 조회할 수 있다.  
+
+---
 
 ### console.dir
 `DOM` 구조를 조회할 때에는 `console.dir`가 유용하다.  
@@ -141,38 +145,43 @@ console.log(msgElement);
 conosle.dir(document.body)
 ```
 
+---
+
+### Child elements
 위처럼 조회해보면, 많은 속성이 나타난다.  
 `HTML` 엘리먼트에 지정할 수 있었던 다양한 속성이 이미 객체 내에 존재하는 것이다.  
 자식들을 찾고싶다면, document.body 객체의 키 중에서 children을 보면 된다.
+`console.dir(document.body.children)` 으로 조회해도 된다.  
 
-console.dir(document.body.children)으로 해도 된다.
+---
 
-# 부모 엘리먼트 찾기
-document.body.children을 조회할 때마다 매번 document.doby로부터 찾아가는일은 버거롭다.
-따로 변수 선언을 해서 이 정보를 저장해두면, 주소를 참조하기 때문에
-언제드닞 접근할 수 있다.
+### Parent elements
+`document.body.children`을 조회할 때마다 매번 `document.body`로부터 찾아가는 일은 번거롭다.  
+따로 변수 선언을 해서 이 정보를 저장해두면, 주소를 참조하기 때문에, 언제든지 접근할 수 있다.  
 
 ```javascript
 let newsContents = document.body.children[1]
 console.dir(newsContents)
 ```
+이제 newContents의 부모 엘리먼트를 가리키는 속성을 `parentElement`로 찾을 수 있다.  
 
-이제 newContents의 부모 엘리먼트를 가리키는 속성을 찾아보자.
-아무래도 parentElement인 듯하다.
+---
 
-# DOM 순회
+### Traversing DOM
+`HTML`이 트리구조이기 때문에, `DOM`을 순회하는 것은 결국 트리 구조를 순회하는 것과 같다.  
+~~`composite` 패턴이기 때문에 visitor pattern 을 쓰면 되겠다...~~
+`DOM` 요소를 순회하는 방법은 [여기](https://www.bsidesoft.com/1431)에서 확인해보자.  
 
-결국 트리 구조를 순회하는 것과 같다.
-컴포지트 패턴이기 때문에 visitor pattern 을 쓰면 되겠다.
-https://www.bsidesoft.com/1431
+---
 
-# DOM으로 흩믈 조작하기.
-CRUD가 가장 중요하다.
-이것을 먼저 이해하고 trivia를 이해하자.
-Create, Read, Update, and Delete를 의미한다.
+# Handling HTML with DOM
+CRUD가 가장 중요하다.  
+이것을 먼저 이해하고 trivia를 이해하자.  
+CRUD는 Create, Read, Update, and Delete를 의미한다.  
 
-## 학습 목표
-돔을 자바스크립트로 조작하여 흩믈 객체를 추가 삭제 변경할 수 있다.  
+---
+## Achievement Goals (CRUD)
+돔을 자바스크립트로 조작하여 `HTML` 객체를 추가 삭제 변경할 수 있다.  
 createElement  
 READ : queryselector, querySelectorAll  
 UPDATE : textContent, id, classList, setAttrivute  
