@@ -7,6 +7,7 @@ tags:
 description: Learn about basic git commands!
 ---
 
+# Git commands
 필자는 지인 추천으로 `fork` 서드파티 앱을 사용한다.  
 하지만 때에 따라서 직접 `terminal`에서 `git`명령어를 사용해야하는데, 헷갈리는 부분을 정리해보았다.   
 
