@@ -35,7 +35,9 @@
 
 - title: "JavaScript Runtime"
   url: "docs/Web_Basics/javascript-runtime"
-          
+
+- title: "Git Commands"
+  url: "docs/git-commands"
 
 # - title: Documentation
 #   url: docs
