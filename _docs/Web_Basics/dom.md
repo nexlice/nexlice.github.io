@@ -128,24 +128,23 @@ console.log(msgElement);
     </body>
 </html>
 ```
-### Finding child elements
+### Implementation of DOM
 개발자 도구의 콘솔로 가면 `JavaScript`를 사용할 수 있다.  
 자바스크립트에서 `DOM`은 `document` 객체에 구현되어있다.  
 브라우저에서 작동되는 `JabaScript` 코드에서는 어디에서나 `document` 객체를 조회할 수 있다.  
 
-## console.dir
-돔 구조를 조회할 때에는 console.dir가 유용하다.
-console.dir는 console.log와 달리 dom을 객체의 모습으로 출력한다.
+### console.dir
+`DOM` 구조를 조회할 때에는 `console.dir`가 유용하다.  
+`console.dir`는 `console.log`와 달리 `DOM`을 객체의 모습으로 출력한다.  
 
 ```javascript
 conosle.dir(document.body)
 ```
-위처럼 조회해보면, 많은 속성이 나타난다.
-HTML엘리먼트에 지정할 수 있었던 다양한 속성이 이미 객체 내에 존재하는 것이다.
-자식들을 찾고싶다면
-document.body 객체의 키 중에서 children을 보면 된다.
 
-## 내 생각
+위처럼 조회해보면, 많은 속성이 나타난다.  
+`HTML` 엘리먼트에 지정할 수 있었던 다양한 속성이 이미 객체 내에 존재하는 것이다.  
+자식들을 찾고싶다면, document.body 객체의 키 중에서 children을 보면 된다.
+
 console.dir(document.body.children)으로 해도 된다.
 
 # 부모 엘리먼트 찾기
