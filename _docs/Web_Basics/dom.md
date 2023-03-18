@@ -98,7 +98,8 @@ console.log(msgElement);
 두번째 console.log의 경우, `<head>`에 추가한 `<script>`는 제대로 출력하지 못한다.  
 따라서 모든 `HTML` 요소가 파싱된 이후, `<body>`의 끝 부분에 `JavaScript`와 연동하는 것을 권장한다.  
 
-## Why DOM?
+---
+## Using DOM
 
 `HTML`을 분석하기 위해서 `JavaScript`와 `DOM`을 활용하여 `HTML`에 접근하고 조작한다.  
 조건문이나 반복문을 사용할 수 있고, 정보를 저장할 수 있지만, `HTML`에서는 이 모든 게 불가능하다.  
@@ -127,11 +128,10 @@ console.log(msgElement);
     </body>
 </html>
 ```
-# 자식 엘리먼트 찾기
-개발자 도구의 콘솔로 가면 자바스크립트를 사용할 수 있다.
-
-자바스크립트에서 DOM은 document객체에 구현되어있다.
-브라우저에서 작동되는 자바스크립트 코드에서는 어디에서나 document 객체를 조회할 수 있다.
+### Finding child elements
+개발자 도구의 콘솔로 가면 `JavaScript`를 사용할 수 있다.  
+자바스크립트에서 `DOM`은 `document` 객체에 구현되어있다.  
+브라우저에서 작동되는 `JabaScript` 코드에서는 어디에서나 `document` 객체를 조회할 수 있다.  
 
 ## console.dir
 돔 구조를 조회할 때에는 console.dir가 유용하다.
