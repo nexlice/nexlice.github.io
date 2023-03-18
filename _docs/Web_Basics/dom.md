@@ -27,7 +27,7 @@ description: Learn about basic git commands!
 
 ---
 
-## Achievement Goals (Intro)
+## Achievement Goals _ Intro
 - `DOM`의 개념을 이해하기
 - `DOM`의 구조를 파악하고, `HTML`과 `DOM`이 어떻게 닮아있는지 확인한다.
 - `HTML`에서 `JavaScript`파일을 불러올 때 주의점에 대해 이해한다.
@@ -180,14 +180,14 @@ CRUD가 가장 중요하다.
 CRUD는 Create, Read, Update, and Delete를 의미한다.  
 
 ---
-## Achievement Goals (CRUD)
+## Achievement Goals _ CRUD
 돔을 자바스크립트로 조작하여 `HTML` 객체를 추가 삭제 변경할 수 있다.  
-createElement  
-READ : queryselector, querySelectorAll  
-UPDATE : textContent, id, classList, setAttrivute  
-DELETE : remove, removeChild, innterHTML = "", textContent = ""  
-APPEND : appendChild  
-innterHTML과 textContent의 차이  
+- Create : `createElement`  
+- Read : `querySelector`, `querySelectorAll`  
+- Update : `textContent`, `id`, `classList`, `setAttribute`  
+- Delete : `remove`, `removeChild`, `innterHTML = ""`, `textContent = ""`  
+- APPEND : `appendChild`  
+- difference between `innterHTML`, and `textContent`  
 
 ## advanced challenge
 createDocumentFragment를 활용하여 효율적 돔 제어  
