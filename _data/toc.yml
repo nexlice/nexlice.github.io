@@ -30,9 +30,9 @@
       url: "docs/Web_Basics/dom"
       children:
         - title: Achievement Goals - DOM Introduction
-          url: "docs/Web_Basics/dom#'Achievement Goals (Intro)'"
+          url: "docs/Web_Basics/dom#Achievement Goals (Intro)"
         - title: Applying JavsScript to HTML
-          url: "docs/Web_Basics/dom#applying-javascript-to-html"
+          url: "docs/Web_Basics/dom#applying javascript to html"
         - title: Using DOM
           url: "docs/Web_Basics/dom#using-dom"
         - title: Handling HTMl with DOM
