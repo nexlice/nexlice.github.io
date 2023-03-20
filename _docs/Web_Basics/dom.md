@@ -27,7 +27,7 @@ description: Learn about basic git commands!
 
 ---
 
-## Achievement Goals - Intro
+## Achievement Goals _ Intro
 - `DOM`의 개념을 이해하기
 - `DOM`의 구조를 파악하고, `HTML`과 `DOM`이 어떻게 닮아있는지 확인한다.
 - `HTML`에서 `JavaScript`파일을 불러올 때 주의점에 대해 이해한다.
