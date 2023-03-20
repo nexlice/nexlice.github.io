@@ -35,7 +35,7 @@ description: Learn about basic git commands!
 
 ---
 
-## Applying JavsScript to HTML
+## Applying JavaScript to HTML
 이전에도 배웠든 `HTML`에 `JavaScript`를 적용하기 위해서는 `<script>` 태그를 이용한다.  
 아래의 경우 `HTML`파일과 같은 디렉토리에 존재하는 `myScriptFile.js`를 불러온다.  
 
