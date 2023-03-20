@@ -263,7 +263,7 @@ button 태그의 예시는 아래와 같다.
 <div class = "name">nexlice</div>
 ```
 ---
-## Dizzy Things
+## Wrap up
 - tag : div 따위의 것들
 - contents : 태그와 태그 사이에 들어있는 것.  
 - attribute : 태그 안에 넣는 class="name" 따위의 것들
