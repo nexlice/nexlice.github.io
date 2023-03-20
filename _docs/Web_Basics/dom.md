@@ -9,6 +9,8 @@ tags:
 description: Learn about basic git commands!
 ---
 
+>   본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다.  
+
 # DOM Introduction
 `DOM`은 프로그래머 관점에서 바라 본 `HTML`이다.  
 `DOM`을 이해하고 조작할 수 있다면, `HTML`을 단순한 문서에서 웹 앱으로 업그레이드 할 수 있다.  
