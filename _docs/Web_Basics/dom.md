@@ -323,5 +323,5 @@ tweets.forEach(function(tweet)){
 - tweets를 유사배열에서 배열로 바꾸는 방법 (how to convert nodelist into javascript array)
 - 같은 element를 appendChild하면 기존 엘리먼트를 복사하는가? 
 - createDocumentFragment
-- HTML5 tempate tag
-- offsetTop. offsetWidth
+- HTML5 template tag
+- offsetTop, offsetWidth
