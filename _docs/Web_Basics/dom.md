@@ -312,7 +312,7 @@ container.append(oneDiv)
 ---
 
 ## Delete
-### 위치를 알고있는 경우
+### remove
 ```javascript
 const container = document.querySelector('#container')
 const tweetDiv = document.createElement('div')
