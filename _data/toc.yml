@@ -29,15 +29,17 @@
     - title: "DOM"
       url: "docs/Web_Basics/dom"
       children:
-        - title: Achievement Goals - DOM Introduction
+        - title: AG - Introduction
           url: "docs/Web_Basics/dom#achievement-goals-_-intro"
+        - title: Entrance Setting
+          url: "docs/Web_Basics/dom#entrance-setting"
         - title: Applying JavsScript to HTML
           url: "docs/Web_Basics/dom#applying-javascript-to-html"
         - title: Using DOM
           url: "docs/Web_Basics/dom#using-dom"
         - title: Handling HTMl with DOM
           url: "docs/Web_Basics/dom#handling-html-with-dom"
-        - title: Achievement Goals - DOM Application
+        - title: AG - DOM Application
           url: "docs/Web_Basics/dom#achievement-goals-_-crud"
         - title: Create
           url: "docs/Web_Basics/dom#create"
@@ -47,6 +49,20 @@
           url: "docs/Web_Basics/dom#update"
         - title: Delete
           url: "docs/Web_Basics/dom#delete"
+        - title: DOM Practice
+          url: "docs/Web_Basics/dom#dom-practice"
+        - title: AG - DOM Practice
+          url: "docs/Web_Basics/dom#achievement-goals-_-dom-practice"
+        - title: Event Handler
+          url: "docs/Web_Basics/dom#event-handler"
+        - title: Event Object
+          url: "docs/Web_Basics/dom#event-object"
+        - title: Attaching Callback Function
+          url: "docs/Web_Basics/dom#attaching-callback-function"
+        - title: Practice 1
+          url: "docs/Web_Basics/dom#practice-1"
+        - title: Practice 2
+          url: "docs/Web_Basics/dom#practice-2"
         - title: Further Study
           url: "docs/Web_Basics/dom#further-study"
           # &nbsp
