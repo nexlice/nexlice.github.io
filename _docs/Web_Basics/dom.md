@@ -27,7 +27,7 @@ description: Learn about basic git commands!
 
 ---
 
-## Achievement Goals (Intro)
+## Achievement Goals - Intro
 - `DOM`의 개념을 이해하기
 - `DOM`의 구조를 파악하고, `HTML`과 `DOM`이 어떻게 닮아있는지 확인한다.
 - `HTML`에서 `JavaScript`파일을 불러올 때 주의점에 대해 이해한다.
@@ -35,7 +35,7 @@ description: Learn about basic git commands!
 
 ---
 
-## Applying JavsScript to HTML 
+## Applying JavsScript to HTML
 이전에도 배웠든 `HTML`에 `JavaScript`를 적용하기 위해서는 `<script>` 태그를 이용한다.  
 아래의 경우 `HTML`파일과 같은 디렉토리에 존재하는 `myScriptFile.js`를 불러온다.  
 
@@ -189,51 +189,66 @@ CRUD는 Create, Read, Update, and Delete를 의미한다.
 - APPEND : `appendChild`  
 - difference between `innterHTML`, and `textContent`  
 
-## advanced challenge
-createDocumentFragment를 활용하여 효율적 돔 제어  
-HTML5 tempate tag사용법  
-element와 node의 차이  
-children과 childNodes의 차이  
-remove와 removeChild의 차이  
-같은 element를 appendChild하면 기존 엘리먼트를 복사하는가?  
-offsetTop : 좌표 정보를 조회  
-offsetWidth : 크기 정보를 조회  
+## Create
+```javascript
+//Create an element
+const a = document.createElement('div');
 
-# 엘리먼스 생성과 할당
-const a = document.createElement('div')로 생성하고  
-document.body.append(a)로 할당한다.  
-
-적절한 위치에 넣기 위해서는 구조를 보고 옳은 위치에 넣어야한다.  
-순회를 하는 방법도 있지만 더 좋은 방법이 있다.
-
-자바스크립트에서 우너시 자료형인 변수의 값을 조회하기 위해서는
-변수의 이름으로 직접 조회가능하다.
-
-참조 자료형인 배열은 index를, 객체는 key를 이용해 값을 조회한다.  
-그러나 dom은 조금 특별한 방법을 사용한다.  
-dom으로 흩믈 엘리먼트의 정보를 조회하기 위해서는 querySelector의 첫 번쨰 인자로 selector를 전달하여 확인 가능하다.  
-셀렉터로는 html 태그 "div" 따위의 것,
-id "#tweetList"
-class ".tweet"이 가장 ㅁ낳이 사용된다.
+//Allocate to the body
+document.body.append(a);
+```
+적절한 위치에 넣기 위해서는, 구조를 보고 옳은 위치에 넣어야한다.  
+적절한 위치를 찾기 위해서 순회를 하는 방법도 있지만, 더 좋은 방법이 있다.  
 
 
-여러 엘리먼트를 한 번에 가져오기 위해서는 querySelectorAll을 사용한다.
-이렇게 조회한 GTML엘리 먼트들은 배열처럼 for문을 사용가능하다.
-하지만 앞서 조회한 HTML엘리먼트들은 배열이 아니다.
-"배열이 아닌 배열"을 유사배열, 배열형 객체 등 다양한 이름으로 부른다.  
-정식 명칭은 Array-like-Object이다.  
+---
 
+## Read
+
+### querySelector
+`JavaScript`의 원시 자료형인 변수의 값을 조회할 떄, 변수의 이름으로 직접 조회가능하다.  
+참조 자료형인 `Array`는 `index`를, `Object`는 `key`를 이용해 값을 조회한다.  
+그러나 `DOM`은 조금 특별한 방법을 사용한다.  
+`DOM`으로 `HTML` 엘리먼트의 정보를 조회하기 위해서는, `querySelector`의 첫 번쨰 인자로 `selector`를 전달하여 확인 가능하다.  
+셀렉터로는 html `<div>` 따위의 것, `id "#tweetList"`, `class ".tweet"`을 가장 많이 사용한다.  
+
+---
+
+### querySelectorAll
+여러 엘리먼트를 한 번에 가져오기 위해서는, `querySelectorAll`을 사용한다.  
+이렇게 조회한 `HTML` 엘리먼트들은 배열처럼 `for loop`를 사용할 수 있다.  
+
+---
+
+### Array like object
+하지만 앞서 조회한 `HTML` 엘리먼트들은 배열이 아니다.  
+"배열이 아닌 배열"을 `유사 배열`, `배열형 객체` 등 다양한 이름으로 부른다.  
+정식 명칭은 `Array-like-Object`이다.  
+
+---
+
+#### Compatibility
 호환성을 위해서 옛날 메서드를 사용해야하기도 한다.  
-작동 방식은 같다.
-dociment.getElementById
-ducument.querySelector로 조회해보고 === 로 같은지 확인하면 true가 나온다.  
+```javascript
+document.getElementById
 
-처음에 append하면 class 가 정의되어있지 않아 css의 스타일링이 적용되지 않는다.  
-클래스를 추가하기 위해서 다음과 같이 한다.
+// 이 메서드는 ducument.querySelector와 정확히 같은 일을 수행한다.  
+```
+
+---
+
+### classList
+ `JavaScript`로 만든 엘리먼트를 append하면 `class`가 정의되어있지 않아, `CSS`의 스타일링이 적용되지 않는다.  
+클래스를 추가하기 위해서 다음과 같이 한다.  
+```javascript
 oneDiv.classList.add('tweet')
+```
 
+---
+
+## Update
 내용을 넣기 위해서는 update를 한다.  
-해당 객체의 textContent = "내용"을 통해서 값을 넣어주자.  
+해당 객체의 `textContent = "내용"`을 통해서 값을 넣어주자.  
 
 특정 클래스에 추가할때에는 다음과 같이도 가능하다.
 ```javascript
@@ -241,27 +256,35 @@ const container = document.querySelector('#container')
 container.append(oneDiv)
 ```
 
-class , id 말고 다른 attribute를 추가하기위해서는 setAttribute를 사용하자.  
+`class`, `id` 말고 다른 attribute를 추가하기위해서는 `setAttribute`를 사용하자.  
 
-# Delete
-## 위치를 알고있는 경우
+---
+
+## Delete
+### 위치를 알고있는 경우
 ```javascript
 const container = document.querySelector('#container')
 const tweetDiv = document.createElement('div')
 container.append(tweetDiv)
 tweetDiv.remove()
 ```
+  
+---
 
-## 여러개의 자식 엘리먼트를 지우기 : innerHTML
+### innerHTML
 ```javascript
 document.querySelectore('#container').innerHTML = '';
 ```
-모든 자식 엘리먼트를 지운다는 점에서 벌써 보안 문제가 있는 것 같다.
-그래서 방법을 대신할 다른 메서드를 사용한다.
+모든 자식 엘리먼트를 지운다는 점에서 보안 문제가 발생한다.  
+그래서 `innerHTML`을 권장하지 않고 대신할 다른 메서드를 사용한다.  
 
-removeChildsms 자식 엘리먼트를 지정해서 삭제한다.
-모든 자식 엘리먼트를 삭제하기위해 반복문을 활용할 수 있다.
-다음 코드는 자식 엘리먼트가 ㄴ마아있지 않을 때까지 첫번째 자식 엘리먼트를 삭제하는 코드이다.
+
+---
+
+### removeChild
+`innerHTML`과 같은 일을 수행한다; 자식 엘리먼트를 지정해서 삭제한다.  
+모든 자식 엘리먼트를 삭제하기 위해 반복문을 활용할 수 있다.  
+다음 코드는 자식 엘리먼트가 남아있지 않을 때까지 첫번째 자식 엘리먼트를 삭제하는 코드이다.  
 
 ```javascript
 const container - dociment.querySelector('#container');
@@ -269,12 +292,11 @@ while (container.fisrtChild){
     container.removeChild(container.firstChild)
 }
 ```
-
-이 방식으로 요소를 삭제하면 제목에 해당하는 h2 "TweetList"까지 삭제된다.
-이를 방지하기위해 여러 요소를 사용할 수 있다.
-이를테면 문자열을 비교해 tweet List만 남기거나,
-새로운 변수를 생성하고 tweetlist를 할당해뒀다가 반복문이 끝나면 새롭게 추가
-또는 자식 엘리먼트를 하남나 남기게 할 수 있다.
+이 방식으로 요소를 삭제하면 제목에 해당하는 `h2 "TweetList"`까지 삭제된다.  
+이를 방지하기위해 여러 요소를 사용할 수 있다.  
+이를테면 문자열을 비교해 `tweet List`만 남기거나,  
+새로운 변수를 생성하고 `tweet List`를 할당해뒀다가 반복문이 끝나면 새롭게 추가하거나,  
+또는 자식 엘리먼트를 하나만 남기게 할 수 있다.  
 
 ```javascript
 const container = document.querySelector('#container');
@@ -283,23 +305,23 @@ while (container.children.length > 1){
 }
 ```
 
-또는 직접 클래스 이름이 tweet 인 엘리먼트만 찾아서 지운다.
+또는 직접 클래스 이름이 `tweet`인 엘리먼트만 찾아서 지울 수 있다.  
 ```javascript
 const tweets = dociment.querySelectorALL('.tweet')
 tweets.forEach(function(tweet)){
     tweet.remove();
 }
-
-// 이벤트 핸들러 안에 인자로 객체를 넣으면 어떻게 되지??
-// or
-
-for (let tweet of tweets)P
-tweet.remove()
 ```
 
-# further study
+---
+
+## Further Study
 - the difference between element and node
 - difference between children and childNodes in javascript dom
 - difference between removeChild and remove in javaScript dom
 - tweets에 forEach는 되는데, reduce 는 안되는 이유 (why array method is nor working on nodelist)
 - tweets를 유사배열에서 배열로 바꾸는 방법 (how to convert nodelist into javascript array)
+- 같은 element를 appendChild하면 기존 엘리먼트를 복사하는가? 
+- createDocumentFragment
+- HTML5 tempate tag
+- offsetTop. offsetWidth

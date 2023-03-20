@@ -30,16 +30,25 @@
       url: "docs/Web_Basics/dom"
       children:
         - title: Achievement Goals - DOM Introduction
-          url: docs/Web_Basics/dom#'Achievement Goals (Intro)'
+          url: "docs/Web_Basics/dom#'achievement-goals-_-intro"
         - title: Applying JavsScript to HTML
-          url: "docs/Web_Basics/dom#applying javascript to html"
+          url: "docs/Web_Basics/dom#applying-javascript-to-html"
         - title: Using DOM
           url: "docs/Web_Basics/dom#using-dom"
         - title: Handling HTMl with DOM
           url: "docs/Web_Basics/dom#handling-html-with-dom"
         - title: Achievement Goals - DOM Application
           url: "docs/Web_Basics/dom#achievement-goals-_-crud"
-
+        - title: Create
+          url: "docs/Web_Basics/dom#create"
+        - title: Read
+          url: "docs/Web_Basics/dom#read"
+        - title: Update
+          url: "docs/Web_Basics/dom#update"
+        - title: Delete
+          url: "docs/Web_Basics/dom#delete"
+        - title: Further Study
+          url: "docs/Web_Basics/dom#further-study"
           # &nbsp
           # %20
           
