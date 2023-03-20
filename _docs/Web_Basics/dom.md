@@ -6,7 +6,7 @@ tags:
  - reset
  - html
  - javascript
-description: Learn about basic git commands!
+description: Learn about basic DOM!
 ---
 
 >   본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다.  
