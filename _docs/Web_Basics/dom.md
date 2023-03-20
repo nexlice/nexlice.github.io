@@ -49,7 +49,7 @@ description: Learn about basic git commands!
 
 ---
 
-### Locations of \<script\>
+### Locations of script tag
 - `<head>`에 존재하는 `<script>` 는 다음과 같이 한다.  
 
 ```html
