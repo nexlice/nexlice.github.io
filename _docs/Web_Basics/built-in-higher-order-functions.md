@@ -1,7 +1,15 @@
-
-
+---
+title: Built-in Higher Order Funtions in JavaScript
+tags: 
+ - JavaScript
+ - map
+ - filter
+ - reduce
+description: Learn how to use map, filter, and reduce!
+---
+>   본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다.  
 # Built in higher order functions in JavaScript
-## achievement goals
+## Achievement Goals
 - 배열 내장 고차함수 filter에 대해서 이해할 수 있다.
 - filter에 대한 이해를 기반으로, 나머지 고차함수를 스스로 학습할 수 있다.
     - forEach, find, filter, map, reduce, sor, some, every
@@ -364,3 +372,364 @@ reduce도 원본 배열에 영향을 주지 않는다.
 - sort : 정렬. 
 - some : 콜백함수를 만족하는 요소가 하나라도 있으면 true
 - every : 콜백함수를 만족하지 않는 요소가 하나라도 있으면 있으면 false
+
+
+##### Practice
+```javascript
+// discarder를 배열에서 제거한 배열을 리턴하는 로직
+
+function removeElement(arr, discarder) {
+    // TODO: 여기에 코드를 작성합니다.
+    let output = [];
+    output = arr.filter(function (num) {
+        return num !== discarder;
+    });
+    return output;   
+}
+
+
+let output = removeElement([1, 2, 3, 2, 1], 2);
+console.log(output); // --> [1, 3, 1]
+```
+
+---
+
+```javascript
+// 문자열 길이가 홀수인 것만 반환
+
+function filterOddLengthWords(words) {
+    // TODO: 여기에 코드를 작성합니다.
+    let output = [];
+    output = words.filter(function (word) {
+        return word.length % 2 !== 0;
+    });
+    return output;   
+}
+  
+let output = filterOddLengthWords(['there', 'it', 'is', 'now']);
+console.log(output); // --> ['there', "now']
+```
+
+---
+
+```javascript
+// 정수를 요소로 갖는 배열과 정수를 입력받아 배열에 추가하고 정렬한다고 가정할 경우, 파라미터로 받은 num의 인덱스 반환하기
+
+function getIndex(arr, num) {
+    // TODO: 여기에 코드를 작성합니다.
+    return arr.filter(function(el) {
+        return el < num;
+    }).length;
+}
+
+
+let output = getIndex([5, 4, 1, 3], 2);
+console.log(output); // --> 1
+
+output = getIndex([10, 5, 1, 3], 13);
+console.log(output); // --> 4
+```
+
+---
+
+```javascript
+// https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/typeof
+// arrayLike to array  >> Array.from()
+
+// https://leftday.tistory.com/81
+// is the given key valid? >> Object.keys(obj).includes('key_name');
+function lessThan100(number) {
+    return typeof number === 'number' && number < 100;
+}
+  
+function getElementsLessThan100AtProperty(obj, property) {
+    // TODO: 여기에 코드를 작성합니다.
+    // console.log(obj[property]);
+    // filter는 배열에 쓰는 메서드이기 때문에 배열이 아니면 에러가 난다.
+    // return obj[property].filter(lessThan100);
+    // 그러니 위처럼 바로 배열이기를 기대하고 짜지 말고 배열로 바꿔주자.
+
+    // 해당 오브젝트에 키가 있는지 확인한다
+    if (Object.keys(obj).includes(property)) {
+        let arr = Array.from(obj[property]);
+        return arr.filter(lessThan100);
+    } else {
+        return [];
+    }
+
+}
+  
+const obj = {
+    key: [1000, 20, 50, 500],
+};
+  
+let output = getElementsLessThan100AtProperty(obj, 'key');
+console.log(output); // --> [20, 50]
+```
+
+---
+
+
+```javascript
+// ????
+
+
+function getOnlyNames(arr) {
+    // TODO: 여기에 코드를 작성합니다.
+    return arr.map(function(data){
+        console.log(data.name);
+
+        // 딕셔너리에 접근할 때 map을 사용하면 . 으로 접근하는 것 같다.
+        // 아마도 data에 대한 정보가 없어서 인식을 못하는 듯 하다
+        // console.log(data[name]);
+        return data.name;
+    }); 
+}
+
+let output = getOnlyNames([
+    { name: 'Harry', age: 15 },
+    { name: 'Ron', age: 14 },
+    { name: 'Hermione', age: 14 },
+]);
+console.log(output); // --> ['Harry', 'Ron', 'Hermione']
+  
+output = getOnlyNames([
+    { name: 'Cho', age: 14 },
+    { name: 'Dumbledore', age: 87 },
+    { name: 'Snape', age: 53 },
+    { name: 'Hagrid', age: 43 },
+]);
+console.log(output); // --> ['Cho', 'Dumbledore', 'Snape', 'Hagrid']
+
+output = getOnlyNames([]);
+console.log(output); // --> []
+```
+
+---
+
+```javascript
+function getFullNames(arr) {
+    // TODO: 여기에 코드를 작성합니다.
+    return arr.map(function(data){
+        // return data.firstName + ' ' + data.lastName;
+        // 서식 지정 출력은 다음과 같이 한다
+        return `${data.firstName} ${data.lastName}`
+    });
+}
+
+
+let output = getFullNames([
+    {
+      firstName: 'Tim',
+      lastName: 'Goldfish',
+    },
+  ]);
+console.log(output); // --> ['Tim Goldfish']
+  
+output = getFullNames([
+    {
+      firstName: 'Adam',
+      lastName: 'Smith',
+    },
+    {
+      firstName: 'Jack',
+      lastName: 'Black',
+    },
+    {
+      firstName: 'Samuel',
+      lastName: 'Jackson',
+    },
+  ]);
+  console.log(output); // --> ['Adam Smith', 'Jack Black', 'Samuel Jackson']
+  
+  output = getFullNames([]);
+  console.log(output); // --> []
+```
+
+---
+
+```javascript
+function square(number) {
+  return number * number;
+}
+
+function getSquaredElementsAtProperty(obj, property) {
+  if (Object.keys(obj).includes(property)) {
+    // 문자열을 배열로 만들면 모든 캐릭터가 쪼개지면서 NaN으로 바뀐다.
+    // 배열인지 확인하자.
+    if (Array.isArray(obj[property])){
+
+    } else{
+      return [];
+    }
+    let arr = Array.from(obj[property]);
+    return arr.map(square);
+  } else {
+    return [];
+  }
+}
+
+const obj = {
+  arr: 'sike',
+};
+
+let output = getSquaredElementsAtProperty(obj, 'arr');
+console.log(output); 
+```
+
+---
+
+```javascript
+function calculateScore(records, value) {
+  const onlyVal = records.filter(function(data){
+    return data.animal === value;
+  });
+
+  // console.log(onlyVal);
+
+  return onlyVal.reduce(function(acc, cur){
+    // console.log(cur.score);
+    // acc는 변수같은거임 .score하면 안된다!!
+    return acc + cur.score;
+  },0);
+
+}
+
+
+const records = [
+  {
+    score: 63,
+    animal: 'dog',
+  },
+  {
+    score: 75,
+    animal: 'dog',
+  },
+  {
+    score: 87,
+    animal: 'cat',
+  },
+  {
+    score: 98,
+    animal: 'cat',
+  },
+  {
+    score: 24,
+    animal: 'dog',
+  },
+];
+
+let output = calculateScore(records, 'cat');
+console.log(output); // --> 185
+
+output = calculateScore(records, 'dog');
+console.log(output); // --> 162
+
+output = calculateScore([], 'dog');
+console.log(output); // --> 0
+
+output = calculateScore(records, 'mouse');
+console.log(output); // --> 0
+```
+
+---
+
+```javascript
+function getLongestElement(arr) {
+  // TODO: 여기에 코드를 작성합니다.
+  // reduce는 파라미터를 두개를 보통 받는다..
+  // rest.reduce(acc. cur))
+  // accumulator : callback함수의 반환값을 누적
+  // cur : 배열의 현재 요소
+  return arr.reduce(function(acc, cur){
+    if (acc.length >= cur.length){
+      return acc;
+    }
+    else{
+      return cur;
+    }
+  }
+  /* 초기값을 제공하지 않을 경우 배열의 첫 번쨰 요소를 사용한다. 빈배열일 때는 에러가 난다. */ 
+  , '')/* 만약 길이를 알고 싶다면 여기서 .length를 하면 된다. */;
+}
+
+
+let output = getLongestElement(['one', 'two', 'three']);
+console.log(output); // --> 'three'
+
+output = getLongestElement(['one', 'two', 'wow']);
+console.log(output); // --> 'one'
+```
+---
+
+```javascript
+function joinArrayOfArrays(arr) {
+  // TODO: 여기에 코드를 작성합니다.
+  return arr.reduce(function(acc, cur){
+    // acc의 자료형을 아마도 cur를 통해서 유추하는 듯하다.
+    return acc.concat(cur);
+  });
+}
+
+let output = joinArrayOfArrays([
+  [1, 4],
+  [true, false],
+  ['x', 'y'],
+]);
+
+console.log(output); // --> [1, 4, true, false, 'x', 'y']
+```
+
+---
+
+```javascript
+function studentReports(students) {
+  // TODO: 여기에 코드를 작성합니다.
+  const onlyFemale = students.filter(function(data){
+    return data.gender === 'female';
+  })
+
+  // console.log(onlyFemale);
+  
+  return onlyFemale.map(function(data){
+    const avg = data.grades.reduce(function(acc, cur){
+      return acc + cur;
+    }, 0) / data.grades.length;
+    data.grades = avg;
+    return data;
+  });
+}
+  
+
+let studentList = [
+  {
+    name: 'Anna',
+    gender: 'female',
+    grades: [4.5, 3.5, 4],
+  },
+  {
+    name: 'Dennis',
+    gender: 'male',
+    country: 'Germany',
+    grades: [5, 1.5, 4],
+  },
+  {
+    name: 'Martha',
+    gender: 'female',
+    grades: [5, 4, 4, 3],
+  },
+  {
+    name: 'Brock',
+    gender: 'male',
+    grades: [4, 3, 2],
+  },
+];
+
+let output = studentReports(studentList);
+
+console.log(output); // -->
+// [
+//   { name: 'Anna', gender: 'female', grades: 4 },
+//   { name: 'Martha', gender: 'female', grades: 4 },
+// ];
+```
