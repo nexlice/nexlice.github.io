@@ -82,18 +82,44 @@ let output = arr.filter(isLteFive);
 console.log(output); // --> ['hello', ' code' , 'happy']
 ```
 
-### 추가적으로 학습할 것들
-filter 메서드에 들어가는 콜백 함수는 truthy 또는 falsy를 리턴할 수 있다.  
-그러나 filter 메서드에 들어가는 콜백 함수는 Deep equality를 통해 조건을 명확하게 밝히는 것을 권장한다.  
+```javascript
+const cartoons = [
+    {
+        id 1,
+        bookType: 'cartoon',
+        title: '식객',
+        subtitle: '어머니의 쌀',
+        createAt: '2003-09-09',
+        genre: '요리',
+        artist: '허영만',
+        averageScore: 9.66,
+    },
+    {
+        id: 2,
+        // .. 이하 생략
+    },
+    // .. 이하 생략
+]; // 만화책의 모음
 
-## 요약
-map : 배열을 반환한다. 
-reduce: 값을 반환한다.
-filter: 조건을 적용한 배열을 반환한다.
-reduce안에서 조건문을 해도 괜찮지만 관심사 분리를 통해 분리하는게 좋다. 아마도?  
+const isCreatedAt2003 = function(cartoon){
+    // 조건을 구현한다.
+    const fullYear = new Date(cartoon.createAt).getFullYear()
+    return fullYear === 2003;
+}; // 단행본 한 권의 출판년도가 2003인지 확인하는 함수
 
-## map
-map은 모든 요소들에 대해서 동일한 행동을 한 결과를 반환한다.
+const filteredCartoons = cartoons.filter(isCraetedAt2003); // 출판년도가 2004년인 책의 모음
+```
+
+---
+
+### Deep equality
+`filter` 메서드에 들어가는 콜백 함수는 `truthy` 또는 `falsy`를 리턴할 수 있다.  
+그러나 `filter` 메서드에 들어가는 콜백 함수는 Deep equality; === 를 통해 조건을 명확하게 밝히는 것을 권장한다.  
+
+---
+
+## Map
+`map`은 모든 요소들에 대해서 동일한 행동을 한 결과를 반환한다.  
 행동은 직접 작성해야하며, 함수로 작성해야한다.  
 또한 기존 배열을 수정하지 않는다.  
 
@@ -124,37 +150,11 @@ const findSubtitle = function(cartoon){
 const subtitles = cartoons.map(findSubtitle); // 각 책의 부제 모음
 ```
 
-## filter
-```javascript
-const cartoons = [
-    {
-        id 1,
-        bookType: 'cartoon',
-        title: '식객',
-        subtitle: '어머니의 쌀',
-        createAt: '2003-09-09',
-        genre: '요리',
-        artist: '허영만',
-        averageScore: 9.66,
-    },
-    {
-        id: 2,
-        // .. 이하 생략
-    },
-    // .. 이하 생략
-]; // 만화책의 모음
-
-const isCreatedAt2003 = function(cartoon){
-    // 조건을 구현한다.
-    const fullYear = new Date(cartoon.createAt).getFullYear()
-    return fullYear === 2003;
-}; // 단행본 한 권의 출판년도가 2003인지 확인하는 함수
-
-const filteredCartoons = cartoons.filter(isCraetedAt2003); // 출판년도가 2004년인 책의 모음
-```
+---
 
 ## Reduce
-여러 데이터를 하나의 데이터로 응축(reduce) 할 때 사용한다.
+여러 데이터를 하나의 데이터로 응축(reduce) 할 때 사용한다.  
+
 ```javascript
 const cartoons = [
     {
@@ -183,9 +183,11 @@ const cartoonAvgScore = cartoons.reduce(scoreReducer, initialValue) / cartoons.l
 // 모든 책의 평점을 누적한 평균을 구한다.
 ```
 
-reduce는 더욱 다양한 방법으로 활용할 수 있다.  
+`reduce`는 더욱 다양한 방법으로 활용할 수 있다.  
 
-### 배열을 문자열로
+---
+
+- 배열을 문자열로
 
 ```javascript
 function joinName(resultStr, user) {
@@ -201,9 +203,11 @@ let users = [
 
 users.reduce(joinName, '');
 ```
-콜백 함수 joinName은 users 배열 안에 있는 요소의 이름을 하나로 응축한다.  
+콜백 함수 `joinName`은 `users` 배열 안에 있는 요소의 이름을 하나로 응축한다.  
 
-### 배열을 객체로
+---
+
+- 배열을 객체로
 
 ```javascript
 function makeAddressBook(addressBook, user) {
@@ -229,7 +233,7 @@ users.reduce(makeAdressBook, {});
 ```
 
 최종 리턴 값
-```javascript
+```bash
 {
     T: [
         { name: 'Tim', age: 40 }
@@ -242,9 +246,9 @@ users.reduce(makeAdressBook, {});
 ```
 
 
-# 왜 꼭 고차함수여야 할까? Why higher order function?
-## 높은 수준에서 생각하기
-추상화때문이다.  
+## Why do we use this
+
+### Abstraction  
 추상화는 복잡한 어떤 것을 압축해서 핵심만 추출한 상태로 만드는 것이 추상화이다.  
 
 우리는 브라우저에서 주소를 입력했을 때 어떤 일이 정확하게 일어나는지 알지 못한다.  
@@ -256,19 +260,19 @@ users.reduce(makeAdressBook, {});
 크롬의 자바스크립트 해석기(엔진)이 대신해주기 때문이다.  
 
 추상화는 생산성의 향상을 부른다.  
-- 함수 = 값을 전달받아 값을 리턴한다 = 값에 대한 복잡한 로직은 감추어져 있다 = 값 수준에서의 추상화
+- 함수 = 값을 전달받아 값을 리턴한다 = 값에 대한 복잡한 로직은 감추어져 있다 = 값 수준에서의 추상화  
 
-고차함수는 이 추상화의 수준을 사고의 추상화 수준으로 끌어올린다. 
+고차함수는 이 추상화의 수준을 사고의 추상화 수준으로 끌어올린다.  
 - 값 수준의 추상화 : 단순히 값(value)을 전달받아 처리하는 수준
 - 사고의 추상화 : 함수(사고의 묶음)를 전달받아 처리하는 수준
 
-즉, 고차함수를 통해, 보다 높은 수준 (higher order)에서 생각할 수 있다.
-- 고차함수 = 함수를 전달받거나 ㅎ마수를 리턴한다 = 사고(함수)에 대한 복잡한 로직은 감추어져 있다 = 사고 수준에서의 추상화
+즉, 고차함수를 통해, 보다 높은 수준 (higher order)에서 생각할 수 있다.  
+- 고차함수 = 함수를 전달받거나 ㅎ마수를 리턴한다 = 사고(함수)에 대한 복잡한 로직은 감추어져 있다 = 사고 수준에서의 추상화  
 추상화 수준이 높아지는 만큼, 생산성도 비약적으로 상승한다.  
 이를테면 배열 내장 함수인 unshift는 고차함수가 아니다.  
 함수를 인자로 받아서 행동을 하지 않기 때문이다.  
 
-## 일반적인, generic한 함수로 구성하기
+### Prefer generic 
 다음과 같은 데이터가 있다고 하자.
 ```javascript
 const data = [
@@ -295,9 +299,9 @@ const data = [
 ];
 ```
 
-함수를 만들때 가능하면 매개변수화 (parameterization)을 하여 일반적으로 함수로 변경하는 것이 좋다.  
-아래의 compose함수는 입력받은 함수를 순서대로 결합하는 고차함수이다.  
-각각의 작업을 분리하여 compose의 인자로 전달되는 콜백 함수로 구성해보자.  
+함수를 만들때 가능하면 매개변수화 (`parameterization`)을 하여 일반적으로 함수로 변경하는 것이 좋다.  
+아래의 `compose` 함수는 입력받은 함수를 순서대로 결합하는 고차함수이다.  
+각각의 작업을 분리하여 `compose`의 인자로 전달되는 콜백 함수로 구성해보자.   
 
 ```javascript
 function getOnlyMales(data) {
@@ -340,37 +344,45 @@ console.log(result); // --> 26
 
 ```
 
-## underbar
+<!-- ## underbar
 이전에는 배열 메서드가 브라우저에서 자체적으로 지원되지 않던 시절이 있었다.  
 그래서 선배 개발자들은 보다 나은 방법으로 배열이나 객체를 다루기 위한 라이브러리,  
 즉 배열이나 객체를 다루기 위한 도구 모음집을 만들었다.  
-배열, 객체를 다루는 라이브러리 Underbar에 대해서 알아보자.  
+배열, 객체를 다루는 라이브러리 Underbar에 대해서 알아보자.   -->
 
-## 메서드
+
+## Wrap up
+
+## Methods
 객체에 들어있는 함수를 의미한다.  
 메서드는 dot notation과 bracket notation으로 접근한다.  
+```javascript
 arr.map
 arr["map"]
+```
 
-## map
+### Map
 arr.map(el, idx) 모양이다.  
 여기서 idx는 옵션이다.  
 map 함수는 원본에 영향을 주지 않는다.  
 그래서 변수에 저장해서 써야한다.  
+**배열을 반환한다. **
 
-## filter
-filter도 index를 사용 가능하다.
+### Filter
+filter도 index를 사용 가능하다.  
+**조건을 적용한 배열을 반환한다.**
 
-## reduce
+### Reduce
 하나로 응축시킨 값을 만들고 싶을 때 사용한다.  
 요소를 한번씩 순회한다.  
 어떤 값을 만드려고하는 것이기 때문에 초깃값이 필요하다.  
 초깃값이 없다면 acc가 0번째 인덱스 요소를 갖게된다.  
 
-초깃값을 설정했다면 초깃값이 첫 acc값이 된다.
+초깃값을 설정했다면 초깃값이 첫 acc값이 된다.  
 reduce도 원본 배열에 영향을 주지 않는다.  
+**응축된 값을 반환한다.**
 
-## 내장 메서드들
+### Others
 - forEach : for 와 같음
 - find : 콜백 함수를 만족하는 요소를 반환한다.
 - sort : 정렬. 
@@ -378,7 +390,7 @@ reduce도 원본 배열에 영향을 주지 않는다.
 - every : 콜백함수를 만족하지 않는 요소가 하나라도 있으면 있으면 false
 
 
-##### Practice
+## Practice
 ```javascript
 // discarder를 배열에서 제거한 배열을 리턴하는 로직
 

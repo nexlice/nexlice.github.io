@@ -85,6 +85,16 @@
           url: "docs/Web_Basics/built-in-higher-order-functions#achievement-goals"
         - title: Filter
           url: "docs/Web_Basics/built-in-higher-order-functions#filter"
+        - title: Map
+          url: "docs/Web_Basics/built-in-higher-order-functions#map"
+        - title: Reduce
+          url: "docs/Web_Basics/built-in-higher-order-functions#reduce"
+        - title: Why do we use this?
+          url: "docs/Web_Basics/built-in-higher-order-functions#why-do-we-use-this"
+        - title: Wrap up
+          url: "docs/Web_Basics/built-in-higher-order-functions#wrap-up"
+        - title: Practice
+          url: "docs/Web_Basics/built-in-higher-order-functions#practice"
           
           
 
