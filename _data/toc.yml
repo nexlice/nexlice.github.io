@@ -78,7 +78,7 @@
           url: "docs/Web_Basics/higher-order-functions#practice"
         - title: Further Studies
           url: "docs/Web_Basics/higher-order-functions#further-studies"
-    - title: Built in higher order functions in JavaScript
+    - title: Built-in Higher Order Functions in JavaScript
       url: "docs/Web_Basics/built-in-higher-order-functions"
       children:
         - title: Achievement Goals
