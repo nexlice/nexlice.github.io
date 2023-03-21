@@ -78,7 +78,9 @@ caller는 조건에 따라 콜백 함수의 실행 여부를 결정할 수 있�
 
 ---
 
-1. 변수에 함수를 할당하는 경우
+- 변수에 함수를 할당하는 경우
+
+
 ``` javascript
 /*
  * 아래는 변수 square에 함수를 할당하는 함수 표현식 입니다.
@@ -99,7 +101,7 @@ console.log(output); // -->49
 
 ---
 
-1.  다른 함수를 인자로 받는 경우  
+- 다른 함수를 인자로 받는 경우  
 
 ```javascript
 function double(num) {
@@ -123,7 +125,7 @@ console.log(output); // --> 8
 ---
 
 
-1. 함수를 리턴하는 경우  
+- 함수를 리턴하는 경우  
 
 ```javascript
 function adder(added) {
@@ -151,7 +153,7 @@ console.log(output); // --> 5
 
 ---
 
-1. 함수를 인자로 받고, 함수를 리턴하는 경우  
+- 함수를 인자로 받고, 함수를 리턴하는 경우  
 
 ```javascript
 functino double(num){

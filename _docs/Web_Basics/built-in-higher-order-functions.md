@@ -7,7 +7,11 @@ tags:
  - reduce
 description: Learn how to use map, filter, and reduce!
 ---
+
+
 >   본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다.  
+
+
 # Built in higher order functions in JavaScript
 
 ## Achievement Goals
@@ -19,14 +23,14 @@ description: Learn how to use map, filter, and reduce!
 - 고차 할수를 활용하여 프로그램을 작성할 수 있다.
 
 ## Filter
-배열의 filter 메서드는 모든 배열의 요소 중에서 특정 조건을 만족하는 요소를 걸러내는 메소드이다.  
+배열의 `filter` 메서드는 모든 배열의 요소 중에서 특정 조건을 만족하는 요소를 걸러내는 메소드이다.  
 예를들어 배열에서 짝수만을 걸러내거나, 18보다 작은 수만을 걸러낼 수 있다.  
-string타입을 요소로 갖는 배열에서, 길이가 10 이하인 문자열만 걸러내거나, 'korea'만 걸러낼 수도 있다.  
+`string` 타입을 요소로 갖는 배열에서, 길이가 10 이하인 문자열만 걸러내거나, 'korea'만 걸러낼 수도 있다.  
 
-여기서 걸러내는 기준이 되는 특정 조건은 filter 메서드의 인자로 전달된다.  
-이때 전달되는 조건은 함수의 형태이다.  
-filter메서드는 걸러내기 위한 조건을 명시한 함수를 인자로 받기 때문에 고차함수이다.  
-filter메서드가 동작하는 방식은 다음과 같다. 
+여기서 걸러내는 기준이 되는 특정 조건은 `filter` 메서드의 `인자`로 전달된다.  
+이때 전달되는 조건은 `함수의 형태`이다.  
+`filter` 메서드는 걸러내기 위한 조건을 명시한 함수를 인자로 받기 때문에 고차함수이다.  
+`filter` 메서드가 동작하는 방식은 다음과 같다. 
 
 ```javascript
 // 아래 코드에서 '짝수'와 '길이 5 이하'는 문법 오류(syntax error)에 해당한다.
@@ -54,10 +58,10 @@ Array.prototype.filter = function(func) {
 }
 ```
 
-filter 메서드는 배열의 요소를, 인자를 전달되는 콜백 함수에 다시 전달한다.  
-콜백 함수는 전달받은 배열의 요소를 받아 함수를 실행하고, 콜백 함수 내부의 조건에 따라 true, false를 리턴해야한다.  
-적어도 filter 메서드는 이런 함수를 기대하고 있다.  
-최종 코드는 다음과 같다.
+`filter` 메서드는 배열의 요소를, 인자를 전달되는 콜백 함수에 다시 전달한다.  
+콜백 함수는 전달받은 배열의 요소를 받아 함수를 실행하고, 콜백 함수 내부의 조건에 따라 `true`, `false`를 리턴해야한다.  
+
+`filter` 메서드는 인자로서 적어도 다음과 같은 형식의 함수를 기대하고 있다.  
 ```javascript
 const isEven = function (num) {
     return num % 2 === 0;
