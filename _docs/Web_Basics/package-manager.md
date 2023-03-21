@@ -11,8 +11,9 @@ tags:
 description: Learn about package manager!
 ---
 
-# Package Manager
 >   본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다.  
+
+# Package Manager
 
 ## The advent of package manager
 패키지 매니저는 왜 태어났을까?  

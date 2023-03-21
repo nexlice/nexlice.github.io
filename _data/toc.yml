@@ -95,7 +95,13 @@
           url: "docs/Web_Basics/built-in-higher-order-functions#wrap-up"
         - title: Practice
           url: "docs/Web_Basics/built-in-higher-order-functions#practice"
-          
+    - title: React Basics
+      url: "docs/Web_Basics/react-basics"
+      children:
+        - title: React Intro
+          url: "docs/Web_Basics/react-basics#react-intro"
+        - title: Achievement Goals
+          url: "docs/Web_Basics/react-basics#achievement-goals"
           
 
 - title: "CLI Commands"
