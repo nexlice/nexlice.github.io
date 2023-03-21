@@ -102,6 +102,8 @@
           url: "docs/Web_Basics/react-basics#react-intro"
         - title: Achievement Goals
           url: "docs/Web_Basics/react-basics#achievement-goals"
+        - title: What is React?
+          url: "docs/Web_Basics/react-basics#what-is-react"
           
 
 - title: "CLI Commands"
