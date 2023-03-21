@@ -99,7 +99,8 @@ console.log(output); // -->49
 
 ---
 
-1.  다른 함수를 인자로 받는 경우
+1.  다른 함수를 인자로 받는 경우  
+
 ```javascript
 function double(num) {
     return num * 2;
@@ -121,7 +122,9 @@ console.log(output); // --> 8
 
 ---
 
-1. 함수를 리턴하는 경우
+
+1. 함수를 리턴하는 경우  
+
 ```javascript
 function adder(added) {
     return function (num) {
@@ -148,7 +151,8 @@ console.log(output); // --> 5
 
 ---
 
-1. 함수를 인자로 받고, 함수를 리턴하는 경우
+1. 함수를 인자로 받고, 함수를 리턴하는 경우  
+
 ```javascript
 functino double(num){
     return num * 2;
