@@ -69,15 +69,21 @@
       url: "docs/Web_Basics/higher-order-functions"
       children: 
         - title: Achievement Goals
-          url: "docs/Web_Basics/dom#achievement-goals"
+          url: "docs/Web_Basics/higher-order-functions#achievement-goals"
         - title: First Class Citizen
-          url: "docs/Web_Basics/dom#first-class-citizen"
+          url: "docs/Web_Basics/higher-order-functions#first-class-citizen"
         - title: Definition
-          url: "docs/Web_Basics/dom#definition"
+          url: "docs/Web_Basics/higher-order-functions#definition"
         - title: Practice
-          url: "docs/Web_Basics/dom#practice"
+          url: "docs/Web_Basics/higher-order-functions#practice"
         - title: Further Studies
-          url: "docs/Web_Basics/dom#further-studies"
+          url: "docs/Web_Basics/higher-order-functions#further-studies"
+    - title: Built in higher order functions in JavaScript
+      url: "docs/Web_Basics/built-in-higher-order-functions"
+      children:
+        - title: Achievement Goals
+          url: "docs/Web_Basics/built-in-higher-order-functions#Achievement Goals"
+          
           # &nbsp
           # %20
           
