@@ -8,13 +8,11 @@ tags:
 description: Learn how to use map, filter, and reduce!
 ---
 
-
 >   본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다.  
 
+# Built in higher order functions in JavaScript  
 
-# Built in higher order functions in JavaScript
-
-## Achievement Goals
+## Achievement Goals  
 - 배열 내장 고차함수 `filter`에 대해서 이해할 수 있다.
 - `filter`에 대한 이해를 기반으로, 나머지 고차함수를 스스로 학습할 수 있다.
     - `forEach`, `find`, `map`, `reduce`, `sort`, `some`, `every`
