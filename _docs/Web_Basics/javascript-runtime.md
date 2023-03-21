@@ -17,7 +17,7 @@ description: Learn about JavaScript Runtime!
 어떤 프로그램이 동작할 때, 프로그램이 동작하는 곳을 런타임이라 한다.  
 
 ---
-## JavaScript Runtime
+## What is JavaScript Runtime?
 우리는 이미 자바스크립트 런타임을 사용하고 있다.  
 크롬, 사파리같은 웹 브라우저가 바로 자바스크립트 런타임이다!  
 
