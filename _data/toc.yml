@@ -67,6 +67,17 @@
           url: "docs/Web_Basics/dom#further-study"
     - title: "Higher Order Functions"
       url: "docs/Web_Basics/higher-order-functions"
+      children: 
+        - title: Achievement Goals
+          url: "docs/Web_Basics/dom#achievement-goals"
+        - title: First Class Citizen
+          url: "docs/Web_Basics/dom#first-class-citizen"
+        - title: Definition
+          url: "docs/Web_Basics/dom#definition"
+        - title: Practice
+          url: "docs/Web_Basics/dom#practice"
+        - title: Further Studies
+          url: "docs/Web_Basics/dom#further-studies"
           # &nbsp
           # %20
           
