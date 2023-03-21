@@ -366,19 +366,19 @@ arr.map(el, idx) 모양이다.
 여기서 idx는 옵션이다.  
 map 함수는 원본에 영향을 주지 않는다.  
 그래서 변수에 저장해서 써야한다.  
-**배열을 반환한다. **
+**같은 함수를 모든 요소에 적용한 객체를 반환한다. **
 
 ### Filter
 filter도 index를 사용 가능하다.  
-**조건을 적용한 배열을 반환한다.**
+**같은 조건을 모든 요소에 적용한 객체를 반환한다.**
 
 ### Reduce
 하나로 응축시킨 값을 만들고 싶을 때 사용한다.  
 요소를 한번씩 순회한다.  
-어떤 값을 만드려고하는 것이기 때문에 초깃값이 필요하다.  
-초깃값이 없다면 acc가 0번째 인덱스 요소를 갖게된다.  
+어떤 값을 만드려고하는 것이기 때문에 초깃값(`acc`)이 필요하다.  
+초깃값이 없다면 `acc`가 0번째 인덱스 요소를 갖게된다.  
 
-초깃값을 설정했다면 초깃값이 첫 acc값이 된다.  
+초깃값을 설정했다면 초깃값이 첫 `acc`값이 된다.  
 reduce도 원본 배열에 영향을 주지 않는다.  
 **응축된 값을 반환한다.**
 
@@ -391,6 +391,9 @@ reduce도 원본 배열에 영향을 주지 않는다.
 
 
 ## Practice
+
+- filter : 제거할 요소를 파라미터로 전달하여 원하는 배열 만들기
+
 ```javascript
 // discarder를 배열에서 제거한 배열을 리턴하는 로직
 
@@ -410,6 +413,8 @@ console.log(output); // --> [1, 3, 1]
 
 ---
 
+- filter : 배열을 파라미터로 받아 조건을 만족한 index만 남기기
+
 ```javascript
 // 문자열 길이가 홀수인 것만 반환
 
@@ -427,6 +432,10 @@ console.log(output); // --> ['there', "now']
 ```
 
 ---
+
+- filter : 배열과 정수를 파라미터로 받아, 정렬 후의 인덱스를 출력하기  
+실제로 정렬을 해준 후에 값을 반환해도 되지만,  
+filter를 이용하여 받은 인자보다 작은 값들의 배열을 만든 후, 그 길이를 반환하는 로직으로 구현하였다.  
 
 ```javascript
 // 정수를 요소로 갖는 배열과 정수를 입력받아 배열에 추가하고 정렬한다고 가정할 경우, 파라미터로 받은 num의 인덱스 반환하기
@@ -447,13 +456,12 @@ console.log(output); // --> 4
 ```
 
 ---
+- filter : 딕셔너리를 받아 배열로 만들기  
+
+> Array.from() : arrayLike to array  
+> Object.keys(obj).includes('key_name'); : check if the given key is valid?  
 
 ```javascript
-// https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/typeof
-// arrayLike to array  >> Array.from()
-
-// https://leftday.tistory.com/81
-// is the given key valid? >> Object.keys(obj).includes('key_name');
 function lessThan100(number) {
     return typeof number === 'number' && number < 100;
 }
@@ -485,19 +493,18 @@ console.log(output); // --> [20, 50]
 
 ---
 
+- map : 딕셔너리를 받아 원하는 값만 남기기  
+
+JavaScript에서는 파라미터의 자료형을 정하지 않고 보낸다.  
+따라서 파라미터의 속성에 접근할 때에는 . 으로 접근한다.  
+map은 배열을 반환하므로 리턴값을 []로 감싸지 않아야 한다.  
 
 ```javascript
-// ????
-
-
 function getOnlyNames(arr) {
     // TODO: 여기에 코드를 작성합니다.
     return arr.map(function(data){
         console.log(data.name);
-
-        // 딕셔너리에 접근할 때 map을 사용하면 . 으로 접근하는 것 같다.
-        // 아마도 data에 대한 정보가 없어서 인식을 못하는 듯 하다
-        // console.log(data[name]);
+        // console.log(data[name]); >> error
         return data.name;
     }); 
 }
@@ -522,6 +529,11 @@ console.log(output); // --> []
 ```
 
 ---
+
+- map : 원하는 값을 서식을 지정하여 배열로 반환하기
+
+JavaScript에서 서식지정 출력은 \`${변수}\` 형식으로 지정한다.  
+원하는 반환값이 배열이므로 map을 활용한 모습이다.  
 
 ```javascript
 function getFullNames(arr) {
@@ -564,6 +576,12 @@ output = getFullNames([
 
 ---
 
+- map : 객체를 입력 받아 모든 값을 제곱하기  
+
+객체와 객체가 가진 키를 파라미터로 받는다.  
+객체 안에 키가 없다면, 빈 배열을 반환한다.  
+원하지 않는 값은 빈 배열을 반환하기 위해서 `Array.isArray`를 활용한다.  
+
 ```javascript
 function square(number) {
   return number * number;
@@ -594,6 +612,12 @@ console.log(output);
 ```
 
 ---
+
+- reduce : 객체를 입력받아 모든 값의 합을 구하기
+
+reduce의 callback함수는 fucntion(acc, cur){}의 형태를 가졌음을 잊지 말자.  
+acc는 초깃값의 영향을 받으며, reduce의 2번째 인자로 넣어줄 수 있다.  
+아래 예시에서는 0으로 들어간 모습이다.  
 
 ```javascript
 function calculateScore(records, value) {
@@ -650,6 +674,12 @@ console.log(output); // --> 0
 
 ---
 
+- reduce : 배열을 입력받아 가장 길이가 긴 문자열을 반환하기  
+
+reduce는 for문과 비슷하다.  
+~~(사실 모든 내장 함수가 내부적으로 for문이 돌아가긴 한다.)~~  
+다음 배열의 원소 `cur`의 값과 현재 값 `acc`의 길이를 비교하여 긴 것만 남긴다.  
+
 ```javascript
 function getLongestElement(arr) {
   // TODO: 여기에 코드를 작성합니다.
@@ -678,11 +708,12 @@ console.log(output); // --> 'one'
 ```
 ---
 
+- reduce: 2차원 배열을 입력받아 1차원으로 flatten 하기  
+
 ```javascript
 function joinArrayOfArrays(arr) {
   // TODO: 여기에 코드를 작성합니다.
   return arr.reduce(function(acc, cur){
-    // acc의 자료형을 아마도 cur를 통해서 유추하는 듯하다.
     return acc.concat(cur);
   });
 }
@@ -697,6 +728,11 @@ console.log(output); // --> [1, 4, true, false, 'x', 'y']
 ```
 
 ---
+
+- map + reduce : 객체를 입력 받아 점수의 평균 반환하기.
+
+반환 값 또한 객체이기 때문에 객체를 반환하는 map을 사용한다.  
+점수의 평균은 응축된 하나의 값이므로 reduce를 사용한다.  
 
 ```javascript
 function studentReports(students) {
