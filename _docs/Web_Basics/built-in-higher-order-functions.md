@@ -353,7 +353,7 @@ console.log(result); // --> 26
 
 ## Wrap up
 
-## Methods
+### Methods
 객체에 들어있는 함수를 의미한다.  
 메서드는 dot notation과 bracket notation으로 접근한다.  
 ```javascript
