@@ -9,16 +9,16 @@ description: Learn how to use map, filter, and reduce!
 ---
 >   본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다.  
 # Built in higher order functions in JavaScript
+
 ## Achievement Goals
-- 배열 내장 고차함수 filter에 대해서 이해할 수 있다.
-- filter에 대한 이해를 기반으로, 나머지 고차함수를 스스로 학습할 수 있다.
-    - forEach, find, filter, map, reduce, sor, some, every
-- 추상화(abstraction)에 대해서 설명할 수 있다.
-- 추상화의 관점에서 고차 함수가 갖는 이점에 대해서 설명할 수 있다.
+- 배열 내장 고차함수 `filter`에 대해서 이해할 수 있다.
+- `filter`에 대한 이해를 기반으로, 나머지 고차함수를 스스로 학습할 수 있다.
+    - `forEach`, `find`, `map`, `reduce`, `sort`, `some`, `every`
+- 추상화(`abstraction`)에 대해서 설명할 수 있다.
+    - 추상화의 관점에서 고차 함수가 갖는 이점에 대해서 설명할 수 있다.
 - 고차 할수를 활용하여 프로그램을 작성할 수 있다.
 
-
-## filter
+## Filter
 배열의 filter 메서드는 모든 배열의 요소 중에서 특정 조건을 만족하는 요소를 걸러내는 메소드이다.  
 예를들어 배열에서 짝수만을 걸러내거나, 18보다 작은 수만을 걸러낼 수 있다.  
 string타입을 요소로 갖는 배열에서, 길이가 10 이하인 문자열만 걸러내거나, 'korea'만 걸러낼 수도 있다.  
