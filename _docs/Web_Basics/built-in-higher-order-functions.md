@@ -434,8 +434,9 @@ console.log(output); // --> ['there', "now']
 ---
 
 - filter : 배열과 정수를 파라미터로 받아, 정렬 후의 인덱스를 출력하기  
-실제로 정렬을 해준 후에 값을 반환해도 되지만,  
-filter를 이용하여 받은 인자보다 작은 값들의 배열을 만든 후, 그 길이를 반환하는 로직으로 구현하였다.  
+
+> 실제로 정렬을 해준 후에 값을 반환해도 되지만,  
+> `filter`를 이용하여 받은 인자보다 작은 값들의 배열을 만든 후, 그 길이를 반환하는 로직으로 구현하였다.  
 
 ```javascript
 // 정수를 요소로 갖는 배열과 정수를 입력받아 배열에 추가하고 정렬한다고 가정할 경우, 파라미터로 받은 num의 인덱스 반환하기
@@ -495,9 +496,9 @@ console.log(output); // --> [20, 50]
 
 - map : 딕셔너리를 받아 원하는 값만 남기기  
 
-JavaScript에서는 파라미터의 자료형을 정하지 않고 보낸다.  
-따라서 파라미터의 속성에 접근할 때에는 . 으로 접근한다.  
-map은 배열을 반환하므로 리턴값을 []로 감싸지 않아야 한다.  
+> `JavaScript`에서는 파라미터의 자료형을 정하지 않고 보낸다.  
+> 따라서 파라미터의 속성에 접근할 때에는 `.` 으로 접근한다.  
+> map은 배열을 반환하므로 리턴값을 `[]`로 감싸지 않아야 한다.  
 
 ```javascript
 function getOnlyNames(arr) {
@@ -532,8 +533,8 @@ console.log(output); // --> []
 
 - map : 원하는 값을 서식을 지정하여 배열로 반환하기
 
-JavaScript에서 서식지정 출력은 \`${변수}\` 형식으로 지정한다.  
-원하는 반환값이 배열이므로 map을 활용한 모습이다.  
+> `JavaScript`에서 서식지정 출력은 \`${변수}\` 형식으로 지정한다.  
+> 원하는 반환값이 배열이므로 `map`을 활용한 모습이다.  
 
 ```javascript
 function getFullNames(arr) {
@@ -578,9 +579,9 @@ output = getFullNames([
 
 - map : 객체를 입력 받아 모든 값을 제곱하기  
 
-객체와 객체가 가진 키를 파라미터로 받는다.  
-객체 안에 키가 없다면, 빈 배열을 반환한다.  
-원하지 않는 값은 빈 배열을 반환하기 위해서 `Array.isArray`를 활용한다.  
+> 객체와 객체가 가진 키를 파라미터로 받는다.  
+> 객체 안에 키가 없다면, 빈 배열을 반환한다.  
+> 원하지 않는 값은 빈 배열을 반환하기 위해서 `Array.isArray`를 활용한다.  
 
 ```javascript
 function square(number) {
@@ -615,9 +616,9 @@ console.log(output);
 
 - reduce : 객체를 입력받아 모든 값의 합을 구하기
 
-reduce의 callback함수는 fucntion(acc, cur){}의 형태를 가졌음을 잊지 말자.  
-acc는 초깃값의 영향을 받으며, reduce의 2번째 인자로 넣어줄 수 있다.  
-아래 예시에서는 0으로 들어간 모습이다.  
+> `reduce의` `callback`함수는 `fucntion(acc, cur){}`의 형태를 가졌음을 잊지 말자.  
+> `acc`는 초깃값의 영향을 받으며, `reduce`의 2번째 인자로 넣어줄 수 있다.  
+> 아래 예시에서는 0으로 들어간 모습이다.  
 
 ```javascript
 function calculateScore(records, value) {
@@ -676,9 +677,9 @@ console.log(output); // --> 0
 
 - reduce : 배열을 입력받아 가장 길이가 긴 문자열을 반환하기  
 
-reduce는 for문과 비슷하다.  
-~~(사실 모든 내장 함수가 내부적으로 for문이 돌아가긴 한다.)~~  
-다음 배열의 원소 `cur`의 값과 현재 값 `acc`의 길이를 비교하여 긴 것만 남긴다.  
+> reduce는 for문과 비슷하다.  
+> ~~(사실 모든 내장 함수가 내부적으로 for문이 돌아가긴 한다.)~~  
+> 다음 배열의 원소 `cur`의 값과 현재 값 `acc`의 길이를 비교하여 긴 것만 남긴다.  
 
 ```javascript
 function getLongestElement(arr) {
@@ -731,8 +732,8 @@ console.log(output); // --> [1, 4, true, false, 'x', 'y']
 
 - map + reduce : 객체를 입력 받아 점수의 평균 반환하기.
 
-반환 값 또한 객체이기 때문에 객체를 반환하는 map을 사용한다.  
-점수의 평균은 응축된 하나의 값이므로 reduce를 사용한다.  
+> 반환 값 또한 객체이기 때문에 객체를 반환하는 map을 사용한다.  
+> 점수의 평균은 응축된 하나의 값이므로 reduce를 사용한다.  
 
 ```javascript
 function studentReports(students) {
