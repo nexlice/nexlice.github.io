@@ -153,7 +153,23 @@
       url: "docs/javascript/async"
       children:
         - title: Achievement Goals
-          url: "docs/javascript/built-in-higher-order-functions#achievement-goals"
+          url: "docs/javascript/async#achievement-goals"
+        - title: Examples
+          url: "docs/javascript/async#examples"
+        - title: Forwarding async functions
+          url: "docs/javascript/async#forwarding-async-functions"
+        - title: Why Async
+          url: "docs/javascript/async#why-async"
+        - title: Controlling Async
+          url: "docs/javascript/async#controlling-async"
+        - title: Timer API
+          url: "docs/javascript/async#timer-api"
+        - title: bind
+          url: "docs/javascript/async#bind"
+        - title: Node.js Moudles
+          url: "docs/javascript/async#node-js-modules"
+        - title: Further Study
+          url: "docs/javascript/async#further-study"
           
 - title: "CLI Commands"
   url: "docs/cli-commands"
