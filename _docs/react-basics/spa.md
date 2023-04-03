@@ -7,7 +7,7 @@ tags:
  - Router
  - Browse Router
 
-description: Learn about basic React!
+description: Learn about basic SPA!
 ---
 
 >   본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다.  
