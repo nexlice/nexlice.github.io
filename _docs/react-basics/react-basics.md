@@ -5,16 +5,9 @@ tags:
  - eclarative
  - Component
  - JSX
- - SPA
  - Bable
- - Router
- - Browse Router
- - State
- - Props
- - Events
- - Data Flow
 
-description: Learn about basic React!
+description: Learn about the concept of React!
 ---
 
 >   본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다.  

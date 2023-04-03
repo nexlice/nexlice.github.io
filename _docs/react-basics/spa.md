@@ -1,3 +1,20 @@
+---
+title: React SPA
+tags: 
+ - React
+ - Wireframe
+ - SPA
+ - Router
+ - Browse Router
+
+description: Learn about basic React!
+---
+
+>   본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다.  
+
+{% include alert.html type="danger" title="Warning!" content="이 문서는 아직 미완성 문서입니다." %}
+
+
 # React SPA
 ## Achievement Goals
 - `SPA` (Single-Page Application) 개념을 이해하고 설명할 수 있다.  
