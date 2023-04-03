@@ -95,23 +95,31 @@
           url: "docs/Web_Basics/built-in-higher-order-functions#wrap-up"
         - title: Practice
           url: "docs/Web_Basics/built-in-higher-order-functions#practice"
+- title: "React Basics"
+  url:  "docs/react-basics/main-page"
+  links:
     - title: "React Basics"
-      url: "docs/Web_Basics/react-basics"
-      links:
-        - title: "React Intro"
-          url: "docs/Web_Basics/react-basics"
-          children:
-            - title: React Intro
-              url: "docs/Web_Basics/react-basics#react-intro"
-    # - title: React Basics
-    #   url: "docs/Web_Basics/react-basics"
-    #   children:
-    #     - title: React Intro
-    #       url: "docs/Web_Basics/react-basics#react-intro"
-    #     - title: Achievement Goals
-    #       url: "docs/Web_Basics/react-basics#achievement-goals-_-intro"
-    #     - title: What is React?
-    #       url: "docs/Web_Basics/react-basics#what-is-react"
+      url: "docs/react-basics/react-basics"
+      children:
+        - title: React Intro
+          url: "docs/react-basics/react-basics#react-intro"
+        - title: Achievement Goals
+          url: "docs/react-basics/react-basics#achievement-goals"
+        - title: What is React?
+          url: "docs/react-basics/react-basics#what-is-react"
+        - title: JSX
+          url: "docs/react-basics/react-basics#jsx"
+        - title: JSX Syntax
+          url: "docs/react-basics/react-basics#jsx-syntax"
+        - title: Component based React 
+          url: "docs/react-basics/react-basics#component-based-react"
+    - title: "React SPA"
+      url: "docs/react-basics/spa"
+      children:
+        - title: React SPA
+          url: "docs/react-basics/spa#react-spa"
+        - title: Achievement Goals
+          url: "docs/react-basics/spa#achievement-goals"
           
 
 - title: "CLI Commands"
