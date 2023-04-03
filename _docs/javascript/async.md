@@ -403,6 +403,7 @@ reuslt();
 
 ## Timer API
 - setTimeout(callback, millisecond)  
+
 ```javascript
 /* setTimeout(callback, millisecond) 
     
@@ -424,6 +425,7 @@ setTimeout(function(){
 - clearTimeout
 
 - setInterval(callback, millisecond)  
+
 ```javascript
 /* setInterval(callback, millisecond) 
     
@@ -443,6 +445,7 @@ setInterval(function(){
 ```
 
 - cleanInterval(timerID)  
+
 ```javascript
 /* cleanInterval(timerID) 
     
@@ -463,7 +466,8 @@ cleanInterval(timer);
 
 ```
 
-## bind
+## bind  
+
 ```javascript
 bind(this, args);
     /*
