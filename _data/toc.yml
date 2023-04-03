@@ -114,10 +114,10 @@
         - title: Component based React 
           url: "docs/react-basics/react-basics#component-based-react"
     - title: "React SPA"
-      url: "docs/react-basics/spa"
+      url: "docs/react-basics/react-spa"
       children:
         - title: React SPA
-          url: "docs/react-basics/spa#react-spa"
+          url: "docs/react-basics/react-spa#react-spa"
         - title: Achievement Goals
           url: "docs/react-basics/spa#achievement-goals"
     - title: "State & Props"
