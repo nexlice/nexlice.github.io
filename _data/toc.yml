@@ -28,56 +28,55 @@
           url: "docs/web-basics/css#practice"
     - title: "DOM"
       url: "docs/web-basics/dom"
-      # 여기서부터 테스트
-      links:
-        - title: "domdomcss"
-          url: "docs/web-basics/css"
-          children: 
-            - title: Achievement Goals
-              url: "docs/web-basics/css#achievement-goals"
-        - title: "domdomhtml"
-          url: "docs/web-basics/html"
-          children:
-            - title: Achievement Goals
-              url: "docs/web-basics/html#achievement-goals"
-
-      # children:
-      #   - title: AG - Introduction
-      #     url: "docs/web-basics/dom#achievement-goals-_-intro"
-      #   - title: Entrance Setting
-      #     url: "docs/web-basics/dom#entrance-setting"
-      #   - title: Applying JavsScript to HTML
-      #     url: "docs/web-basics/dom#applying-javascript-to-html"
-      #   - title: Using DOM
-      #     url: "docs/web-basics/dom#using-dom"
-      #   - title: Handling HTMl with DOM
-      #     url: "docs/web-basics/dom#handling-html-with-dom"
-      #   - title: AG - DOM Application
-      #     url: "docs/web-basics/dom#achievement-goals-_-crud"
-      #   - title: Create
-      #     url: "docs/web-basics/dom#create"
-      #   - title: Read
-      #     url: "docs/web-basics/dom#read"
-      #   - title: Update
-      #     url: "docs/web-basics/dom#update"
-      #   - title: Delete
-      #     url: "docs/web-basics/dom#delete"
-      #   - title: DOM Practice
-      #     url: "docs/web-basics/dom#dom-practice"
-      #   - title: AG - DOM Practice
-      #     url: "docs/web-basics/dom#achievement-goals-_-dom-practice"
-      #   - title: Event Handler
-      #     url: "docs/web-basics/dom#event-handler"
-      #   - title: Event Object
-      #     url: "docs/web-basics/dom#event-object"
-      #   - title: Attaching Callback Function
-      #     url: "docs/web-basics/dom#attaching-callback-function"
-      #   - title: Practice 1
-      #     url: "docs/web-basics/dom#practice-1"
-      #   - title: Practice 2
-      #     url: "docs/web-basics/dom#practice-2"
-      #   - title: Further Study
-      #     url: "docs/web-basics/dom#further-study"
+      # nested links are not available.
+      # links:
+      #   - title: "domdomcss"
+      #     url: "docs/web-basics/css"
+      #     children: 
+      #       - title: Achievement Goals
+      #         url: "docs/web-basics/css#achievement-goals"
+      #   - title: "domdomhtml"
+      #     url: "docs/web-basics/html"
+      #     children:
+      #       - title: Achievement Goals
+      #         url: "docs/web-basics/html#achievement-goals"
+      children:
+        - title: AG - Introduction
+          url: "docs/web-basics/dom#achievement-goals-_-intro"
+        - title: Entrance Setting
+          url: "docs/web-basics/dom#entrance-setting"
+        - title: Applying JavsScript to HTML
+          url: "docs/web-basics/dom#applying-javascript-to-html"
+        - title: Using DOM
+          url: "docs/web-basics/dom#using-dom"
+        - title: Handling HTMl with DOM
+          url: "docs/web-basics/dom#handling-html-with-dom"
+        - title: AG - DOM Application
+          url: "docs/web-basics/dom#achievement-goals-_-crud"
+        - title: Create
+          url: "docs/web-basics/dom#create"
+        - title: Read
+          url: "docs/web-basics/dom#read"
+        - title: Update
+          url: "docs/web-basics/dom#update"
+        - title: Delete
+          url: "docs/web-basics/dom#delete"
+        - title: DOM Practice
+          url: "docs/web-basics/dom#dom-practice"
+        - title: AG - DOM Practice
+          url: "docs/web-basics/dom#achievement-goals-_-dom-practice"
+        - title: Event Handler
+          url: "docs/web-basics/dom#event-handler"
+        - title: Event Object
+          url: "docs/web-basics/dom#event-object"
+        - title: Attaching Callback Function
+          url: "docs/web-basics/dom#attaching-callback-function"
+        - title: Practice 1
+          url: "docs/web-basics/dom#practice-1"
+        - title: Practice 2
+          url: "docs/web-basics/dom#practice-2"
+        - title: Further Study
+          url: "docs/web-basics/dom#further-study"
 
 - title: "Web advanced"
   url: "docs/web-advanced/main-page"
