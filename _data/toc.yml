@@ -119,7 +119,7 @@
         - title: React SPA
           url: "docs/react-basics/react-spa#react-spa"
         - title: Achievement Goals
-          url: "docs/react-basics/spa#achievement-goals"
+          url: "docs/react-basics/react-spa#achievement-goals"
     - title: "State & Props"
       url: "docs/react-basics/state-and-props"
       children:
