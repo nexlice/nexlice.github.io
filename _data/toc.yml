@@ -120,11 +120,11 @@
           url: "docs/react-basics/spa#react-spa"
         - title: Achievement Goals
           url: "docs/react-basics/spa#achievement-goals"
-    - title: "State & Props"
-      url: "docs/react-basics/state-and-props"
-      children:
-        - title: Achievement Goals
-          url: "docs/react-basics/state-and-props#achievement-goals"
+    # - title: "State & Props"
+    #   url: "docs/react-basics/state-and-props"
+    #   children:
+    #     - title: Achievement Goals
+    #       url: "docs/react-basics/state-and-props#achievement-goals"
           
 
 - title: "CLI Commands"
