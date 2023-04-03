@@ -170,7 +170,10 @@
           url: "docs/javascript/async#node-js-modules"
         - title: Further Study
           url: "docs/javascript/async#further-study"
-          
+
+- title: "HTTP"
+  url: "docs/http"
+
 - title: "CLI Commands"
   url: "docs/cli-commands"
 
