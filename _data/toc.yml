@@ -123,13 +123,13 @@
         - title: Entrance Setting
           url: "docs/react-basics/spa#entrance-setting"
         - title: SPA
-          url: "docs/react-basics/spa#spa"
+          url: "docs/react-basics/react-spa#spa"
         - title: Wireframe
-          url: "docs/react-basics/spa#wireframe"
+          url: "docs/react-basics/react-spa#wireframe"
         - title: React Router
-          url: "docs/react-basics/spa#react-router"
+          url: "docs/react-basics/react-spa#react-router"
         - title: React Router Tutorial
-          url: "docs/react-basics/spa#react-router-tutorial"
+          url: "docs/react-basics/react-spa#react-router-tutorial"
     - title: "State & Props"
       url: "docs/react-basics/state-and-props"
       children:
