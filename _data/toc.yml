@@ -122,6 +122,14 @@
           url: "docs/react-basics/spa#achievement-goals"
         - title: Entrance Setting
           url: "docs/react-basics/spa#entrance-setting"
+        - title: SPA
+          url: "docs/react-basics/spa#spa"
+        - title: Wireframe
+          url: "docs/react-basics/spa#wireframe"
+        - title: React Router
+          url: "docs/react-basics/spa#react-router"
+        - title: React Router Tutorial
+          url: "docs/react-basics/spa#react-router-tutorial"
     - title: "State & Props"
       url: "docs/react-basics/state-and-props"
       children:
