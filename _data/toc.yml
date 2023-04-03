@@ -135,6 +135,18 @@
       children:
         - title: Achievement Goals
           url: "docs/react-basics/state-and-props#achievement-goals"
+        - title: Props
+          url: "docs/react-basics/state-and-props#props"
+        - title: State
+          url: "docs/react-basics/state-and-props#state"
+        - title: Event Handling
+          url: "docs/react-basics/state-and-props#event-handling"
+        - title: Practice
+          url: "docs/react-basics/state-and-props#practice"
+        - title: Controlled Component
+          url: "docs/react-basics/state-and-props#controlled-component"
+        - title: React Dataflow
+          url: "docs/react-basics/state-and-props#react-dataflow"
           
 
 - title: "CLI Commands"
