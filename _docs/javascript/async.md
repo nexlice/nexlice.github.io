@@ -22,6 +22,8 @@ description: Learn about the concept of Async!
 
 # Async
 
+---
+
 ## Achievement Goals
 - 중첩된 callback의 발생
 - nested callback vs Promise
@@ -33,8 +35,12 @@ description: Learn about the concept of Async!
 - `async/await`
 - `fs`
 
+---
+
 ## Asynchronous Call
 Javascript안에서 비동기/동기 호출에 대해서 알아보자.
+
+---
 
 ### callback
 다른 함수의 parameter로 넘겨주는 함수이다.  
@@ -67,6 +73,8 @@ document.querySelector('#btn').onclick = handleClick();
 document.querySelector('#btn').onclick = handleClick;
 ```
 
+---
+
 ### blocking vs non blocking
 - blocking : 하던 일을 멈추고 받아야 한다  
 - synchronous : 요청에 대한 결과가 동시에 일어난다  
@@ -74,6 +82,8 @@ document.querySelector('#btn').onclick = handleClick;
 - asynchronous : 요청에 대한 결과가 동시에 일어나지 않는다  
 
 > 응답을 주는 것은 트리거가 생기면 발생하는 이벤트에 해당한다.
+
+---
 
 ## Examples
 
@@ -122,6 +132,9 @@ Steve는 카페라뗴를 마십니다
 John는 아메리카노를 마십니다
 ```
 
+---
+
+
 **asynchronous의 예**  
 ```javascript
 // 특정 시간 이후에 callback 함수가 실행되게끔 하는 브라우저 내장 함수
@@ -152,6 +165,8 @@ customers.forEach(function(customer){
 });
 ```
 
+---
+
 ## Forwarding async functions
 ```javascript
 // callback 패턴
@@ -169,6 +184,8 @@ orderCoffeeAsync(request).onready = function(response){
 
 즉, 동기, synchronous는 직렬적 수행이고, 비동기 asynchronous는 병렬적 수행이다.  
 
+---
+
 ### Prime usage of async functions
 - DOM Element의 이벤트 핸들러
     - onclick, keydown
@@ -179,6 +196,8 @@ orderCoffeeAsync(request).onready = function(response){
 - Server request
     - fetch API
     - AJAX (XHR)
+
+---
 
 ## Why Async
 `Node.js`는 `asynchronous event-driven JavaScript runtime`이며, thread없이 디자인 되었다.  
@@ -192,9 +211,13 @@ orderCoffeeAsync(request).onready = function(response){
 로딩이 되는동안 사용자의 행동이 제한되면 UX를 크게 떨어뜨린다.  
 이러한 이유에서 비동기를 사용한다.  
 
+---
+
 ## Controlling Async
 비동기로 여러 태스크를 할 때, 각각의 태스크가 걸리는 시간이 다를 수 있기 때문에, 결과를 실행시간에만 알 수 있다.  
 만약 이 실행 순서를 제어하고 싶다면, 어떻게 해야할까?  
+
+---
 
 ### callback
 async를 handling하기 위해서 callback을 사용한다.  
@@ -202,6 +225,8 @@ async를 handling하기 위해서 callback을 사용한다.
 
 #### callback hell
 순차적으로 이뤄져서 좋긴한데, 가독성도 떨어지고 코드 관리가 힘들어진다.
+
+---
 
 ### Promise
 `promise`는 프로미스가 생성된 시점에는 알려지지 않았을 수도 있는 값을 위한 대리자이다.  
@@ -254,6 +279,8 @@ resolve를 호출할 때 특정 값을 파라미터로 넣으면, 이 값을 작
 
 #### then, catch
 resolve가 되면 then으로 넘어가고, reject가 되면 catch로 넘어간다.
+
+---
 
 ### callback vs promise
 Callback Hell을 벗어나기 위해서 사용한다. Promise는 클래스이다.  
@@ -319,6 +346,8 @@ printAll() // always prints ABC
 
 #### but..
 하지만 `promise`를 활용할지라도 `return` 문을 사용하지 않으면, `promise hell`이 생길 수 있다.  
+
+---
 
 ### aysnc wait
 JS 비동기 처리를 원활하게 하기 위해 ES7에서 추가된 JS문법.  
@@ -401,6 +430,8 @@ const result = async() => {
 reuslt();
 ```
 
+---
+
 ## Timer API
 - setTimeout(callback, millisecond)  
 
@@ -466,6 +497,8 @@ cleanInterval(timer);
 
 ```
 
+---
+
 ## bind  
 
 ```javascript
@@ -479,6 +512,8 @@ bind(this, args);
         function
     */
 ```
+
+---
 
 ## Node js Modules
 `Node.js`의 경우 많은 API가 비동기로 작성되어 있다.  
@@ -509,6 +544,8 @@ npm install underscore
 ```javascript
 const _ = require('underscore');
 ```
+
+---
 
 ## Further Study
 - AnimationAPI

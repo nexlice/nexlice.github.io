@@ -16,11 +16,15 @@ description: Learn about the concept of React!
 
 # React Intro
 
+---
+
 ## Achievement Goals
 - `React`의 3가지 특징에 대해서 이해하고, 설명할 수 있다.
 - `JSX`가 왜 명시적인지 이해하고, 바르게 작성할 수 있다.
 - `React 컴포넌트` (`React Component`)의 필요성에 대해서 이해하고, 설명할 수 있다.
 - `create-react-app`으로 간단한 개발용 `React`앱을 실행할 수 있다.
+
+---
 
 ## What is React
 프론트 엔드 개발을 위한 자바스크립트 오픈소스 라이브러리.  
@@ -40,6 +44,8 @@ description: Learn about the concept of React!
 **Learn Onece, Write Anywhere**  
 리액트는 자바스크립트 프로젝트 어디에든 유연하게 적용될 수 있다.  
 `facebook`에서 관리되어 안정적이고, 가장 유명하며 `React Native`로 모바일 개발도 가능하다.  
+
+---
 
 ## JSX
 `JSX`는 `JavaScript XML`의 줄임말로 문자열도 아니고 `HTML`도 아니다.  
@@ -68,6 +74,8 @@ description: Learn about the concept of React!
 
 > 물론 JSX 없이도 React 요소를 만들 수 있다.  
 > 하지만 코드가 복잡하고 가독성이 떨어진다.  
+
+---
 
 ## JSX Syntax
 - 하나의 엘리먼트 안에 모든 엘리먼트가 포함되어야 한다.
@@ -174,6 +182,8 @@ function Blog() {
 map 메서드의 결과를 return 문 안에 인라인으로 처리할 수 있다.  
 코드 가독성을 위해 변수로 추출할지, 아니면 인라인에 넣을지는 개발자가 판단해야 할 몫이다.  
 
+---
+
 ### key 속성
 React에서 map메서드 사용 시, key 속성을 넣지 않으면, 리스트의 각 항목에 key를 넣어야 한다는 경고가 표시된다.  
 key 속성의 위치는 map 메서드 내부에 있는 엘리먼트, 즉 첫 엘리먼트에 넣어준다.
@@ -204,13 +214,21 @@ function Blog() {
 }
 ```
 
+---
+
 ## Component-Based React
+
+---
+
+
 ### 컴포넌트로 생각하기
 컴포넌트란 하나의 기능 구현을 위한 여러 종류의 코드 묶음이며, UI를 구성하는 필수 요소이다.  
 모든 리액트 애플리케이션은 최소 한 개의 컴포넌트를 갖고 있으며,  
 이 컴포넌트는 애플리케이션 내부적으로는 근원(root)이 되는 역할을 한다.  
 이 최상위 컴포넌트는 근원의 역할을 하므로 다른 자식 컴포넌트를 가질 수 있다.  
 이 계층적 구조(hierachy)를 트리구조로 형상화 할 수 있다.  
+
+---
 
 ### HTML + CSS + JS vs React Component
 만약 리액트로 짜지 않았다면 컴포넌트 위치의 수정 사항이 생겼을 때, 개발자는 적어도 다음 3가지를 수행하여야한다.  
@@ -221,11 +239,15 @@ function Blog() {
 반면 컴포넌트로 개발을 하였다면, 다음 하나만 수행하면 된다.
 - 변경하려는 UI에 맞추어 컴포넌트의 위치만 수정한다.
 
+---
+
 ### Create React App
 Create React App은 리액트 SPA를 쉽고 빠르게 개발할 수 있도록 만들어진 툴 체인이다.  
 리액트 말고도 여러 도구들이 웹앱을 배포할 떄 사용된다.  
 그 모든 도구들이 작동하는 방법을 알면 좋겠지만 쉽지 않다.  
 그래서 툴체인을 만들어서 개발을 좀 더 쉽게 하도록 한다.  
+
+---
 
 ### Installation
 - 먼저 리액트 프로젝트를 보관하고 싶은 디렉토리로 이동한다.  
@@ -235,14 +257,20 @@ npx create-react-app {원하는 프로젝트 이름}
 실행을 하면 react, react-dom과 같은 패키지들이 설치된다.  
 Happy hacking! 문구가 나오면 성공적으로 설치한 것이다.  
 
+---
+
 ### Directory
 node_modules 디렉토리 안에 모듈들이 위치해있고, json파일에 모듈에 대한 버전들이 명세되어있다.  
 package.json에서 scripts의 start를 제일 많이 쓰게된다.  
 `react scripts start` 와 `npm run start`는 똑같은 명령어이다.  
 
+---
+
 ### index.js
 `document.querySelector`와 비슷한 역할을 하는 `document.getElementById`를 통해 루트를 찾고,  
 우리가 개발할 App을 호출하는 모습이다.  
+
+---
 
 ### App.js
 앞서 index.js에서 확인했듯 코드를 수정하면 바로 변경점이 보인다.  

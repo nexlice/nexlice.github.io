@@ -15,6 +15,9 @@ description: Learn about the concept of State and Props!
 <!-- {% include alert.html type="danger" title="Warning!" content="이 문서는 아직 미완성 문서입니다." %} -->
 
 # React State & Props
+
+---
+
 ## Achievement Goals
 - State, Props의 개념에 대해서 이해하고, 실제 프로젝트에 바르게 적용할 수 있다.  
 - React 함수 컴포넌트(React Function Component)에서 State hook을 이용하여 State를 정의할 수 있다.  
@@ -23,6 +26,8 @@ description: Learn about the concept of State and Props!
 - 실제 웹 애플리케이션의 컴포넌트를 보고 어떤 데이터가 State이고 Props에 적합한지 판단할 수 있다.  
 - 실제 웹 애플리케이션 개발 시 State와 Props의 위치를 스스로 정할 수 있다.  
 - React의 단방향 데이터흐름 (One-way data flow)에 대해 자신의 언어로 설명할 수 있다.  
+
+---
 
 ## Props
 **컴포넌트의 속성(property)을 의미한다.**  
@@ -45,6 +50,8 @@ props는 외부로부터 전달받아 변하지 않는 값이다.
 > 즉, 개발자가 의도하지 않은 side effect가 생기게 되고,  
 > 이는 React의 하향식 데이터 흐름 원칙에 위배한다.  
 
+
+---
 ###  How to use props
 props를 사용하는 방법은 아래 3단계로 이루어진다.  
 1. 하위 컴포넌트에 전달하고자하는 값(data)과 속성을 정의한다.
@@ -136,6 +143,8 @@ export default App;
 ```
 만약 여러개의 props를 전달하고 싶다면 whitespace로 구분하여 전달한다.  
 
+---
+
 ## State
 Toggle Switch나,  Counter처럼 컴포넌트 내부에서 변할 수 있는 값이다.  
 State로 사용할 수 있는 **상태**의 종류는 다음과 같다.  
@@ -164,6 +173,8 @@ function CheckboxExample() {
 
 export default CheckboxExample;
 ```
+
+---
 
 ### useState
 React에서는 state를 다루는 바법 중 하나로 useState 함수를 제공한다.  
@@ -199,6 +210,8 @@ useState의 인자로 넘겨주는 값은 **state의 초기값**이다.
 const [state 저장 변수, state 갱신 함수] = useState(상태 초기 값);
 ```
 
+---
+
 ### update state
 - state를 갱신하려면 state 변수를 갱신할 수 있는 함수인, ```setIsChecked```를 호출한다.  
 - 위의 예시의 경우, ```input[type=checkbox]``` JSX 엘리먼트의 값 변경에 다라서 ```isChecked```가 변경되어야 한다.  
@@ -222,6 +235,8 @@ function CheckboxExample() {
   );
 }
 ```
+
+---
 
 ### Precautions
 - React 컴포넌트는 state가 변경되면 새롭게 호출되고, 리렌더링 된다.  
@@ -249,6 +264,8 @@ function CheckboxExample() {
 }
 ```
 
+---
+
 ## Event Handling
 React의 이벤트 처리 (이벤트 핸들링; Event handling) 방식은 DOM의 이벤트 처리 방식과 유사하다.  
 단, 몇 가지 문법 차이가 있다.  
@@ -266,6 +283,8 @@ HTML과  React의 이벤트 처리 방식차이는 아래와 같다.
 ```
 
 이벤트를 처리하는 데 여러 방식이 가능하다. 다음은 자주 사용되는 이벤트 처리에 대한 예시이다.
+
+---
 ### onChange
 ```<input>``` ```<textarea>``` ```<select>```와 같은 폼(Form) 엘리먼트는 사용자의 입력값을 제어하는데 사용된다.  
 React에서는 이러한 **변경될 수 있는 입력값**을 일반적으로 **컴포넌트의 state**로 관리하고 업데이트한다.  
@@ -291,6 +310,7 @@ function NameForm() {
 };
 ```
 
+---
 
 ### onClick
 ```onClick``` 이벤트는 사용자가 클릭이라는 행동을 하였을 때 발생하는 이벤트이다.  
@@ -349,6 +369,8 @@ function NameForm() {
     );
 };
 ```
+
+---
 
 ## Practice
 - Select  
@@ -423,6 +445,8 @@ function App() {
 export default App;
 ```
 
+---
+
 ## Controlled Component
 React가 state를 통제할 수 있는 컴포넌트를 Controlled Component라고 한다.  
 제어 컴포넌트가 동작하는 순서는 아래와 같다.  
@@ -463,6 +487,8 @@ export default function App() {
 }
 ```
 
+---
+
 ## React Data Flow
 React의 개발 방식의 가장 큰 특징은 페이지 단위가 아닌, 컴포넌트 단위로 시작한다는 점이다.  
 FE 개발자는 앱의 프로토타임을 받으면, 먼저 컴포넌트를 식별한다.  
@@ -473,6 +499,8 @@ FE 개발자는 앱의 프로토타임을 받으면, 먼저 컴포넌트를 식�
 컴포넌트를 나눌 때에는 단일 책임 원칙에 다라 구분한다.  
 하나의 컴포넌트는 한 가지 일만 하도록 하자.  
 
+---
+
 ### Top-Down dataflow
 컴포넌트는 컴포넌트 바깥에서 props를 이용해 데이터를 마치 전달인자 (arguments) 혹은 속성 (attrivbutes) 처럼 전달 받을 수 있다.  
 데이터를 전달하는 주체는 부모 컴포넌트가 된다.  
@@ -480,6 +508,8 @@ FE 개발자는 앱의 프로토타임을 받으면, 먼저 컴포넌트를 식�
   
 one-way data flow, 단방향 데이터 흐름이 React를 대표하는 키워드일 정도로 이 원칙은 매우 중요하다.  
 컴포넌트는 props를 통해 전달받은 데이터가 어디서 왔는지 알지 못한다.  
+
+---
 
 ### State data definition
 어플리케이션에서 필요한 데이터가 무엇인지 먼저 정의해야한다.  
@@ -492,10 +522,14 @@ one-way data flow, 단방향 데이터 흐름이 React를 대표하는 키워드
 - 컴포넌트 안의 다른 state나 props를 가지고 계산가능한가?
 이들 중 하나라도 만족한다면 state가 아니다.  
 
+---
+
 ### Location of State
 상태가 특정 컴포넌트에서만 유의미하다면, 특정 컴포넌트에만 위치시키면 된다.  
 하지만, 만일 하나의 상태를 기반으로 두 컴포넌트가 영향을 받는다면, 이때에는 공통 소유 컴포넌트를 찾아 그곳에 상태를 위치해야 한다.  
 즉, 두 개의 자식 컴포넌트가 하나의 상태에 접근하고자 할 때는 두 자식의 공통 부모 컴포넌트에 상태를 위치해야 한다.  
+
+---
 
 ### Reversed Data FLow
 부모 컴포넌트에서의 상태가 하위 컴포넌트에 의해 변하는 액션은, 부모의 상태를 변화시켜야 한다.  
