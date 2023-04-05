@@ -289,8 +289,10 @@ HTTP로 클라이언트와 서버가 통신을 주고 받는 과정에서, HTTP�
 - [MDN: HTTP 요청 메서드](https://developer.mozilla.org/ko/docs/Web/HTTP/Methods)  
 - [MDN: HTTP 메시지](https://developer.mozilla.org/ko/docs/Web/HTTP/Messages)  
 - [MDN: HTTP 상태 코드](https://developer.mozilla.org/ko/docs/Web/HTTP/Status)  
+- [Software Testing Material: Software Architecture](https://www.softwaretestingmaterial.com/software-architecture/)  
+- [IBM: What is 3-Tier Architecture?](https://www.ibm.com/topics/three-tier-architecture)  
 
----
+---  
 
 ## Further Study
 - HTTP's Stateless
