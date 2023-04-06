@@ -1,30 +1,27 @@
 ---
-title: StringifyJSON
+title: API Server
 tags: 
- - JavaScript
- - JSON
+ - node.js
+ - API Server
+ - CORS
+ - HTTP
+ - HTTP Request
+ - HTTP Response
+ - node.js modules
+ - Routing
+ - Express
+ - CRUD
 
-description: Learn about the concepts of StringifyJSON!
+description: Learn about building API Server!
 ---
 
 >   본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다.  
 
-# main-page
-- node.js
-- API Server
-- HTTP
-- HTTP Request
-- HTTP Response
-- node.js modules
-- Routing
-- Express
-- CRUD
+{% include alert.html type="danger" title="Warning!" content="이 문서는 아직 미완성 문서입니다." %}
 
-node.js를 이용하여 백엔드를 구축하는 방법을 알아보고, API Server를 직접 구현해보자.  
-
+`Node.js`를 이용하여 백엔드를 구축하는 방법을 알아보고, API Server를 직접 구현해보자.  
 
 # CORS
-
 ## Entrance Settings
 이전의 클라이언트 서버 관계에서, 유저의 요청에 의해 서버에 있던 클라이언트를 유저가 받아가는 통신을 했다.  
 즉, 유저는 서버에 있던 클라이언트(클라이언트에 static하게 담겨있는 데이터)를 일방적으로 보는 방식이었다.  
