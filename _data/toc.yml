@@ -182,7 +182,6 @@
           url: "docs/backend/references"
         - title: Further Study
           url: "docs/backend/further-study"
-          - title: "HTTP"
     - title: "REST API"
       url: "docs/backend/rest-api"
       children: 
