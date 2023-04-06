@@ -13,6 +13,12 @@ tags:
  - Props
  - Events
  - Data Flow
+ - Pure Function
+ - Side Effect
+ - useEffect
+ - state manager
+ - props drilling
+ - single source of truth
 
 description: Learn about basic React!
 ---
