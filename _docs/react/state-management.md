@@ -12,8 +12,6 @@ description: Learn about the concepts of State Management!
 
 >   본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다.  
 
-{% include alert.html type="danger" title="Warning!" content="이 문서는 아직 미완성 문서입니다." %}
-
 ## State management
 `state`란, 변하는 데이터이다. 특히 FE 개발에서는 동적으로 표현되는 데이터이다.  
 리액트에서 서로 다른 컴포넌트가 동일한 상태를 다룬다면, 이 출처는 오직 한 곳이어야 한다.  

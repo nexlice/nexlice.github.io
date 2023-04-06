@@ -12,8 +12,6 @@ description: Learn about the concepts of lifting State!
 
 >   본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다.  
 
-{% include alert.html type="danger" title="Warning!" content="이 문서는 아직 미완성 문서입니다." %}
-
 # Lifting State Up
 단반향 데이터 흐름이라는 원칙에 따라, 하위 컴포넌트는 상위 컴포넌트로부터 전달받은 데이터의 형태, 혹은 타입만 알 수 있다.  
 데이터가 `state`로부터 왔는지, 하드 코딩으로 입력한 내용인지는 알지 못한다.  
