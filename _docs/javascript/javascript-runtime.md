@@ -29,13 +29,13 @@ description: Learn about JavaScript Runtime!
 이제 자바스크립트를 이용해서 웹페이지 뿐 아니라 서버와 같은 다른 프로그램을 만들 수 있다.  
 
 ---
-### node.js
+### Node.js
 노드.js 런타임의 등장으로. 자바스크립트 코드를 브라우저와 node.js 환경 모두에서 실행시킬 수 있다.  
 HTML `<script>` 태그 내에 자바스크립트 코드를 작성하면, 이 코드는 웹브라우저에서 작동한다.  
 CLI 환경에서 `node <file_name>` 명령어를 프롬프트에 입력하면, 작성한 코드가 node.js라는 런타임에서 실행된다.  
 
 ---
-## nvm
+#### nvm
 nvm은 node version manager의 이니셜이다.  
 자주 나오는 용어인 lts는 long tern service의 이니셜이다.  
   
@@ -44,7 +44,7 @@ nvm은 node version manager의 이니셜이다.
 nvm을 통해 다양한 노드 버전을 옮겨다닐 수 있다.  
 
 ---
-## module
+#### module
 모듈이란 컴증된 코드를 말한다.  
 "바퀴를 재발명하지 마라"라는 프로그래밍 세계에서의 격언이 있듯, 개발을 할 때 모든 것을 다 만들어서 쓰지 않는다.  
   
@@ -116,20 +116,20 @@ package.json에는 이 프로그램을 실행시키기 위해 필요한 모듈�
 `underscore`, `react`같은 것들이다.  
 
 ---
-## save option
+#### save option
 이 옵션과 함께 설치하면 자동으로 `dependencies`에 추가 된다.  
 하지만 `npm5`부터는 `--save` 옵션을 기본 옵션으로 적용한다.  
 즉, `--save`를 사용하지 않아도 `dependencies`에 항목이 추가된다.  
 즉, `--save`옵션은 생략해도 좋다.  
 
 ---
-## Why package.json?
+### Why package.json?
 내가 만든 프로젝트라면, 이 프로젝트에 어떤 모듈이 필요하고, 어떻게 실행시킬지를 잘 안다. ~~모를지도...?~~
 하지만 프로젝트를 처음 접하는 사람이 실행시킬 때에는, 바로 알 수 없다.  
 협업을 하기 위해서. 프로젝트에 대해 알려주기 위해 `package.json`을 쓴다.  
 
 ---
-## scripts
+### scripts
 `scripts` 항목은 CLI에서 사용 가능한 명령을 기술한다.  
 우리는 이를 `npm script`라고 부른다.
 cli에서 실행할 때에는 다음과 같이 실행한다.  
