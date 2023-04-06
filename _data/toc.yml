@@ -194,6 +194,15 @@
           url: "docs/javascript/higher-order-functions#practice"
         - title: Further Studies
           url: "docs/javascript/higher-order-functions#further-studies"
+    - title: StringifyJSON
+      url: "docs/javascript/stringifyjson"
+      children:
+        - title: Achievement Goals
+          url: "docs/javascript/stringifyjson#achievement-goals"
+        - title: JSON
+          url: "docs/javascript/stringifyjson#json"
+        - title: Further Study
+          url: "docs/javascript/stringifyjson#further-study"
     - title: Built-in Higher Order Functions in JavaScript
       url: "docs/javascript/built-in-higher-order-functions"
       children:
@@ -232,6 +241,13 @@
           url: "docs/javascript/async#node-js-modules"
         - title: Further Study
           url: "docs/javascript/async#further-study"
+    - title: Async
+      url: "docs/javascript/async"
+      children:
+        - title: Achievement Goals
+          url: "docs/javascript/async#achievement-goals"
+        - title: Examples
+          url: "docs/javascript/async#examples"
 
 - title: "CLI Commands"
   url: "docs/cli-commands"

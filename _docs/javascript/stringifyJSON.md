@@ -9,13 +9,15 @@ description: Learn about the concepts of stringifyJSON!
 
 >   본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다.  
 
-{% include alert.html type="danger" title="Warning!" content="이 문서는 아직 미완성 문서입니다." %}
+<!-- {% include alert.html type="danger" title="Warning!" content="이 문서는 아직 미완성 문서입니다." %} -->
 
-## achievement goals
+## Achievement Goals
 - json 구조가 재귀 함수를 사용할 수 있는 Tree구조이다.
 - JSON.stringify와 JSON.parse가 각각 serialize, deserailize에 대응한다.
 - JSON.stringify와 JSON.parse를 사용하여 JavaScript값과 JSON을 넘나들 수 있다.
 - JSON에 재귀 호출을 사용할 떄, 어디에 사용해야할 지 알 수 있다.
+
+---
 
 ## JSON
 `JSON` 은 JavaScript Object Notation의 아니셜로,  
@@ -74,6 +76,8 @@ console.log(typeof(obj));
 
 > 이렇게 `JSON.parse`를 적용하는 과정을 역직렬화(deeserialize)라고 한다.  
 
+---
+
 ### Base rule of JSON
 딕셔너리 객체와 JSON의 차이는 다음과 같다.  
 ||자바스크립트 객체|JSON|
@@ -83,7 +87,9 @@ console.log(typeof(obj));
 
 또한 JSON은 키와 값 사이, 그리고 키-값 쌍 사이에는 공백이 있어서는 안된다.  
 
-### Further Study
+---
+
+## Further Study
 - JavaScript recursion memory leak
 - tail recursion in js
 - js tower of hanoi in recursion
