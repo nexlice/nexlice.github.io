@@ -25,17 +25,6 @@
     - title: "DOM"
       url: "docs/web/dom-main-page"
       # nested links are not available.
-      # links:
-      #   - title: "domdomcss"
-      #     url: "docs/web/css"
-      #     children: 
-      #       - title: Achievement Goals
-      #         url: "docs/web/css#achievement-goals"
-      #   - title: "domdomhtml"
-      #     url: "docs/web/html"
-      #     children:
-      #       - title: Achievement Goals
-      #         url: "docs/web/html#achievement-goals"
       children:
         - title: Introduction
           url: "docs/web/dom-introduction"
@@ -178,7 +167,7 @@
         - title: Further Studies
           url: "docs/javascript/higher-order-functions#further-studies"
     - title: StringifyJSON
-      url: "docs/javascript/stringifyjson"
+      url: "docs/javascript/s"
       children:
         - title: JSON
           url: "docs/javascript/stringifyjson#json"
