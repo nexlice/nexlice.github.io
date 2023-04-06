@@ -89,7 +89,7 @@
         - title: CORS
           url: "docs/web/browser-operation-principles#cors"
 
-- title: "React Basics"
+- title: "React"
   url:  "docs/react/main-page"
   links:
     - title: "React Intro"
@@ -137,6 +137,26 @@
           url: "docs/react/state-and-props#controlled-component"
         - title: React Dataflow
           url: "docs/react/state-and-props#react-dataflow"
+    - title: "Lifting State Up"
+      url: "docs/react/lifting-state-up"
+    - title: "Effect Hook"
+      url: "docs/react/effect-hook"
+      children:
+        - title: Side Effect
+          url: "docs/react/effect-hook#side-effect"
+        - title: Pure Function
+          url: "docs/react/effect-hook#pure-function"
+        - title: Function Component
+          url: "docs/react/effect-hook#function-component"
+        - title: useEffect
+          url: "docs/react/effect-hook#useeffect"
+        - title: Examples
+          url: "docs/react/effect-hook#examples"
+        - title: Further Study
+          url: "docs/react/effect-hook#further-study"
+    - title: "State Management"
+      url: "docs/react/state-management"
+      
 
 - title: "Backend"
   url: "docs/backend/main-page"

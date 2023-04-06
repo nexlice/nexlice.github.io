@@ -11,7 +11,16 @@ description: Learn about the concepts of Effect Hook!
 
 >   본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다.  
 
-{% include alert.html type="danger" title="Warning!" content="이 문서는 아직 미완성 문서입니다." %}
+<!-- {% include alert.html type="danger" title="Warning!" content="이 문서는 아직 미완성 문서입니다." %} -->
+
+# Effect Hook
+`Hook`은  React 16.8에 새로 추가된 기능으로,  
+클래스를 따로 작성하지 않고도 state와 다른 React의 기능들을 사용할 수 있게 해준다.  
+`Hook` 의 대표적인 예시로 이전에도 다뤘던 `useState()`와 같은 `State Hook`이 있다.  
+`Effect Hook`은 컴포넌트 안에서 데이터를 가져오거나, 구독하거나, 또는 DOM을 직접 조작할 때,  
+`Side Effect`를 제어하기 위해서 사용하는 `useEffect()`를 의미한다.  
+
+---
 
 ## Side Effect
 우리말로는 **부수 효과**라 한다.  
@@ -132,7 +141,7 @@ Hook을 쓸 때 주의점은 다음 두가지 정도 있다.
 
 ---
 
-## Dependency array
+### Dependency array
 `useEffect`의 두 번째 인자는 배열이다. 
 이 배열은 조건을 담고 있다.  
 여기서 조건은 `boolean` 형태의 표현식이 아닌, **어떤 값의 변경이 일어날 때**를 의미한다.  
@@ -363,7 +372,7 @@ useEffect(() => {
 
 ---
 
-### Further Study
+## Further Study
 실무에서는 서버의 부담과 클라이언트의 부담이 적절하게 분배된 어플리케이션 구조를 가지게 된다.  
 
 **클라이언트가 서버에 요청을 덜 보내는 방법**  
