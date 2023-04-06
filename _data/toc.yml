@@ -118,41 +118,47 @@
       url: "docs/react/state-management"
       
 
-- title: "Backend"
-  url: "docs/backend/main-page"
+- title: "Network"
+  url: "docs/network/main-page"
   links:
     - title: "HTTP"
-      url: "docs/backend/http"
+      url: "docs/network/http"
       children: 
         - title: URL vs URI
-          url: "docs/backend/url-vs-uri"
+          url: "docs/network/http#url-vs-uri"
         - title: IP
-          url: "docs/backend/ip"
+          url: "docs/network/http#ip"
         - title: PORT
-          url: "docs/backend/port"
+          url: "docs/network/http#port"
         - title: Domain name
-          url: "docs/backend/domain-name"
+          url: "docs/network/http#domain-name"
         - title: DNS
-          url: "docs/backend/dns"
+          url: "docs/network/http#dns"
         - title: HTTP definition
-          url: "docs/backend/http-definition"
+          url: "docs/network/http#http-definition"
         - title: Stateless
-          url: "docs/backend/stateless"
+          url: "docs/network/http#stateless"
         - title: References
-          url: "docs/backend/references"
+          url: "docs/network/http#references"
         - title: Further Study
-          url: "docs/backend/further-study"
+          url: "docs/network/http#further-study"
+
+- title: "Server"
+  url: "docs/server/main-page"
+  links:
     - title: "REST API"
-      url: "docs/backend/rest-api"
+      url: "docs/server/rest-api"
       children: 
         - title: RMM
-          url: "docs/backend/rmm"
+          url: "docs/server/rest-api#rmm"
         - title: Reference
-          url: "docs/backend/reference"
+          url: "docs/server/rest-api#reference"
         - title: Open API
-          url: "docs/backend/open-api"
+          url: "docs/server/rest-api#open-api"
         - title: API Key
-          url: "docs/backend/api-key"
+          url: "docs/server/rest-api#api-key"
+    - title: "API Server"
+      url: "docs/server/api-server"
 
 
 - title: "JavaScript"
