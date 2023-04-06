@@ -43,30 +43,37 @@
           </div>
           <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
             <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
-	      <ol class="breadcrumb spb-1">
-              {% assign crumbs = page.url | append: "/"  | replace: '//', '/' | split: '/' %}
-              {% for crumb in crumbs offset: 1 %}
-                {% if crumb != "index" %}
-                  {% if forloop.last %}
-                    <li class="breadcrumb-item active" aria-current="page">
-                      <a href="{{ site.url }}{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
-                    </li>
-                  {% else %}
-                    {% if page.url != "/docs/" %}
-                      {% if site.version_params.versioning == true and crumb == currentpageversion or crumb == site.version_params.version_dir %}
-                      <!-- Don't display the version number or directory in the breadcrumb -->
-                      {% else %}
-                      <li class="breadcrumb-item">
-                        <!-- <a href="{{ site.url }}{{ site.baseurl }}{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{% if crumb == "docs" %}Documentation{% else %}{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}{% endif %}</a> -->
-                        <a href="{{ site.url }}{{ site.baseurl }}{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}{% if  == 2 %}main-page{% endif %}{% if crumb == crumbs[2] %}main-page{% endif %}">{% if crumb == "docs" %}Documentation{% else %}{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}{% endif %}</a>
-
-                      </li>
-                      {% endif %}
+              <ol class="breadcrumb spb-1">
+                {% assign crumbs = page.url | append: "/"  | replace: '//', '/' | split: '/' %}
+                {% assign last_crumb = crumbs | last %}
+                {% for crumb in crumbs offset: 1 %}
+                    {% if crumb != "index" %}
+                        {% if forloop.last %}
+                            <li class="breadcrumb-item active" aria-current="page">
+                                <a href="{{ site.url }}{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
+                            </li>
+                        {% else %}
+                            {% if page.url != "/docs/" %}
+                                {% if site.version_params.versioning == true and crumb == currentpageversion or crumb == site.version_params.version_dir %}
+                                    <!-- Don't display the version number or directory in the breadcrumb -->
+                                {% else %}
+                                    {% assign crumb_limit = forloop.index | plus: 1 %}
+                                    <li class="breadcrumb-item">
+                                        {% if forloop.last %}
+                                            <span>{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</span>
+                                        {% else %}
+                                            {% capture next_crumb %}{{ crumbs[forloop.index] }}{% endcapture %}
+                                            {% if next_crumb != "main-page" or crumb != last_crumb %}
+                                                <a href="{{ site.url }}{{ site.baseurl }}{% for c in crumbs limit: crumb_limit %}{{ c | append: '/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a>
+                                            {% endif %}
+                                        {% endif %}
+                                    </li>
+                                {% endif %}
+                            {% endif %}
+                        {% endif %}
                     {% endif %}
-                  {% endif %}
-                {% endif %}
-              {% endfor %}
-	      </ol>
+                {% endfor %}
+            </ol>
            </nav>
            <div class="td-content">        
             {% if site.version_params.versioning == true %}
