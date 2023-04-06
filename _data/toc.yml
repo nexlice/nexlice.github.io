@@ -44,6 +44,64 @@
         - title: CORS
           url: "docs/web/browser-operation-principles#cors"
 
+- title: "JavaScript"
+  url: "docs/javascript/main-page"
+  links:
+    - title: "JavaScript Runtime"
+      url: "docs/javascript/javascript-runtime"
+    - title: "Higher Order Functions"
+      url: "docs/javascript/higher-order-functions"
+      children: 
+        - title: First Class Citizen
+          url: "docs/javascript/higher-order-functions#first-class-citizen"
+        - title: Definition
+          url: "docs/javascript/higher-order-functions#definition"
+        - title: Practice
+          url: "docs/javascript/higher-order-functions#practice"
+        - title: Further Studies
+          url: "docs/javascript/higher-order-functions#further-studies"
+    - title: StringifyJSON
+      url: "docs/javascript/stringifyjson"
+      children:
+        - title: JSON
+          url: "docs/javascript/stringifyjson#json"
+        - title: Further Study
+          url: "docs/javascript/stringifyjson#further-study"
+    - title: Built-in Higher Order Functions
+      url: "docs/javascript/built-in-higher-order-functions"
+      children:
+        - title: Filter
+          url: "docs/javascript/built-in-higher-order-functions#filter"
+        - title: Map
+          url: "docs/javascript/built-in-higher-order-functions#map"
+        - title: Reduce
+          url: "docs/javascript/built-in-higher-order-functions#reduce"
+        - title: Why do we use this?
+          url: "docs/javascript/built-in-higher-order-functions#why-do-we-use-this"
+        - title: Wrap up
+          url: "docs/javascript/built-in-higher-order-functions#wrap-up"
+        - title: Practice
+          url: "docs/javascript/built-in-higher-order-functions#practice"
+    - title: Async
+      url: "docs/javascript/async"
+      children:
+        - title: Examples
+          url: "docs/javascript/async#examples"
+        - title: Forwarding async functions
+          url: "docs/javascript/async#forwarding-async-functions"
+        - title: Why Async
+          url: "docs/javascript/async#why-async"
+        - title: Controlling Async
+          url: "docs/javascript/async#controlling-async"
+        - title: Timer API
+          url: "docs/javascript/async#timer-api"
+        - title: bind
+          url: "docs/javascript/async#bind"
+        - title: Node.js Moudles
+          url: "docs/javascript/async#node-js-modules"
+        - title: Further Study
+          url: "docs/javascript/async#further-study"
+
 - title: "React"
   url:  "docs/react/main-page"
   links:
@@ -148,65 +206,6 @@
           url: "docs/server/rest-api#api-key"
     - title: "API Server"
       url: "docs/server/api-server"
-
-
-- title: "JavaScript"
-  url: "docs/javascript/main-page"
-  links:
-    - title: "JavaScript Runtime"
-      url: "docs/javascript/javascript-runtime"
-    - title: "Higher Order Functions"
-      url: "docs/javascript/higher-order-functions"
-      children: 
-        - title: First Class Citizen
-          url: "docs/javascript/higher-order-functions#first-class-citizen"
-        - title: Definition
-          url: "docs/javascript/higher-order-functions#definition"
-        - title: Practice
-          url: "docs/javascript/higher-order-functions#practice"
-        - title: Further Studies
-          url: "docs/javascript/higher-order-functions#further-studies"
-    - title: StringifyJSON
-      url: "docs/javascript/stringifyjson"
-      children:
-        - title: JSON
-          url: "docs/javascript/stringifyjson#json"
-        - title: Further Study
-          url: "docs/javascript/stringifyjson#further-study"
-    - title: Built-in Higher Order Functions in JavaScript
-      url: "docs/javascript/built-in-higher-order-functions"
-      children:
-        - title: Filter
-          url: "docs/javascript/built-in-higher-order-functions#filter"
-        - title: Map
-          url: "docs/javascript/built-in-higher-order-functions#map"
-        - title: Reduce
-          url: "docs/javascript/built-in-higher-order-functions#reduce"
-        - title: Why do we use this?
-          url: "docs/javascript/built-in-higher-order-functions#why-do-we-use-this"
-        - title: Wrap up
-          url: "docs/javascript/built-in-higher-order-functions#wrap-up"
-        - title: Practice
-          url: "docs/javascript/built-in-higher-order-functions#practice"
-    - title: Async
-      url: "docs/javascript/async"
-      children:
-        - title: Examples
-          url: "docs/javascript/async#examples"
-        - title: Forwarding async functions
-          url: "docs/javascript/async#forwarding-async-functions"
-        - title: Why Async
-          url: "docs/javascript/async#why-async"
-        - title: Controlling Async
-          url: "docs/javascript/async#controlling-async"
-        - title: Timer API
-          url: "docs/javascript/async#timer-api"
-        - title: bind
-          url: "docs/javascript/async#bind"
-        - title: Node.js Moudles
-          url: "docs/javascript/async#node-js-modules"
-        - title: Further Study
-          url: "docs/javascript/async#further-study"
 
 - title: "CLI Commands"
   url: "docs/cli-commands"
