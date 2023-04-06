@@ -1,5 +1,5 @@
 ---
-title: Built-in Higher Order Funtions in JavaScript
+title: Built-in Higher Order Funtions
 tags: 
  - JavaScript
  - map
@@ -10,7 +10,7 @@ description: Learn how to use map, filter, and reduce!
 
 >   본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다.  
 
-# Built in higher order functions in JavaScript  
+# Built in higher order functions
 
 ## Achievement Goals  
 - 배열 내장 고차함수 `filter`에 대해서 이해할 수 있다.
