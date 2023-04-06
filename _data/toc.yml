@@ -1,105 +1,93 @@
-- title: "Web Basics"
-  url: "docs/web-basics/main-page"
+- title: "Web"
+  url: "docs/web/main-page"
   links:
     - title: "HTML"
-      url: "docs/web-basics/html"
+      url: "docs/web/html"
       children:
       # 만약 children이 없으면 컴파일이 안됨.
         - title: Achievement Goals
-          url: "docs/web-basics/html#achievement-goals"
+          url: "docs/web/html#achievement-goals"
         - title: html, CSS, and JavaScript
-          url: "docs/web-basics/html#html-css-and-javascript"
+          url: "docs/web/html#html-css-and-javascript"
         - title: HTML Basics
-          url: "docs/web-basics/html#html-basics"
+          url: "docs/web/html#html-basics"
         - title: Wrap up
-          url: "docs/web-basics/html#wrap-up"
+          url: "docs/web/html#wrap-up"
         - title: Markdown and Markup
-          url: "docs/web-basics/html#markdown-and-markup"
+          url: "docs/web/html#markdown-and-markup"
     - title: "CSS"
-      url: "docs/web-basics/css"
+      url: "docs/web/css"
       children:
         - title: Achievement Goals
-          url: "docs/web-basics/css#achievement-goals"
+          url: "docs/web/css#achievement-goals"
         - title: Introduction
-          url: "docs/web-basics/css#introduction"
+          url: "docs/web/css#introduction"
         - title: CSS Basics
-          url: "docs/web-basics/css#css-basics"
+          url: "docs/web/css#css-basics"
         - title: Practice
-          url: "docs/web-basics/css#practice"
+          url: "docs/web/css#practice"
     - title: "DOM"
-      url: "docs/web-basics/dom"
+      url: "docs/web/dom"
       # nested links are not available.
       # links:
       #   - title: "domdomcss"
-      #     url: "docs/web-basics/css"
+      #     url: "docs/web/css"
       #     children: 
       #       - title: Achievement Goals
-      #         url: "docs/web-basics/css#achievement-goals"
+      #         url: "docs/web/css#achievement-goals"
       #   - title: "domdomhtml"
-      #     url: "docs/web-basics/html"
+      #     url: "docs/web/html"
       #     children:
       #       - title: Achievement Goals
-      #         url: "docs/web-basics/html#achievement-goals"
+      #         url: "docs/web/html#achievement-goals"
       children:
         - title: AG - Introduction
-          url: "docs/web-basics/dom#achievement-goals-_-intro"
+          url: "docs/web/dom#achievement-goals-_-intro"
         - title: Entrance Setting
-          url: "docs/web-basics/dom#entrance-setting"
+          url: "docs/web/dom#entrance-setting"
         - title: Applying JavsScript to HTML
-          url: "docs/web-basics/dom#applying-javascript-to-html"
+          url: "docs/web/dom#applying-javascript-to-html"
         - title: Using DOM
-          url: "docs/web-basics/dom#using-dom"
+          url: "docs/web/dom#using-dom"
         - title: Handling HTMl with DOM
-          url: "docs/web-basics/dom#handling-html-with-dom"
+          url: "docs/web/dom#handling-html-with-dom"
         - title: AG - DOM Application
-          url: "docs/web-basics/dom#achievement-goals-_-crud"
+          url: "docs/web/dom#achievement-goals-_-crud"
         - title: Create
-          url: "docs/web-basics/dom#create"
+          url: "docs/web/dom#create"
         - title: Read
-          url: "docs/web-basics/dom#read"
+          url: "docs/web/dom#read"
         - title: Update
-          url: "docs/web-basics/dom#update"
+          url: "docs/web/dom#update"
         - title: Delete
-          url: "docs/web-basics/dom#delete"
+          url: "docs/web/dom#delete"
         - title: DOM Practice
-          url: "docs/web-basics/dom#dom-practice"
+          url: "docs/web/dom#dom-practice"
         - title: AG - DOM Practice
-          url: "docs/web-basics/dom#achievement-goals-_-dom-practice"
+          url: "docs/web/dom#achievement-goals-_-dom-practice"
         - title: Event Handler
-          url: "docs/web-basics/dom#event-handler"
+          url: "docs/web/dom#event-handler"
         - title: Event Object
-          url: "docs/web-basics/dom#event-object"
+          url: "docs/web/dom#event-object"
         - title: Attaching Callback Function
-          url: "docs/web-basics/dom#attaching-callback-function"
+          url: "docs/web/dom#attaching-callback-function"
         - title: Practice 1
-          url: "docs/web-basics/dom#practice-1"
+          url: "docs/web/dom#practice-1"
         - title: Practice 2
-          url: "docs/web-basics/dom#practice-2"
+          url: "docs/web/dom#practice-2"
         - title: Further Study
-          url: "docs/web-basics/dom#further-study"
-
-- title: "Web advanced"
-  url: "docs/web-advanced/main-page"
-  links:
-    - title: "HTTP and Browser"
-      url: "docs/web-advanced/http-and-browser"
+          url: "docs/web/dom#further-study"
+    - title: "Browser Operation Principles"
+      url: "docs/web/browser-operation-principles"
       children:
-        - title: URL vs URI
-          url: "docs/web-advanced/http-and-browser#url-vs-uri"
-        - title: IP
-          url: "docs/web-advanced/http-and-browser#ip"
-        - title: Domain name
-          url: "docs/web-advanced/http-and-browser#domain-name"
-        - title: DNS
-          url: "docs/web-advanced/http-and-browser#dns"
-        - title: HTTP
-          url: "docs/web-advanced/http-and-browser#dns"
-        - title: Stateless
-          url: "docs/web-advanced/http-and-browser#stateless"
-        - title: References
-          url: "docs/web-advanced/http-and-browser#references"
-        - title: Further Study
-          url: "docs/web-advanced/http-and-browser#further-study"
+        - title: AJAX
+          url: "docs/web/browser-operation-principles#ajax"
+        - title: SSR
+          url: "docs/web/browser-operation-principles#ssr"
+        - title: CSR
+          url: "docs/web/browser-operation-principles#csr"
+        - title: CORS
+          url: "docs/web/browser-operation-principles#cors"
 
 - title: "React Basics"
   url:  "docs/react-basics/main-page"
