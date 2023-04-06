@@ -23,7 +23,7 @@
         - title: Practice
           url: "docs/web/css#practice"
     - title: "DOM"
-      url: "docs/web/dom"
+      url: "docs/web/dom-main-page"
       # nested links are not available.
       # links:
       #   - title: "domdomcss"
@@ -37,42 +37,12 @@
       #       - title: Achievement Goals
       #         url: "docs/web/html#achievement-goals"
       children:
-        - title: AG - Introduction
-          url: "docs/web/dom#achievement-goals-_-intro"
-        - title: Entrance Setting
-          url: "docs/web/dom#entrance-setting"
-        - title: Applying JavsScript to HTML
-          url: "docs/web/dom#applying-javascript-to-html"
-        - title: Using DOM
-          url: "docs/web/dom#using-dom"
-        - title: Handling HTMl with DOM
-          url: "docs/web/dom#handling-html-with-dom"
-        - title: AG - DOM Application
-          url: "docs/web/dom#achievement-goals-_-crud"
-        - title: Create
-          url: "docs/web/dom#create"
-        - title: Read
-          url: "docs/web/dom#read"
-        - title: Update
-          url: "docs/web/dom#update"
-        - title: Delete
-          url: "docs/web/dom#delete"
-        - title: DOM Practice
-          url: "docs/web/dom#dom-practice"
-        - title: AG - DOM Practice
-          url: "docs/web/dom#achievement-goals-_-dom-practice"
-        - title: Event Handler
-          url: "docs/web/dom#event-handler"
-        - title: Event Object
-          url: "docs/web/dom#event-object"
-        - title: Attaching Callback Function
-          url: "docs/web/dom#attaching-callback-function"
-        - title: Practice 1
-          url: "docs/web/dom#practice-1"
-        - title: Practice 2
-          url: "docs/web/dom#practice-2"
-        - title: Further Study
-          url: "docs/web/dom#further-study"
+        - title: Introduction
+          url: "docs/web/dom-introduction"
+        - title: CRUD
+          url: "docs/web/dom-crud"
+        - title: Practice
+          url: "docs/web/dom-practice"
     - title: "Browser Operation Principles"
       url: "docs/web/browser-operation-principles"
       children:
