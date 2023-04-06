@@ -143,7 +143,7 @@ DNS는 Domain Name System의 줄임말로, 호스트의 도메임 이름을 IP�
 
 ---
 
-## HTTP
+## HTTP definition
 HTTP는 HyperText Transfer Protocol의 줄임말로, HTML과 같은 문서를 전송하기 위한 `Application Layer` 프로토콜이다.  
 HTTP는 웹 브라우저와 웹 서버의 소통을 위해 디자인 되었다.  
 전통적인 클라이언트-서버 모델에서 클라이언트가 HTTP messages 양식에 맞춰 요청을 보내면,  
