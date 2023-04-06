@@ -5,11 +5,9 @@
       url: "docs/web/html"
       children:
       # 만약 children이 없으면 컴파일이 안됨.
-        - title: Achievement Goals
-          url: "docs/web/html#achievement-goals"
-        - title: html, CSS, and JavaScript
+        - title: HTML, CSS, and JavaScript
           url: "docs/web/html#html-css-and-javascript"
-        - title: HTML Basics
+        - title: Basics
           url: "docs/web/html#html-basics"
         - title: Wrap up
           url: "docs/web/html#wrap-up"
@@ -18,11 +16,9 @@
     - title: "CSS"
       url: "docs/web/css"
       children:
-        - title: Achievement Goals
-          url: "docs/web/css#achievement-goals"
         - title: Introduction
           url: "docs/web/css#introduction"
-        - title: CSS Basics
+        - title: Basics
           url: "docs/web/css#css-basics"
         - title: Practice
           url: "docs/web/css#practice"
@@ -95,8 +91,6 @@
     - title: "React Intro"
       url: "docs/react/react-intro"
       children:
-        - title: Achievement Goals
-          url: "docs/react/react-intro#achievement-goals"
         - title: What is React?
           url: "docs/react/react-intro#what-is-react"
         - title: JSX
@@ -108,8 +102,6 @@
     - title: "React SPA"
       url: "docs/react/react-spa"
       children:
-        - title: Achievement Goals
-          url: "docs/react/react-spa#achievement-goals"
         - title: Entrance Setting
           url: "docs/react/react-spa#entrance-setting"
         - title: SPA
@@ -123,8 +115,6 @@
     - title: "State & Props"
       url: "docs/react/state-and-props"
       children:
-        - title: Achievement Goals
-          url: "docs/react/state-and-props#achievement-goals"
         - title: Props
           url: "docs/react/state-and-props#props"
         - title: State
@@ -203,8 +193,6 @@
     - title: "Higher Order Functions"
       url: "docs/javascript/higher-order-functions"
       children: 
-        - title: Achievement Goals
-          url: "docs/javascript/higher-order-functions#achievement-goals"
         - title: First Class Citizen
           url: "docs/javascript/higher-order-functions#first-class-citizen"
         - title: Definition
@@ -216,8 +204,6 @@
     - title: StringifyJSON
       url: "docs/javascript/stringifyjson"
       children:
-        - title: Achievement Goals
-          url: "docs/javascript/stringifyjson#achievement-goals"
         - title: JSON
           url: "docs/javascript/stringifyjson#json"
         - title: Further Study
@@ -225,8 +211,6 @@
     - title: Built-in Higher Order Functions in JavaScript
       url: "docs/javascript/built-in-higher-order-functions"
       children:
-        - title: Achievement Goals
-          url: "docs/javascript/built-in-higher-order-functions#achievement-goals"
         - title: Filter
           url: "docs/javascript/built-in-higher-order-functions#filter"
         - title: Map
@@ -242,8 +226,6 @@
     - title: Async
       url: "docs/javascript/async"
       children:
-        - title: Achievement Goals
-          url: "docs/javascript/async#achievement-goals"
         - title: Examples
           url: "docs/javascript/async#examples"
         - title: Forwarding async functions
@@ -260,13 +242,6 @@
           url: "docs/javascript/async#node-js-modules"
         - title: Further Study
           url: "docs/javascript/async#further-study"
-    - title: Async
-      url: "docs/javascript/async"
-      children:
-        - title: Achievement Goals
-          url: "docs/javascript/async#achievement-goals"
-        - title: Examples
-          url: "docs/javascript/async#examples"
 
 - title: "CLI Commands"
   url: "docs/cli-commands"
