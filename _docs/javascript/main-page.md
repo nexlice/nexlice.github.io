@@ -1,7 +1,15 @@
 ---
 title: JavaScript
 tags: 
+ - JavaScript
+ - JavaScript Runtime
+ - node.js
+ - module
+ - nvm
+ - npm
+ - JSON
  - higher-order-functions
+ - hoisting
  - runtime
  - node
  - async

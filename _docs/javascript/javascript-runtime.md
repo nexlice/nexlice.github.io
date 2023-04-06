@@ -2,7 +2,7 @@
 title: JavaScript Runtime
 tags: 
  - JavaScript
- - javasScript Runtime
+ - JavasScript Runtime
  - node.js
  - module
  - nvm

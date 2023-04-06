@@ -136,7 +136,7 @@
         - title: Controlled Component
           url: "docs/react/state-and-props#controlled-component"
         - title: React Dataflow
-          url: "docs/react/state-and-props#react-dataflow"
+          url: "docs/react/state-and-props#react-data-flow"
     - title: "Lifting State Up"
       url: "docs/react/lifting-state-up"
     - title: "Effect Hook"
@@ -272,11 +272,11 @@
 - title: "CLI Commands"
   url: "docs/cli-commands"
 
-- title: "Package Manager"
-  url: "docs/package-manager"
-
 - title: "Git Commands"
   url: "docs/git-commands"
+
+- title: "Package Manager"
+  url: "docs/package-manager"
 
 # - title: Documentation
 #   url: docs
