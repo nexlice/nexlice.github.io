@@ -1,5 +1,5 @@
 ---
-title: HTML Basics
+title: HTML
 tags: 
  - HTML
  - CSS
