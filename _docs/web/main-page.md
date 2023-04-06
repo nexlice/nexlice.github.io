@@ -1,5 +1,5 @@
 ---
-title: Web Basics
+title: Web
 tags: 
  - HTML
  - CSS
