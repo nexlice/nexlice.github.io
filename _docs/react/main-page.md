@@ -1,5 +1,5 @@
 ---
-title: React Basics
+title: React
 tags: 
  - React
  - eclarative
