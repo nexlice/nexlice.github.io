@@ -9,8 +9,6 @@ description: Learn about the concepts of stringifyJSON!
 
 >   본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다.  
 
-<!-- {% include alert.html type="danger" title="Warning!" content="이 문서는 아직 미완성 문서입니다." %} -->
-
 ## Achievement Goals
 - json 구조가 재귀 함수를 사용할 수 있는 Tree구조이다.
 - JSON.stringify와 JSON.parse가 각각 serialize, deserailize에 대응한다.
