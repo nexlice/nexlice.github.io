@@ -162,6 +162,18 @@
           url: "docs/backend/references"
         - title: Further Study
           url: "docs/backend/further-study"
+          - title: "HTTP"
+    - title: "REST API"
+      url: "docs/backend/rest-api"
+      children: 
+        - title: RMM
+          url: "docs/backend/rmm"
+        - title: Reference
+          url: "docs/backend/reference"
+        - title: Open API
+          url: "docs/backend/open-api"
+        - title: API Key
+          url: "docs/backend/api-key"
 
 
 - title: "JavaScript"
