@@ -167,7 +167,7 @@
         - title: Further Studies
           url: "docs/javascript/higher-order-functions#further-studies"
     - title: StringifyJSON
-      url: "docs/javascript/s"
+      url: "docs/javascript/stringifyjson"
       children:
         - title: JSON
           url: "docs/javascript/stringifyjson#json"
