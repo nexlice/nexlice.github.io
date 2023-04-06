@@ -90,53 +90,53 @@
           url: "docs/web/browser-operation-principles#cors"
 
 - title: "React Basics"
-  url:  "docs/react-basics/main-page"
+  url:  "docs/react/main-page"
   links:
     - title: "React Intro"
-      url: "docs/react-basics/react-intro"
+      url: "docs/react/react-intro"
       children:
         - title: Achievement Goals
-          url: "docs/react-basics/react-intro#achievement-goals"
+          url: "docs/react/react-intro#achievement-goals"
         - title: What is React?
-          url: "docs/react-basics/react-intro#what-is-react"
+          url: "docs/react/react-intro#what-is-react"
         - title: JSX
-          url: "docs/react-basics/react-intro#jsx"
+          url: "docs/react/react-intro#jsx"
         - title: JSX Syntax
-          url: "docs/react-basics/react-intro#jsx-syntax"
+          url: "docs/react/react-intro#jsx-syntax"
         - title: Component based React 
-          url: "docs/react-basics/react-intro#component-based-react"
+          url: "docs/react/react-intro#component-based-react"
     - title: "React SPA"
-      url: "docs/react-basics/react-spa"
+      url: "docs/react/react-spa"
       children:
         - title: Achievement Goals
-          url: "docs/react-basics/react-spa#achievement-goals"
+          url: "docs/react/react-spa#achievement-goals"
         - title: Entrance Setting
-          url: "docs/react-basics/react-spa#entrance-setting"
+          url: "docs/react/react-spa#entrance-setting"
         - title: SPA
-          url: "docs/react-basics/react-spa#spa"
+          url: "docs/react/react-spa#spa"
         - title: Wireframe
-          url: "docs/react-basics/react-spa#wireframe"
+          url: "docs/react/react-spa#wireframe"
         - title: React Router
-          url: "docs/react-basics/react-spa#react-router"
+          url: "docs/react/react-spa#react-router"
         - title: React Router Tutorial
-          url: "docs/react-basics/react-spa#react-router-tutorial"
+          url: "docs/react/react-spa#react-router-tutorial"
     - title: "State & Props"
-      url: "docs/react-basics/state-and-props"
+      url: "docs/react/state-and-props"
       children:
         - title: Achievement Goals
-          url: "docs/react-basics/state-and-props#achievement-goals"
+          url: "docs/react/state-and-props#achievement-goals"
         - title: Props
-          url: "docs/react-basics/state-and-props#props"
+          url: "docs/react/state-and-props#props"
         - title: State
-          url: "docs/react-basics/state-and-props#state"
+          url: "docs/react/state-and-props#state"
         - title: Event Handling
-          url: "docs/react-basics/state-and-props#event-handling"
+          url: "docs/react/state-and-props#event-handling"
         - title: Practice
-          url: "docs/react-basics/state-and-props#practice"
+          url: "docs/react/state-and-props#practice"
         - title: Controlled Component
-          url: "docs/react-basics/state-and-props#controlled-component"
+          url: "docs/react/state-and-props#controlled-component"
         - title: React Dataflow
-          url: "docs/react-basics/state-and-props#react-dataflow"
+          url: "docs/react/state-and-props#react-dataflow"
 
 - title: "Backend"
   url: "docs/backend/main-page"
