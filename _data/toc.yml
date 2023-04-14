@@ -221,7 +221,7 @@
         - title: Visual Studio Code
           url: "docs/server/node-app-debugging#visual-studio-code"
         - title: nodemon & Postman
-          url: "docs/server/node-app-debugging#nodemon-&-Postman"
+          url: "docs/server/node-app-debugging#nodemon-and-Postman"
 
 - title: "CLI Commands"
   url: "docs/cli-commands"

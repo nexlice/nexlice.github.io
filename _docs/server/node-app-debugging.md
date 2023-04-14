@@ -54,8 +54,8 @@ node --inspect basic-server.js
 
 ---
 
-## nodemon & Postman
-`nodemon`을 설치하면 `live server`와 같이 서버 소스를 고쳤을 때 바로 적용이 되게할 수 있다.
+## nodemon and Postman
+`nodemon`을 설치하면 `live server`와 같이 서버 소스를 고쳤을 때 바로 적용(hot reloading)이 되게할 수 있다.  
 또한 `postman`을 통해서 client의 요청을 쉽게 테스팅할 수 있다.  
 
 ---  

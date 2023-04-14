@@ -309,6 +309,8 @@ if (req.methid === 'OPTIONS') {
 ```
 
 [cors 미들웨어](https://github.com/expressjs/cors)를 사용하면, 이 과정을 다음과 같이 간단하게 처리할 수 있다.  
+<br>  
+
 **모든 요청에 대해 허용**  
 ```javascript
 const cors = require('cors');
