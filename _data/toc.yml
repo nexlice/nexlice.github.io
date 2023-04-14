@@ -206,6 +206,22 @@
           url: "docs/server/rest-api#api-key"
     - title: "API Server"
       url: "docs/server/api-server"
+      children: 
+        - title: CORS
+          url: "docs/server/api-server#cors"
+        - title: HTTP Module
+          url: "docs/server/api-server#http-module"
+        - title: Express
+          url: "docs/server/api-server#express"
+    - title: "Node app Debugging"
+      url: "docs/server/node-app-debugging"
+      children: 
+        - title: Browser
+          url: "docs/server/node-app-debugging#browser-debugging"
+        - title: Visual Studio Code
+          url: "docs/server/node-app-debugging#visual-studio-code"
+        - title: nodemon & Postman
+          url: "docs/server/node-app-debugging#nodemon-&-Postman"
 
 - title: "CLI Commands"
   url: "docs/cli-commands"
