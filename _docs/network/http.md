@@ -170,7 +170,7 @@ HTTP messages는 몇 줄의 텍스트 정보로 구성된다.
 개발자는 이런 메세지를 직접 작성할 필요가 거의 없다.  
 
 - HTTP messages의 구조
-![HTTP messages의 구조]()  
+![HTTP messages의 구조](../../assets/img/http-message-structure.png)  
 
 요청(Requests)과 응답(Responses)는 다음과 같은 유사한 구조를 가진다.  
 1. start line : startline에는 요청이나 응답의 상태를 나타낸다.  
@@ -226,7 +226,7 @@ HTTP 요청은 클라이언트가 서버에 보내는 메세지이다. Start lin
 Referer처럼 컨텍스트를 제공하거나, If-None과 같이 조건에 따라 제약을 추가할 수 있다.  
 -  Entity headers : Content-Length와 같은 헤더는 body에 적용된다.  
 body가 비어있는 경우, entity headers는 전송되지 않는다.  
-![request headers]()
+![request headers](../../assets/img/http-request-headers.png)  
 
 ---
 
@@ -262,7 +262,7 @@ Status line은 `HTTP/1.1 404 Not Found.`과 같이 생겼다.
 - Response headers: Vary, Accept-Ranges와 같이 상태 줄에 넣기에는 공간이 부족했던 추가 정보를 제공한다.  
 - Entity headers: Content-Length와 같은 헤더는 body에 적용된다.  
 body가 비어있는 경우, entity headers는 전송되지 않는다.  
-![Response headers]()  
+![Response headers](../../assets/img/http-response-headers.png)  
 
 ---
 
