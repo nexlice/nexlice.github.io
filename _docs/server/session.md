@@ -10,7 +10,7 @@ description: Learn about the concept of Session!
 
 >   본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다.  
 
-{% include alert.html type="danger" title="Warning!" content="이 문서는 아직 미완성 문서입니다." %}
+<!-- {% include alert.html type="danger" title="Warning!" content="이 문서는 아직 미완성 문서입니다." %} -->
 
 # Session
 세션이란, 서버와 클라이언트가 연결된 상태, 사용자가 인증에 성공한 상태를 의미한다.  
