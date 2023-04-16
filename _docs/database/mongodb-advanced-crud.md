@@ -17,13 +17,14 @@ description: Learn about the advanced MongoDB CRUD!
 
 # MongoDB Advanced CRUD
 `MongoDB`에서 더 다양한 옵션을 통해 CRUD를 사용해보자.  
+본 글에서 다루는 모든 실습은 `MongoDB`에서 제공하는 Sample Database를 사용하였다.  
 
 ---
 
 ## Comparison Operators
 `mongo shell`에서 연산자는 다음과 같은 문법으로 사용하며, 연산자의 종류는 아래와 같다.  
 ```json
-{<field> : {<operator : <value>}}
+{ "field" : { "operator" : "value" }}
 ```
 
 - `$eq` : Equal to
