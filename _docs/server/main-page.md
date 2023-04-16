@@ -7,6 +7,7 @@ tags:
  - API Key
  - Cookie
  - Session
+ - Token
 
 description: Learn about basic implementations of server!
 ---

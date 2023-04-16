@@ -249,6 +249,19 @@
           url: "docs/server/session#express-session"
         - title: Reference
           url: "docs/server/session#reference"
+    - title: "Token"
+      url: "docs/server/token"
+      children:
+        - title: Background
+          url: "docs/server/token#background"
+        - title: Client has it
+          url: "docs/server/token#client-has-it"
+        - title: JWT
+          url: "docs/server/token#jwt"
+        - title: Authentication
+          url: "docs/server/token#token-based-authentication"
+        - title: References
+          url: "docs/server/token#references"
 
 - title: "Database"
   url: "docs/databse/main-page"
