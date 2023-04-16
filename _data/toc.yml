@@ -238,6 +238,19 @@
       children:
         - title: Database Syntax
           url: "docs/database/sql-syntax#database-syntax"
+    - title: "ACID"
+      url: "docs/database/acid"
+      children:
+        - title: Transaction
+          url: "docs/database/acid#transaction"
+        - title: Atomicity
+          url: "docs/database/acid#atomicity"
+        - title: Consistency
+          url: "docs/database/acid#consistency"
+        - title: Isolation
+          url: "docs/database/acid#isolation"
+        - title: Durability
+          url: "docs/database/acid#durability"
 
 - title: "CLI Commands"
   url: "docs/cli-commands"
