@@ -229,6 +229,15 @@
           url: "docs/server/node-app-debugging#visual-studio-code"
         - title: nodemon & Postman
           url: "docs/server/node-app-debugging#nodemon-and-Postman"
+    - title: "Cookie"
+      url: "docs/server/cookie"
+      children:
+        - title: Cookie Options
+          url: "docs/server/cookie#cookie-options"
+        - title: Stateless to Stateful
+          url: "docs/server/cookie#stateless-to-stateful"
+        - title: Reference
+          url: "docs/server/cookie#reference"
 
 - title: "Database"
   url: "docs/databse/main-page"

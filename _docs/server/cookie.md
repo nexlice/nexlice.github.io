@@ -1,3 +1,21 @@
+---
+title: Cookie
+tags: 
+ - doamin
+ - path
+ - MaxAge
+ - Expires
+ - Secure
+ - HttpOnly
+ - SameSite
+ - stateless
+ - stateful
+description: Learn about the concept of Cookie!
+---
+
+>   본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다.  
+
+{% include alert.html type="danger" title="Warning!" content="이 문서는 아직 미완성 문서입니다." %}
 # Cookie
 쿠키는 서버에서 클라이언트에 데이터를 저장하고 불러올 수 있는 방법의 하나이다.  
 즉, 서버가 일방적으로 클라이언트에 전달하는 작은 데이터이다.  
