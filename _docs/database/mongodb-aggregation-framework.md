@@ -34,9 +34,10 @@ Aggregatinon 파이프라인의 데이터는 파이프라인 내에 있기 때�
 ---
 
 ## MQL vs Aggregation Framework
-앞에서 다룬 MQL에서는 `find` 명령을 사용하여 쿼리와 `Projection`을 한다.  
-`Aggregation Framework`에서는 `find`가 아닌 `aggregate` 명령을 사용한다.  
 ![aggregation framework](../../assets/img/mql-aggregation-framework.png)  
+
+일반적인 MQL에서는 `find` 명령을 사용하여 쿼리와 `Projection`을 하였다.  
+`Aggregation Framework`에서는 `find`가 아닌 `aggregate` 명령을 사용한다. 
 
 ```bash
 db.listingsAndReviews.find(
@@ -49,7 +50,7 @@ db.listingsAndReviews.aggregate([
     { $project : {"Price" : 1, "address" : 1 , "_id" : 0}}
     ]).pretty()
 ```
-
+ 
 `aggregate`를 사용하면 도큐먼트를 필터링하지 않고 그룹으로 데이터를 집계하거나 데이터를 수정할 수 있다.  
 `aggregate`를 사용하면 데이터 찾기 및 프로젝션 없이 작업을 수행하거나 계산할 수 있다.  
 `aggregate`를 사용할 땐 대괄호를 이용해 배열을 인자로 사용한다.  
@@ -69,8 +70,11 @@ pipleline의 필터들은 **이전의 필터보다 이후의 필터가 더 자�
 ### group
 ![group](../../assets/img/aggregation-framework-group.png)  
 이 연산자는 들어온 데이터를 가지고 여러 개의 개별 저장소로 빨아들여 그룹화하는 연산자이다.  
-여기에서 `Aggregation Framework`에 `$match` 등과 같은 필터링 단계가 없으면, 데이터 요약, 계산 및 그룹화를 수행할 때 원본 데이터를 수정하지 않는다는 점을 유의해야 한다.  
+여기에서 `Aggregation Framework`에 `$match` 등과 같은 필터링 단계가 없으면,  
+데이터 요약, 계산 및 그룹화를 수행할 때 원본 데이터를 수정하지 않는다는 점을 유의해야 한다.  
 `$group`은 결과적으로 데이터를 압축, reduce하는 효과를 가진다.  
+
+---
 
 ![group filter](../../assets/img/aggregation-framework-group-filter.png)  
 다음 그림처럼 필터링 단계가 있을 때에는 원본 데이터 대신 파이프라인의 이전 단계에서 가져온 데이터로 작업한다.  
