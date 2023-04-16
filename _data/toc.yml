@@ -266,6 +266,21 @@
           url: "docs/database/nosql#which-db-should-you-use"
     - title: "MongoDB"
       url: "docs/database/mongodb"
+      children: 
+        - title: NoSQL Database
+          url: "docs/database/mongodb#nosql-database"
+        - title: Use Cases
+          url: "docs/database/mongodb#use-cases"
+        - title: Atlas Cloud
+          url: "docs/database/mongodb#atlas-cloud"
+        - title: MongoDB Document
+          url: "docs/database/mongodb#mongodb-document"
+        - title: Jargons
+          url: "docs/database/mongodb#jargons"
+        - title: JSON vs BSON
+          url: "docs/database/mongodb#json-vs-bson"
+        - title: Import & Export
+          url: "docs/database/mongodb#import-and-export"
     
       
 
