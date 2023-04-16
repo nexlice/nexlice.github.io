@@ -16,7 +16,7 @@ description: Learn about the SQL Syntax!
 `SQL`은 데이터베이스용 프로그래밍 언어이며, 데이터베이스에 query를 보내 원하는 데이터만을 뽑아올 수 있다.  
 주로 `MySQL`, `Oracle`, `SQLite`, `PostgreSQL` 등, 다양한 관계형 데이터베이스에서 사용한다.  
 SQL을 사용하기 위해서는 데이터의 구조가 고정되어 있어야 한다.  
-<br>  
+<br>
 
 이떄 Query란, `질의문`을 의미하며, 검색창에 적는 검색어 또한 Query의 일종이다.  
 Query는 저장되어있는 정보를 필터하기 위한 질문이다.  

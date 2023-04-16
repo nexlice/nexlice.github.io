@@ -78,5 +78,6 @@ description: Learn about the basic jargons of database!
 User 테이블 안에 `user_id`와 `recommend_id`가 있다고 하자.  
 한 명의 유저는 한 명의 추천인을 가질 수 있다.  
 그러나 여러 명이 한 명의 유저를 추천인으로 등록할 수 있다.  
-<br>  
+<br>
+
 1:N 관계와 유사하지만, 일반적으로 일대다 관계는 서로 다른 테이블의 관계를 나타낼 때 표현하는 방법이다.  
