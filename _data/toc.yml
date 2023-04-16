@@ -251,6 +251,17 @@
           url: "docs/database/acid#isolation"
         - title: Durability
           url: "docs/database/acid#durability"
+    - title: "NoSQL"
+      url: "docs/database/nosql"
+      children:
+        - title: SQL vs NoSQL
+          url: "docs/database/nosql#sql-vs-nosql"
+        - title: RDB
+          url: "docs/database/nosql#rdb"
+        - title: NoSQL
+          url: "docs/database/nosql#nosql"
+        - title: Which one?
+          url: "docs/database/nosql#which-db-should-you-use"
 
 - title: "CLI Commands"
   url: "docs/cli-commands"

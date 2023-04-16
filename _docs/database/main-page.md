@@ -5,6 +5,8 @@ tags:
  - File I/O
  - SQL
  - ACID
+ - NoSQL
+ - RDBMS
 
 description: Learn about the Database!
 ---
