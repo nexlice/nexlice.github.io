@@ -271,8 +271,8 @@
           url: "docs/database/mongodb-crud"
         - title: Advanced CRUD
           url: "docs/database/mongodb-advanced-crud"
-    
-      
+        - title: Aggregation Framework
+          url: "docs/database/mongodb-aggregation-framework"
 
 - title: "CLI Commands"
   url: "docs/cli-commands"

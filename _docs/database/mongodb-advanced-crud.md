@@ -33,12 +33,16 @@ description: Learn about the advanced MongoDB CRUD!
 - `$gte` : Greater than or Equal to
 - `$lte` : Less than or Equal to
 
+---
+
 ### MongoDB GUI
 MongoDB GUI에서 쿼리할 때에는 mongo shell에서 질의하는 것과는 달리 필터만 넣어주면 된다.  
 아래의 `Filter`는 70초동안 자전거를 빌린 사람 중에서, 구독자가 아닌 사람이 몇명인지 몇명인지 조회할 수 있다.  
 ```json
 {"tripduration" : {"site" : 70}, "usertype" : {"$ne" : "Subscriber"}}
 ```
+
+---
 
 ### mongo shell
 mongo shell에서의 쿼리는 `find`를 활용하여 결과를 받는다.  
@@ -49,6 +53,8 @@ db.trips.find({"tripduration" : {"site" : 70}, "usertype" : {"$ne" : "Subscriber
 
 이처럼 비교 연산자를 사용하면 특정 범위 내에서 데이터를 찾을 수 있다.  
 비교 연산자를 지정하지 않으면 기본 연산자로 `$eq`가 사용된다.  
+
+---
 
 ## Logic Operators
 MQL(MongoDB Query Language)에는 `$and`, `$or`, `$nor`, 그리고 `$not` 4 가지 논리 연산자가 있다.  
