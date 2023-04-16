@@ -11,7 +11,7 @@ description: Learn about the Aggregation Framework of MongoDB!
 
 > 본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다.  
 
-<!-- {% include alert.html type="danger" title="Warning!" content="이 문서는 아직 미완성 문서입니다." %} -->
+{% include alert.html type="danger" title="Warning!" content="이 문서는 아직 미완성 문서입니다." %}
 
 # Aggregation Framework
 `MongoDB`에서 데이터를 파이프라인에 따라 처리할 수 있는 강력한 프레임워크인 `Aggregation Framework`에 대해 알아보자.  
