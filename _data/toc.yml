@@ -189,6 +189,13 @@
           url: "docs/network/http#references"
         - title: Further Study
           url: "docs/network/http#further-study"
+    - title: "HTTPS"
+      url: "docs/network/https"
+      children:
+        - title: Entrance Settings
+          url: "docs/network/https#entrance-settings"
+        - title: Features
+          url: "docs/network/https#features"
 
 - title: "Server"
   url: "docs/server/main-page"

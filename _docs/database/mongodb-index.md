@@ -78,7 +78,7 @@ db.restaurants.createIndex({"cuisine": 1, "name": 1}, { partialFilterExpression 
 이 속성은 Date 타입 혹은 Date 배열 타입의 필드에 적용할 수 있다.  
 이 속성을 사용하면, 특정 시간이 지난 후, 도큐먼트를 컬렉션에서 삭제한다.  
 <br>
-아래 예시는 인덱스에 TTL 속성을 추가하고, 이에 따라 `lastModifiedDate`와 3600초 이상 차이가 나면, 도큐먼트를 컬렉션에서 제거한다.  
+아래 예시는 인덱스에 TTL 속성을 추가하고, `lastModifiedDate`와 3600초 이상 차이가 나면, 도큐먼트를 컬렉션에서 제거한다.  
 ```bash
 db.eventlog.createIndex({"lastModifiedDate": 1}, {expireAfterSeconds: 3600})
 ```
