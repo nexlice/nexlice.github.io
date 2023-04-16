@@ -10,7 +10,7 @@ description: Learn about the basic jargons of database!
 
 > 본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다.  
 
-{% include alert.html type="danger" title="Warning!" content="이 문서는 아직 미완성 문서입니다." %}
+<!-- {% include alert.html type="danger" title="Warning!" content="이 문서는 아직 미완성 문서입니다." %} -->
 
 # MongoDB
 `MongoDB`는 대표적인 `NoSQL` 도큐먼트 데이터베이스이다.  
@@ -34,7 +34,6 @@ description: Learn about the basic jargons of database!
 `NoSQL` 데이터베이스는 데이터베이스를 클라우드 기반으로 쉽게 분리할 수 있또록 지원하여, 저장 공간을 효율적으로 사용한다.  
 시스템이 커지면서 DB를 증설해야하는 시점이 오면, SQL 데이터베이스에서는 수직적 확장의 형태로 DB를 증설한다.  
 <br>
-
 수직적으로 확장된 데이터베이스는 관리가 어려워질 수 있는 데에 반해,  
 `NoSQL`은 순평적 확장의 형태로 증설하므로, 이론상 무한대로 서버를 계속 분산시켜 DB를 증설할 수 있다.  
 
