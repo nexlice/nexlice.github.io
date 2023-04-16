@@ -104,7 +104,7 @@ db.listingsAndReviews.aggregate([
 ```
 지금은 address 필드만 가져와도 되기 때문에, 첫 번째 단계에서 `$project`로 address 필드만을 쿼리한다.  
 그다음 `$group` 연산자를 이용해 address.country 값으로 데이터를 그룹화한다.  
-문법에 맞게 `$group`의 첫 번째 인자로 {_id : “$address.country”}로 작성한다.  
+문법에 맞게 `$group`의 첫 번째 인자로 `{_id : “$address.country”}`로 작성한다.  
 <br>
 이후 각 국가에 위치한 숙소의 수를 세기 위해 파이프라인을 추가한다.  
 두 번째 인자에서 `$group`에서 `$sum` 연산자를 사용하면, 쉽게 각 국가에 얼마나 많은 숙소가 있는지 집계할 수 있다.  

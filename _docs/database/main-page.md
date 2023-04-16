@@ -9,6 +9,7 @@ tags:
  - RDBMS
  - MongoDB
  - Aggregation Framework
+ - Index
  
 description: Learn about the Database!
 ---
