@@ -223,6 +223,22 @@
         - title: nodemon & Postman
           url: "docs/server/node-app-debugging#nodemon-and-Postman"
 
+- title: "Database"
+  url: "docs/databse/main-page"
+  links:
+    - title: "Why Database?"
+      url: "docs/database/why-database"
+      children :
+      - title: In-memory
+        url: "docs/database/why-database#in-memory"
+      - title: File I/O
+        url: "docs/database/why-database#file-io"
+    - title: "SQL Syntax"
+      url: "docs/database/sql-syntax"
+      children:
+        - title: Database Syntax
+          url: "docs/database/sql-syntax#database-syntax"
+
 - title: "CLI Commands"
   url: "docs/cli-commands"
 
