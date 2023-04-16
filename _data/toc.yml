@@ -233,6 +233,8 @@
         url: "docs/database/why-database#in-memory"
       - title: File I/O
         url: "docs/database/why-database#file-io"
+    - title: "Basic Jargons"
+      url: "docs/database/basic-jargons"
     - title: "SQL Syntax"
       url: "docs/database/sql-syntax"
       children:
@@ -262,6 +264,8 @@
           url: "docs/database/nosql#nosql"
         - title: Which one?
           url: "docs/database/nosql#which-db-should-you-use"
+    
+      
 
 - title: "CLI Commands"
   url: "docs/cli-commands"
