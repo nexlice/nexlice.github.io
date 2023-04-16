@@ -5,6 +5,7 @@ tags:
  - RMM
  - Open API
  - API Key
+ - Cookie
 
 description: Learn about basic implementations of server!
 ---
