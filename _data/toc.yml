@@ -238,6 +238,17 @@
           url: "docs/server/cookie#stateless-to-stateful"
         - title: Reference
           url: "docs/server/cookie#reference"
+    - title: "Session"
+      url: "docs/server/session"
+      children:
+        - title: Cookie vs Session
+          url: "docs/server/session#cookie-vs-session"
+        - title: Case Study
+          url: "docs/server/session#case-study"
+        - title: express-session
+          url: "docs/server/session#express-session"
+        - title: Reference
+          url: "docs/server/session#reference"
 
 - title: "Database"
   url: "docs/databse/main-page"
