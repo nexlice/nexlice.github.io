@@ -269,6 +269,8 @@
       children: 
         - title: CRUD
           url: "docs/database/mongodb-crud"
+        - title: Advanced CRUD
+          url: "docs/database/mongodb-advanced-crud"
     
       
 

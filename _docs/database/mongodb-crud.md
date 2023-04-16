@@ -17,7 +17,7 @@ tags:
  - $push
 
 
-description: Learn about the basic jargons of database!
+description: Learn about the MongoDB CRUD!
 ---
 
 > 본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다.  
