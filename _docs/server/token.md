@@ -9,9 +9,16 @@ description: Learn about the concept of Token!
 
 >   본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다.  
 
-{% include alert.html type="danger" title="Warning!" content="이 문서는 아직 미완성 문서입니다." %}
-
+<!-- {% include alert.html type="danger" title="Warning!" content="이 문서는 아직 미완성 문서입니다." %} -->
 # Token
+클라이언트에서 인증 정보를 보관하는 방법으로, 토큰 기반 인증이 고안되었다.  
+클라이언트가 토큰을 가지고 있다면, 보통의 다른(돈을 내지 않은) 유저들과는 다르게,  
+서버에서 제공하는 다양한, 더 프리미엄의 기능을 요청할 수 있을 것이다.  
+<br>
+하지만 앞서 클라이언트는 `XSS`, `XSRF 공격`에 노출이 될 위험이 있으니, 민감한 정보를 담아서는 안된다고 했다.  
+그러나 토큰은, 유저 정보를 **암호화**한 상태로 담을 수 있고, 암호화 했기 때문에 클라이언트에 담을 수 있다.  
+
+---
 
 ## Background
 세션 기반 인증은 서버(혹은 DB)에 유저 정보를 담는 인증방식이었다.  
@@ -20,15 +27,7 @@ description: Learn about the concept of Token!
 요청마다 데이터베이스를 확인하는 오버헤드를 줄이기 위해서 토큰기반 인증을 쓴다.  
 그 중 `JWT (JSON Web Token)`에 대해서 알아보자.  
 
-## Client has it
-클라이언트에서 인증 정보를 보관하는 방법으로, 토큰 기반 인증이 고안되었다.  
-클라이언트가 토큰을 가지고 있다면, 보통의 다른(돈을 내지 않은) 유저들과는 다르게,  
-서버에서 제공하는 다양한, 더 프리미엄의 기능을 요청할 수 있을 것이다.  
-
-<br>  
-
-하지만 앞서 클라이언트는 XSS, XSRF공격에 노출이 될 위험이 있으니, 민감한 정보를 담아서는 안된다고 했다.  
-그러나 토큰은, 유저 정보를 **암호화**한 상태로 담을 수 있고, 암호화 했기 때문에 클라이언트에 담을 수 있다.  
+---
 
 ## JWT
 `JWT`에서는 두 종류의 토큰을 사용한다.  
@@ -39,25 +38,25 @@ description: Learn about the concept of Token!
 클라이언트가 처음 인증을 받게 될 때 (로그인 시), `Access Token`과 `Refresh Token` 두 가지를 다 받지만,  
 실제로 권한을 얻는데 사용하는 토큰은 `Access Token`이다.  
 즉, **권한을 부여받는 데엔 Access Token**만 있으면 된다.  
-<br>  
-
+<br>
 하지만 `Access Token`을 악의적인 유저가 얻어냈을 때, 마치 자신이 그 유저인 것 처럼 서버에 여러가지 요청을 보낼 수 있다.  
 따라서 `Access Token`에는 비교적 `짧은 유효기간`을 주어 탈취 되더라도, 오래송안 사용할 수 없도록 한다.  
-<br>  
-
+<br>
 `Access Token`의 유효기간이 만료되면 `Refresh Token`을 사용하여, 새로운 `Access Token`을 발급받는다.  
 이때, 유저는 다시 로그인할 필요가 없다.  
-<br>  
-
+<br>
 유효기간이 긴 `Refresh Token`마저 악의적인 유저가 얻어낸다면, 그 유효기간 동안 `Access Token`이 만료되면,  
 다시 발급 받으며 유저에게 피해를 줄 수 있다.  
+<br>
 따라서 유저의 **편의**보다 **정보를 지키는 것이 더 중요**한 웹사이트들은 `Refresh Token`을 사용하지 않는 곳이 많다.  
 세상에 완벽한 보안은 없기 떄문에, 각 방법의 장단점을 잘 활용해야한다.  
 
+---
+
 ### Structure
-![jwt구조]()  
+![jwt구조](../../assets/img/jwt-structure.png)  
 JWT는 위 그림과 같이 `.`으로 나누어진 세 부분이 존재한다.  
-각 부분은 JSON 객체를 base64로 인코딩한 것이다.  
+각 부분은 `JSON` 객체를 `base64`로 인코딩한 것이다.  
 
 1. Header  
 Header는 이것이 어떤 종류의 토큰인지(지금의 경우 JWT 토큰), 어떤 알고리즘으로 sign(암호화) 할 지 적혀있다.  
@@ -91,15 +90,18 @@ HMAC SHA256을 사용한다면 Signature는 아래와 같은 방식으로 생성
 HMACSHA256(base64UrlEncode(header) + '.' + base64UrlEncode(payload), secret);
 ```
 
+---
+
 ### Usage
 JWT는 `권한 부여`에 굉장히 유용하다.  
 새로 다운로드한 `A`라는 앱이 Gmail과 연동되어 이메일을 읽어와야한다고 가정하자.  
-<br>  
-
+<br>
 유저는 다음의 과정을 거치게 된다.  
 1. Gmail 인증 서버에 로그인 정보(아이디, 비밀번호)를 제공한다.  
 2. 성공적으로 인증 시 JWT를 발급받는다.  
 3. A앱은 JWT를 사용해 해당 유저의 Gmail을 읽거나 사용할 수 있다.  
+
+---
 
 ## Token based Authentication
 1. 클라이언트가 서버에 아이디/비밀번호를 담아 로그인 요청을 보낸다.  
@@ -113,7 +115,9 @@ JWT는 `권한 부여`에 굉장히 유용하다.
     - bearer authentication을 이용한다.
 5. 서버는 토큰을 해독하여 `서버가 발급한 토큰이 맞다` 판단이 될 경우, 클라이언트의 요청을 처리한 후 응답을 보낸다.  
 
-![토큰 기반 인증]()
+![token-based-authentication](../../assets/img/token-based-authentication.png)  
+
+---
 
 ### Pros
 1. Statelessness & Scalability (무상태성 & 확장성)
@@ -129,8 +133,6 @@ JWT는 `권한 부여`에 굉장히 유용하다.
     - 토큰의 payload 안에 어떤 정보에 접근 가능한지 정할 수 있다.  
 
     
-
-
 ## References
 [Postman : bearer authentication](https://learning.postman.com/docs/sending-requests/authorization/#bearer-token)
 [RFC : bearer authentication](https://www.rfc-editor.org/rfc/rfc6750)
