@@ -42,6 +42,7 @@ description: Learn about building API Server!
 <br>
 하지만, 최근의 웹이 고도화 됨에 따라, `SPA`(Single Page Application)가 등장하면서,  
 한 서버에만 요청하는것이 아니라 여러 서버에 요청을 보내게 되었다.  
+<br>
 즉, 이제는 same origin이 아니라, 다른 origin으로 요청하는 경우가 생겼다.  
 이러한 현상을 cross origin resource sharing, `CORS`라고 한다.  
 <br>
@@ -219,12 +220,14 @@ console.log(
 미들웨어 사이사이에 로거를 삽입하여 현재 데이터를 확인하거나, 디버깅에 사용할 수 있다.  
 이런 미들웨어는 일반적으로 다음과 같은 구성을 가진다.  
 ![공식 문서에서 확인할 수 있는 미들웨어의 구성](./../../assets/img/middleware-structure.png)  
+<br>
 위 그림은 endpoint가 `/`이면서, 클라이언트로부터 `GET` 요청을 받았을 때 적용되는 미들웨어이다.  
 파라미터 순서에 유의하자.  
 <br>
 `req`, `res`는 요청/응답에 해당하고, `next`는 다음 미들웨어를 실행한다.  
 다음 그림에서 `next`의 역할을 유추해볼 수 있다.  
 ![next](../../assets/img/middleware-next.png)  
+<br>
 다시 첫번째 이미지를 살펴보면, 미들웨어 내부에서는 아무런 작업을 하고있지 않다.  
 그저 `next()` 함수를 호출하여 다음 미들웨어로 데이터를 전달하고 있다.  
 만약 특정 endpoint가 아니라 모든 요처엥 동일한 미들웨어를 적용하려면, `app.use`를 사용한다.  
