@@ -14,6 +14,7 @@ description: Learn about the concept of Docker!
 <!-- {% include alert.html type="danger" title="Warning!" content="이 문서는 아직 미완성 문서입니다." %} -->
 
 # Docker
+![docker]()  
 도커는 리눅스 컨테이터 기술을 기반으로 하는 오픈 소스 서비스이다.  
 도커를 통해 어플리케이션 실행 환경을 코드로 작성할 수 있으며, OS를 격리화하여 관리한다.  
 도커의 등장 배경과 중요한 개념들에 대해 알아보자.  

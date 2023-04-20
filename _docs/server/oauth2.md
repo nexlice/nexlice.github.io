@@ -94,14 +94,14 @@ Client에서는 authorization code만 받아오고, Server에서 Acess Token요�
 <br>
 OAuth는 이 문제를 해결하기 위해서 다음과 같이 접근한다.  
 ![case-study-oauth-1](../../assets/img/case-study-oauth1.png)  
-`1` : 사용자가 소셜 로그인(페이스북)을 통해 어플리케이션 로그인을 시도한다.  
-`2` : 사용자의 이미지에 접근하도록 페이스북에 요청한다.  
-`3` : 페이스북 서버가 유저에게 어플리케이션에게 이미지 권한을 부여해도 괜찮은지 확인한다.  
-`4` : 유저는 페이스북에게 이미지 접근을 허용한다.  
-`5` : 페이스북 서버는 어플리케이션에게 권한을 허락한다는 Access Token을 준다.  
-`6` : 어플리케이션은 받은 Access Token을 통해 유저가 허락한 리소스들에 접근할 수 있다.  
+- `1` : 사용자가 소셜 로그인(페이스북)을 통해 어플리케이션 로그인을 시도한다.  
+- `2` : 사용자의 이미지에 접근하도록 페이스북에 요청한다.  
+- `3` : 페이스북 서버가 유저에게 어플리케이션에게 이미지 권한을 부여해도 괜찮은지 확인한다.  
+- `4` : 유저는 페이스북에게 이미지 접근을 허용한다.  
+- `5` : 페이스북 서버는 어플리케이션에게 권한을 허락한다는 Access Token을 준다.  
+- `6` : 어플리케이션은 받은 Access Token을 통해 유저가 허락한 리소스들에 접근할 수 있다.  
 어플리케이션은 페이스북에게 유저의 프로필 이미지를 요청한다.  
-`7` : 페이스북은 Access Token을 확인하고 리소스를 제공한다.  
+- `7` : 페이스북은 Access Token을 확인하고 리소스를 제공한다.  
 <br>
 Resource Owner : 사용자  
 Client : 어플리케이션  
@@ -112,19 +112,46 @@ Scope : 이미지
 - 구글 소셜로그인을 지원하는 G-app이라는 웹 앱이 있고, G-app server에는 유저의 사진이 저장된다.  
 구글 소셜 로그인으로 유저를 증명하고, 이를 통해 G-app server에 저장된 사진에 접근할 수 있는 권한을 받아보자.  
 ![oauth-grant-social-login-logic-flow-1](../../assets/img/oauth-grant-social-login-logic-flow-1.png)  
+
+---
+
 ![oauth-grant-social-login-logic-flow-2](../../assets/img/oauth-grant-social-login-logic-flow-2.png)  
+
+---
+
 ![oauth-grant-social-login-logic-flow-3](../../assets/img/oauth-grant-social-login-logic-flow-3.png)  
+
+---
+
 ![oauth-grant-social-login-logic-flow-4](../../assets/img/oauth-grant-social-login-logic-flow-4.png)  
+
+---
+
 ![oauth-grant-social-login-logic-flow-5](../../assets/img/oauth-grant-social-login-logic-flow-5.png)  
+
+---
+
 ![oauth-grant-social-login-logic-flow-6](../../assets/img/oauth-grant-social-login-logic-flow-6.png)  
+
+---
+
 ![oauth-grant-social-login-logic-flow-7](../../assets/img/oauth-grant-social-login-logic-flow-7.png)  
+
+---
+
 ![oauth-grant-social-login-logic-flow-8](../../assets/img/oauth-grant-social-login-logic-flow-8.png)  
+
+---
+
 ![oauth-grant-social-login-logic-flow-9](../../assets/img/oauth-grant-social-login-logic-flow-9.png)  
 
 ---
 
 #### General flow
 ![general-flow-1](../../assets/img/general-oauth-authorization-flow-1.png)  
+
+---
+
 ![general-flow-2](../../assets/img/general-oauth-authorization-flow-2.png)  
 
 ---
@@ -142,4 +169,7 @@ Refresh token을 사용하기 위해서는 사용하고자하는 server의 정�
 Access token의 유효기간이 1일인 서비스의 OAuth를 이용하고자 한다.  
 유저의 입장에서 매일 소셜로그인 갱신을 다시 하지 않도록, 안전하게 로그인이 유지되도록 하자.  
 ![refresh-token-login-logic-flow-1](../../assets/img/refresh-token-login-logic-flow-1.png)  
+
+---
+
 ![refresh-token-login-logic-flow-2](../../assets/img/refresh-token-login-logic-flow-2.png)  
