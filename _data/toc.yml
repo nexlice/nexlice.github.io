@@ -284,10 +284,18 @@
           url: "docs/server/docker#backgrounds"
         - title: Why Docker
           url: "docs/server/docker#why-docker"
+        - title: Container
+          url: "docs/server/docker#container"
+        - title: Isolation
+          url: "docs/server/docker#isolation"
         - title: Image
           url: "docs/server/docker#image"
         - title: Registry
           url: "docs/server/docker#registry"
+        - title: Dependency Collision
+          url: "docs/server/docker#dependency-collision-problems"
+        - title: Dependency Collision
+          url: "docs/server/docker#dependency-collision-problems"
 
 - title: "Database"
   url: "docs/databse/main-page"
