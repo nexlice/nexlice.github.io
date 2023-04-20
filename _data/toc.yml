@@ -294,8 +294,10 @@
           url: "docs/server/docker#registry"
         - title: Dependency Collision
           url: "docs/server/docker#dependency-collision-problems"
-        - title: Dependency Collision
-          url: "docs/server/docker#dependency-collision-problems"
+        - title: Development Environments
+          url: "docs/server/docker#development-environments"
+        - title: Horizontal Scaling and Distribution of New Content
+          url: "docs/server/docker#horizontal-scaling-and-distribution-of-new-content"
 
 - title: "Database"
   url: "docs/databse/main-page"
