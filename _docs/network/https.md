@@ -20,7 +20,7 @@ description: Learn about the concepts of HTTPS!
 
 ---
 
-## Entrance Settings
+## Backgrounds
 기존의 HTTP 요청은 누군가가 요청을 보면 모든 정보가 노출된다.  
 반면 HTTPS는 알맞는 키가 없다면 내용을 알 수 없다.  
 <br>

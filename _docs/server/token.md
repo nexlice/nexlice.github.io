@@ -10,6 +10,7 @@ description: Learn about the concept of Token!
 >   본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다.  
 
 <!-- {% include alert.html type="danger" title="Warning!" content="이 문서는 아직 미완성 문서입니다." %} -->
+
 # Token
 클라이언트에서 인증 정보를 보관하는 방법으로, 토큰 기반 인증이 고안되었다.  
 클라이언트가 토큰을 가지고 있다면, 보통의 다른(돈을 내지 않은) 유저들과는 다르게,  

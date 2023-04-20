@@ -119,8 +119,8 @@
     - title: "React SPA"
       url: "docs/react/react-spa"
       children:
-        - title: Entrance Setting
-          url: "docs/react/react-spa#entrance-setting"
+        - title: Backgrounds
+          url: "docs/react/react-spa#backgrounds"
         - title: SPA
           url: "docs/react/react-spa#spa"
         - title: Wireframe
@@ -192,8 +192,8 @@
     - title: "HTTPS"
       url: "docs/network/https"
       children:
-        - title: Entrance Settings
-          url: "docs/network/https#entrance-settings"
+        - title: Backgrounds
+          url: "docs/network/https#backgrounds"
         - title: Features
           url: "docs/network/https#features"
 
@@ -262,6 +262,21 @@
           url: "docs/server/token#token-based-authentication"
         - title: References
           url: "docs/server/token#references"
+    - title: "OAuth 2.0"
+      url: "docs/server/oauth2"
+      children:
+        - title: OAuth 2.0
+          url: "docs/server/oauth/oauth-2"
+        - title: Why OAuth
+          url: "docs/server/oauth/why-oauth"
+        - title: Jargons
+          url: "docs/server/oauth/jargons"
+        - title: Grant Type
+          url: "docs/server/oauth/grant-type"
+        - title: Authorization Code
+          url: "docs/server/oauth/authorization-code-grant-type"
+        - title: Refresh Token
+          url: "docs/server/oauth/refresh-token-grant-type"
 
 - title: "Database"
   url: "docs/databse/main-page"

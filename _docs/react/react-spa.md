@@ -30,7 +30,7 @@ description: Learn about basic SPA!
 
 ---
 
-## Entrance Setting
+## Backgrounds
 전통적인 웹사이트에서는 사용자가 웹사이트 내의 다른 페이지로 이동하면,  
 브라우저가 페이지를 보여주기 위해 매번 HTML파일로 된 "페이지 전체"를 불러와야만 했다.  
 

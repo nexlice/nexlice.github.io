@@ -22,7 +22,7 @@ description: Learn about the MongoDB Index!
 
 ---
 
-## Entrance Settings
+## Backgrounds
 한 도서의 색인, index는 찾고자 하는 대상이 사전식으로 나열되어있고, 각 대상의 위치도 표현되어 있다.  
 이 위치를 참조하면 책 전체를 살필 필요 없이, 해당 대상이 언급된 페이지로 바로 이동할 수 있다.  
 데이터베이스의 인덱스도 이와 유사하다.  
