@@ -24,6 +24,8 @@ description: Learn about building API Server!
 # API Server
 `CORS` 설정과 `API`들을 `Node.js`를 통한 `HTTP 모듈` 로 만드는 방법과 `Express`를 통해 만드는 방법에 대해 알아보자.  
 
+---
+
 ## CORS
 `CORS`의 개념에 대해 알아보고, 실제로 적용하는 방법에 대해 알아보자.
 
@@ -33,19 +35,16 @@ description: Learn about building API Server!
 이전의 클라이언트 서버 관계에서, 유저의 요청에 의해 서버에 있던 클라이언트를 유저가 받아가는 통신을 했다.  
 즉, 유저는 서버에 있던 클라이언트(클라이언트에 static하게 담겨있는 데이터)를 일방적으로 보는 방식이었다.  
 서버에서 내려준 클라이언트는 서버에 위해가 되는 행동을 하지 않을 것이라 기대했다.  
-<br>  
-
+<br>
 클라이언트가 요청을 보낼때 보내는 클라이언트도 origin이 서버이고,  
 서버가 응답으로 보내는 클라이언트 또한 origin이 서버이기 때문에,  
 서버는 이 요청을 막을 필요가 없다.  
-<br>  
-
+<br>
 하지만, 최근의 웹이 고도화 됨에 따라, `SPA`(Single Page Application)가 등장하면서,  
 한 서버에만 요청하는것이 아니라 여러 서버에 요청을 보내게 되었다.  
 즉, 이제는 same origin이 아니라, 다른 origin으로 요청하는 경우가 생겼다.  
 이러한 현상을 cross origin resource sharing, `CORS`라고 한다.  
-<br>  
-
+<br>
 브라우저에서는 보안상의 이유로, 스크립트 내에서 초기화되는 cross-origin HTTP요청을 제한한다.  
 곧이어 개발자들은 브라우저 벤더사들에게 XMLHttpRequest가 cross-domain 요청을 할 수 있도록 요청했다.  
 이후, 서버가 허용한 범위 내에서는 cross origin 요청을 허용하도록 브라우저가 변경되었다.  
@@ -73,14 +72,12 @@ const defaultCorsHeaders = {
 ### options
 `options`는 `preflight request`이다.  
 브라우저가 자동으로 client가 다른 origin에 있는 서버에 요청할 때, 서버에게 허가를 받는 역할을 한다.  
-<br>  
-
+<br>
 어떤 서버에서 `A origin`만 cross-origin domain 요청을 허용한 상황에서, A가 서버에 POST 요청을 보내는 상황을 가정해보자.  
 `A`는 처음에 `options`라는 `preflight request`를 통해서 서버에 CORS origin에 대한 request 정보를 확인한다.  
 즉, 브라우저가 자동으로 options라는 요청으로 서버로 보내서 CORS origin에 대한 허가를 받은 후에,  
 서버에게 POST request를 보내게 된다.  
-<br>  
-
+<br>
 만약 `A`가 아닌 `B`가 서버에게 request를 보낸다고 하면,  
 `B`가 `options`를 서버에 보냈을 떄 거절 응답이 돌아와 요청이 불가능하다.  
 
@@ -187,8 +184,7 @@ node basic-server.js
 자동차 공장에서는 컨베이어 벨트 위에 올려진 자동차의 뼈대에, 각 공정마다 부품을 추가한다.  
 모든 부품이 추가되면 완성된 자동차가, 어딘가 문제가 있다면 불량품이 결과물로 나오게 된다.  
 `미들웨어`는 자동차 고장의 공정과 비슷하다.  
-<br>  
-
+<br>
 컨베이어 벨트 위에 올라가 있는 request에 필요한 기능을 더하거나,  
 문제가 발견된 불량품을 밖으로 걷어내는 역할을 한다.  
 `미들웨어`는 `Express.js`의 가장 큰 장점이다.  
@@ -205,8 +201,7 @@ node basic-server.js
 
 미들웨어를 사용하면 `node.js`만으로 구현한 서버에서는 다소 번거로울 수 있는 작업을 더욱 쉽게 적용할 수 있다.  
 미들웨어에 대한 [공식문서](https://expressjs.com/ko/guide/writing-middleware.html)를 확인해보자.  
-<br>  
-
+<br>
 미들웨어는 말 그대로 프로세스 중간에 관여하여 특정 역할을 수행한다.  
 위에서 수행했던 실습을 변환해보자.  
 
@@ -226,8 +221,7 @@ console.log(
 ![공식 문서에서 확인할 수 있는 미들웨어의 구성](./../../assets/img/middleware-structure.png)  
 위 그림은 endpoint가 `/`이면서, 클라이언트로부터 `GET` 요청을 받았을 때 적용되는 미들웨어이다.  
 파라미터 순서에 유의하자.  
-<br>  
-
+<br>
 `req`, `res`는 요청/응답에 해당하고, `next`는 다음 미들웨어를 실행한다.  
 다음 그림에서 `next`의 역할을 유추해볼 수 있다.  
 ![next](../../assets/img/middleware-next.png)  
@@ -309,8 +303,7 @@ if (req.methid === 'OPTIONS') {
 ```
 
 [cors 미들웨어](https://github.com/expressjs/cors)를 사용하면, 이 과정을 다음과 같이 간단하게 처리할 수 있다.  
-<br>  
-
+<br>
 **모든 요청에 대해 허용**  
 ```javascript
 const cors = require('cors');
