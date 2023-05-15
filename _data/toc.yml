@@ -1,59 +1,59 @@
-- title: "Blockchain"
-  url: "docs/blockchain/main-page"
+- title: "Distributed Ledger"
+  url: "docs/distributed-ledger/main-page"
   links:
     - title: "Distributed Database"
-      url: "docs/blockchain/distributed-database"
+      url: "docs/distributed-ledger/distributed-database"
       children:
       # link가 있을 때, children이 없으면 컴파일이 안됨.
         - title: Transparency
-          url: "docs/blockchain/distributed-database#transparency"
+          url: "docs/distributed-ledger/distributed-database#transparency"
         - title: Implementations
-          url: "docs/blockchain/distributed-database#implementations"
+          url: "docs/distributed-ledger/distributed-database#implementations"
         - title: Clustering
-          url: "docs/blockchain/distributed-database#clustering"
+          url: "docs/distributed-ledger/distributed-database#clustering"
         - title: Replication
-          url: "docs/blockchain/distributed-database#replication"
+          url: "docs/distributed-ledger/distributed-database#replication"
         - title: Sharding
-          url: "docs/blockchain/distributed-database#sharding"
+          url: "docs/distributed-ledger/distributed-database#sharding"
         - title: Pros and Cons
-          url: "docs/blockchain/distributed-database#pros-and-cons"
+          url: "docs/distributed-ledger/distributed-database#pros-and-cons"
         - title: Distributed Database vs Blockchain
-          url: "docs/blockchain/distributed-database#distributed-database-vs-blockchain"
+          url: "docs/distributed-ledger/distributed-database#distributed-database-vs-blockchain"
     - title: "Distributed Ledger Technology"
-      url: "docs/blockchain/distributed-ledger-technology"
+      url: "docs/distributed-ledger/distributed-ledger-technology"
       children:
         - title: Centralized Ledger System
-          url: "docs/blockchain/distributed-ledger-technology#centralized-ledger-system"
+          url: "docs/distributed-ledger/distributed-ledger-technology#centralized-ledger-system"
         - title: Distributed Ledger Technology
-          url: "docs/blockchain/distributed-ledger-technology#distributed-ledger-techonology"
+          url: "docs/distributed-ledger/distributed-ledger-technology#distributed-ledger-techonology"
         - title: Technical Challenge
-          url: "docs/blockchain/distributed-ledger-technology#technical-challenge"
+          url: "docs/distributed-ledger/distributed-ledger-technology#technical-challenge"
     - title: "Segwit"
-      url: "docs/blockchain/segwit"
+      url: "docs/distributed-ledger/segwit"
       children:
         - title: Time Consumption
-          url: "docs/blockchain/segwit#time-consumption"
+          url: "docs/distributed-ledger/segwit#time-consumption"
         - title: Storage
-          url: "docs/blockchain/segwit#storage"
+          url: "docs/distributed-ledger/segwit#storage"
         - title: Existing Issues
-          url: "docs/blockchain/segwit#existing-issues"
+          url: "docs/distributed-ledger/segwit#existing-issues"
         - title: Improving Scalability
-          url: "docs/blockchain/segwit#improving-scalability"
+          url: "docs/distributed-ledger/segwit#improving-scalability"
         - title: Features
-          url: "docs/blockchain/segwit#features"
+          url: "docs/distributed-ledger/segwit#features"
         - title: Wrap up
-          url: "docs/blockchain/segwit#wrap-up"
+          url: "docs/distributed-ledger/segwit#wrap-up"
     - title: "Merkle Tree"
-      url: "docs/blockchain/merkle-tree"
+      url: "docs/distributed-ledger/merkle-tree"
       children:
         - title: Operating Mechanism
-          url: "docs/blockchain/merkle-tree#operating-mechanism"
+          url: "docs/distributed-ledger/merkle-tree#operating-mechanism"
         - title: Integrity
-          url: "docs/blockchain/merkle-tree#integrity"
+          url: "docs/distributed-ledger/merkle-tree#integrity"
         - title: With Blockchain
-          url: "docs/blockchain/merkle-tree#with-blockchain"
+          url: "docs/distributed-ledger/merkle-tree#with-blockchain"
         - title: Further Study
-          url: "docs/blockchain/merkle-tree#further-study"
+          url: "docs/distributed-ledger/merkle-tree#further-study"
 
 - title: "Web"
   url: "docs/web/main-page"
