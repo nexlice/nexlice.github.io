@@ -1,3 +1,16 @@
+---
+title: Symmetric and Asymmetric Key
+tags: 
+ - Key
+ - Encryption
+ - Decryption
+ - Digital Envelope
+
+description: Learn about the concept of Symmetric and Asymmetric Key!
+---
+
+> 본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다.  
+
 # Symetric vs Assymetric Key
 비대칭키 암호 방식과 대칭키 암호 방식에는 다음과 같은 차이점이 있다.  
 
@@ -7,6 +20,8 @@
 |연산 속도|블록 암호화나 스트림 암호화 모두 연산이 단순하기 때문에 연산 속도가 빠르다.<br>따라서 대용량 데이터를 전송할 때 많이 사용한다.|복잡한 수학적 연산을 수행해야 하므로, 비교적 속도가 느리며, 키 길이가 길기 때문에 훨씬 더 많은 연산 능력이 필요하다.<br>주로 데이터 전송에 앞서 안전한 채널을 인증하고 구축하기 위한 소규모 트랜잭션(TLS, etc.)에 많이 사용된다.|
 |보안|단일한 개인키를 공유해야 하므로,<br>키 전달과정에서 키가 노출되면 해당 키로 암호화된 모든 데이터의 보안 위협이 커진다.|암호화할 때 공개키를 사용하고, 복호화할 때에는 개인키를 사용하여 앞선 문제를 해결한다.|
 |알고리즘|RC4, AES, DES, 3DES|RSA, 디피-헬먼, ECC|
+
+---
 
 ## Digital Envelope
 대칭키 암호 방식은 비대칭 키 암호 방식에 비해 비교적 간결하기 때문에,  

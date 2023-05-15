@@ -1,3 +1,16 @@
+---
+title: Token Systems
+tags: 
+ - Public Blockchain
+ - Private Blockchain
+ - Consortium
+ - Token Economy
+
+description: Learn about the concept of Token System!
+---
+
+> 본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다.  
+
 # Read Me
 토큰은 블록체인 네트워크에 올라가 있는 스마트 컨트랙트를 통해 발행되기 떄문에,  
 블록체인에서 자체 발행하는 코인과 무관하게 토큰 그 자체로 새로운 생태계를 구성할 수 있다.  
@@ -5,6 +18,8 @@
 그러나 토큰을 통해 생성된 생태계는 블록체인 네트워크 위에 있기 때문에,  
 어떤 블록체인에 올라가 있는지에 따라 토큰 이코노미의 형태도 달라진다.  
 즉, 토큰 이코노미는 자신이 속해 있는 블록체인의 성격에 따라 그 모습이 조금씩 달라진다.  
+
+---
 
 ## Token Economy of Public Blockchain
 비트코인이나 이더리움 등, 기존 블록체인에서 새로운 생태계를 어떻게 구성할까? 
@@ -32,7 +47,7 @@
 일상생활에서도 토큰 이코노미를 활용한 사례를 볼 수 있다.  
 <br>
 예를 들어, 스타벅스에는 카드 또는 어플리케이션에 일정량의 금액을 미리 충전해 둘 수 있다.  
-![]()  
+![starbucks](../../assets/img/starbucks.png)  
 이렇게 충전된 금액은 더 이상 실제 화폐는 아니다.  
 스타벅스에서만 사용할 수 있는 디지털 자산(토큰)이 된 것이다.  
 <br>
@@ -44,6 +59,8 @@
 
 > **블록체인에서의 토큰 이코노미**  
 > 사용자들의 합의에 따라 정해진 토큰 기반 경제 시스템이라는 점에서 프로토콜 이코노미(Protocol Economy)라고도 불린다.  
+
+---
 
 ## Token Economy of Private Blockchain and Consortium
 컨소시엄 형태 또는 프라이빗 형태의 블록체인은 채굴자가 정해져 있다.  

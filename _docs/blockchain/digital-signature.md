@@ -1,3 +1,16 @@
+---
+title: Digital Signature
+tags: 
+ - public key
+ - private key
+ - hashing
+ - verification
+
+description: Learn about the concept of Digital Signature!
+---
+
+> 본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다.  
+
 # Digital Signature
 우리가 수기로 작성하는 일반적인 서명을 통해 해당 문서에 대해  
 "`나`라는 사람이 읽었으며, 문서에 문제가 없음을 확인했고, 문서의 내용에 동의함”을 표현할 수 있다.  
@@ -21,28 +34,28 @@
 
 ---
 
-### Background
+## Background
 공개키 암호화 방식은 공개키와 개인키로 구성된 한 쌍의 키를 사용한 암호화 방식이다.  
 두 키는 타원곡선 알고리즘(Elliptic Curve Algorithm, ECC)을 사용하여 생성된다.  
 공개키로 암호화된 데이터는 해당 개인키로 복호화할 수 있다.  
 따라서 공개키는 외부에 공개하고, 개인키는 기밀로 유지해야 한다.  
 
-![public-key]()  
+![public-key](../../assets/img/public-key.png)  
 
 <br>
 
-![public-key-encryption]()  
+![public-key-encryption](../../assets/img/public-key-encryption.gif)  
 
 공개키로 암호화된 데이터는 암호화한 사용자(개인키 소유자)만이 복호화할 수 있다.  
 만약 암호화된 데이터를 다른 사람에게 보내야 하는 경우,  
 해당 사용자의 공개키로 데이터를 암호화하고, 수신자는 송신자의 개인키로 복호화해야 한다.  
 이 방식을 사용하면 중요한 데이터를 암호화하여 승인된 사용자에게만 전달할 수 있다.
 
-![private-key]()  
+![private-key](../../assets/img/private-key.png)  
 
 <br>
 
-![private-key-encryption]()
+![private-key-encryption](../../assets/img/private-key-encryption.gif)
 
 
 반대로 개인키로 암호화된 데이터를 공개키로 해독하는 방식도 있다.  
@@ -52,16 +65,20 @@
 따라서 데이터의 내용을 숨기는 것이 아니라, 디지털 서명을 하여,  
 데이터의 무결성과 진위성을 검증해야 할 때는 개인키로 암호화하는 방식을 사용한다.
 
-### How this works
+---
+
+## How does it work
 디지털 서명은 크게 세 단계로 나뉜다.  
 
 1. 해싱
 2. 서명
 3. 검증
 
-![digital-signature]()  
+![digital-signature](../../assets/img/digital-signature.png)  
 
-#### Hashing
+---
+
+### Hashing
 원본 데이터를 해싱한다.  
 원본 데이터의 크기는 제각기 다를 수 있지만, 해싱되었을 때는 동일한 길이의 해시값을 가지게 된다.  
 
@@ -69,7 +86,9 @@
 > 해싱하지 않은 원본 데이터에 개인키로 서명을 할 수도 있기 때문이다.  
 > 그러나 해싱함으로써 고정된 길이의 값을 비교하는 것이 무결성을 검증하는데 훨씬 간편하기 때문에 사용한다.
 
-#### Signature
+---
+
+### Signature
 비대칭키 암호화 방식을 사용해 해싱된 데이터에 서명한다.  
 서명하는 방식은 다양하지만, 일반적으로 송신자의 개인키로 해시값을 암호화한다.  
 이 암호화된 결과값이 바로 디지털 서명이다.  
@@ -79,7 +98,9 @@
 <br>
 서명이 완료되면 송신자는 `원본 데이터`와 `디지털 서명`, `송신자의 공개키`를 함께 전송한다.  
 
-#### Verification
+---
+
+### Verification
 수신자는 `송신자의 공개키`를 가지고 `디지털 서명을 복호화`한다.  
 검증 과정에서는 두 데이터를 비교한다.  
 
@@ -88,7 +109,9 @@
 
 이 두 해시값을 비교하여 만약 해시값이 동일하다면, 데이터가 정상적으로 송신자에 의해 서명된 것임을 확인할 수 있다.  
 
-![digital-signature-flow]()  
+![digital-signature-flow](../../assets/img/digital-signature-flow.png)  
+
+---
 
 ## Features
 디지털 서명은 세 가지 특징을 갖고 있다.  
