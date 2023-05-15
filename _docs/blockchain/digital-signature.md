@@ -42,7 +42,6 @@ description: Learn about the concept of Digital Signature!
 
 ![public-key](../../assets/img/public-key.png)  
 
-<br>
 
 ![public-key-encryption](../../assets/img/public-key-encryption.gif)  
 
@@ -53,7 +52,6 @@ description: Learn about the concept of Digital Signature!
 
 ![private-key](../../assets/img/private-key.png)  
 
-<br>
 
 ![private-key-encryption](../../assets/img/private-key-encryption.gif)
 
