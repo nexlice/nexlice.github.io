@@ -23,11 +23,11 @@
       url: "docs/blockchain/distributed-ledger-technology"
       children:
         - title: Centralized Ledger System
-          url: "docs/blockchain/distributed-database#centralized-ledger-system"
+          url: "docs/blockchain/distributed-ledger-technology#centralized-ledger-system"
         - title: Distributed Ledger Technology
-          url: "docs/blockchain/distributed-database#distributed-ledger-techonology"
+          url: "docs/blockchain/distributed-ledger-technology#distributed-ledger-techonology"
         - title: Technical Challenge
-          url: "docs/blockchain/distributed-database#technical-challenge"
+          url: "docs/blockchain/distributed-ledger-technology#technical-challenge"
     - title: "Segwit"
       url: "docs/blockchain/segwit"
       children:
