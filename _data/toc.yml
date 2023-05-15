@@ -1,10 +1,66 @@
+- title: "Blockchain"
+  url: "docs/blockchain/main-page"
+  links:
+    - title: "Distributed Database"
+      url: "docs/blockchain/distributed-database"
+      children:
+      # link가 있을 때, children이 없으면 컴파일이 안됨.
+        - title: Transparency
+          url: "docs/blockchain/distributed-database#transparency"
+        - title: Implementations
+          url: "docs/blockchain/distributed-database#implementations"
+        - title: Clustering
+          url: "docs/blockchain/distributed-database#clustering"
+        - title: Replication
+          url: "docs/blockchain/distributed-database#replication"
+        - title: Sharding
+          url: "docs/blockchain/distributed-database#sharding"
+        - title: Pros and Cons
+          url: "docs/blockchain/distributed-database#pros-and-cons"
+        - title: Distributed Database vs Blockchain
+          url: "docs/blockchain/distributed-database#distributed-database-vs-blockchain"
+    - title: "Distributed Ledger Technology"
+      url: "docs/blockchain/distributed-ledger-technology"
+      children:
+        - title: Centralized Ledger System
+          url: "docs/blockchain/distributed-database#centralized-ledger-system"
+        - title: Distributed Ledger Technology
+          url: "docs/blockchain/distributed-database#distributed-ledger-techonology"
+        - title: Technical Challenge
+          url: "docs/blockchain/distributed-database#technical-challenge"
+    - title: "Segwit"
+      url: "docs/blockchain/segwit"
+      children:
+        - title: Time Consumption
+          url: "docs/blockchain/segwit#time-consumption"
+        - title: Storage
+          url: "docs/blockchain/segwit#storage"
+        - title: Existing Issues
+          url: "docs/blockchain/segwit#existing-issues"
+        - title: Improving Scalability
+          url: "docs/blockchain/segwit#improving-scalability"
+        - title: Features
+          url: "docs/blockchain/segwit#features"
+        - title: Wrap up
+          url: "docs/blockchain/segwit#wrap-up"
+    - title: "Merkle Tree"
+      url: "docs/blockchain/merkle-tree"
+      children:
+        - title: Operating Mechanism
+          url: "docs/blockchain/merkle-tree#operating-mechanism"
+        - title: Integrity
+          url: "docs/blockchain/merkle-tree#integrity"
+        - title: With Blockchain
+          url: "docs/blockchain/merkle-tree#with-blockchain"
+        - title: Further Study
+          url: "docs/blockchain/merkle-tree#further-study"
+
 - title: "Web"
   url: "docs/web/main-page"
   links:
     - title: "HTML"
       url: "docs/web/html"
       children:
-      # 만약 children이 없으면 컴파일이 안됨.
         - title: HTML, CSS, and JavaScript
           url: "docs/web/html#html-css-and-javascript"
         - title: Basics

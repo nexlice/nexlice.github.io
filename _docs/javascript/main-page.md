@@ -22,7 +22,7 @@ description: Learn about the javascript!
 ---
 
 
-# Read Me
+# READ ME
 `JavaScript`는 **'웹 페이지에 생동감을 불어넣기 위해'** 만들어진 프로그래밍 언어이다.  
 `JavaScript`로 작성한 프로그램을 스크립트(script)라고 부른다.  
 스크립트는 웹페이지의 HTML 안에 작성할 수 있는데, 웹페이지를 불러올 때 스크립트가 자동으로 실행된다.  

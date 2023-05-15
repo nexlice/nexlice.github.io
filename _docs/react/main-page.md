@@ -24,7 +24,7 @@ description: Learn about basic React!
 ---
 
 
-# Read Me
+# READ ME
 `React`는 웹, 데스크탑, 모바일 등 다양한 플랫폼에서 활용할 수 있는 프론트엔드 라이브러리이다.  
 이 문서와 하위 문서에서는 리액트의 개념과 활용 방법에 대해서 다룬다.  
 
