@@ -147,8 +147,8 @@
           url: "docs/blockchain/hash-function#how-does-it-work"
         - title: In Blockchain
           url: "docs/blockchain/hash-function#in-blockchain"
-        - title: Annonymity
-          url: "docs/blockchain/hash-function#annonymity"
+        - title: Anonymity
+          url: "docs/blockchain/hash-function#anonymity"
         - title: Integrity
           url: "docs/blockchain/hash-function#integrity"
         - title: Determining Mining Node
@@ -190,8 +190,8 @@
           url: "docs/blockchain/darkcoin-and-zkp#zero-knowledge-proof"
         - title: Prerequisites
           url: "docs/blockchain/darkcoin-and-zkp#prerequisites"
-        - title: Annonymous Coin
-          url: "docs/blockchain/darkcoin-and-zkp#annonymous-coin"
+        - title: Anonymous Coin
+          url: "docs/blockchain/darkcoin-and-zkp#anonymous-coin"
 
 - title: "Web"
   url: "docs/web/main-page"
