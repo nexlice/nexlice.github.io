@@ -80,11 +80,11 @@
         - title: Governance in Blockchain
           url: "docs/blockchain/governance-and-crypto-economy#governance-in-blockchain"
         - title: Coordination of Interests
-            url: "docs/blockchain/governance-and-crypto-economy#coordination-of-interests"
+          url: "docs/blockchain/governance-and-crypto-economy#coordination-of-interests"
         - title: Types of Governance
-            url: "docs/blockchain/governance-and-crypto-economy#types-of-governance"
+          url: "docs/blockchain/governance-and-crypto-economy#types-of-governance"
         - title: Crypto Economy
-            url: "docs/blockchain/governance-and-crypto-economy#crypto-economy"
+          url: "docs/blockchain/governance-and-crypto-economy#crypto-economy"
     - title: "Coins and Tokens"
       url: "docs/blockchain/coins-and-tokens"
       children:
