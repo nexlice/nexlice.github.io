@@ -187,11 +187,11 @@
       url: "docs/blockchain/darkcoin-and-zkp"
       children:
         - title: Zero Knowledge Proof
-          url: "docs/blockchain/wallets#zero-knowledge-proof"
+          url: "docs/blockchain/darkcoin-and-zkp#zero-knowledge-proof"
         - title: Prerequisites
-          url: "docs/blockchain/wallets#prerequisites"
+          url: "docs/blockchain/darkcoin-and-zkp#prerequisites"
         - title: Annonymous Coin
-          url: "docs/blockchain/wallets#annonymous-coin"
+          url: "docs/blockchain/darkcoin-and-zkp#annonymous-coin"
 
 - title: "Web"
   url: "docs/web/main-page"
