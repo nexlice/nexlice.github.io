@@ -55,6 +55,48 @@
         - title: Further Study
           url: "docs/distributed-ledger/merkle-tree#further-study"
 
+- title: "Blockchain"
+  url: "docs/blockchain/main-page"
+  links:
+    - title: "Cryptocurrency"
+      url: "docs/blockchain/cryptocurrency"
+      children:
+        - title: Difference from Currency
+          url: "docs/blockchain/cryptocurrency#difference-from-currency"
+        - title: Etymology
+          url: "docs/blockchain/cryptocurrency#etymology"
+    - title: "CBDC"
+      url: "docs/blockchain/cbdc"
+      children:
+        - title: Background
+          url: "docs/blockchain/cbdc#background"
+        - title: Digital Assetss vs CBDC
+          url: "docs/blockchain/cbdc#digital-assets-vs-cbdc"
+        - title: Pros
+          url: "docs/blockchain/cbdc#pros"
+    - title: "Governance and Crypto Economy"
+      url: "docs/blockchain/governance-and-crypto-economy"
+      children:
+        - title: Governance in Blockchain
+          url: "docs/blockchain/governance-and-crypto-economy#governance-in-blockchain"
+        - title: Coordination of Interests
+            url: "docs/blockchain/governance-and-crypto-economy#coordination-of-interests"
+        - title: Types of Governance
+            url: "docs/blockchain/governance-and-crypto-economy#types-of-governance"
+        - title: Crypto Economy
+            url: "docs/blockchain/governance-and-crypto-economy#crypto-economy"
+    - title: "Coins and Tokens"
+      url: "docs/blockchain/coins-and-tokens"
+      children:
+        - title: Generating Tokens - Smart Contract
+          url: "docs/blockchain/coins-and-tokens#generating-tokens-_-smart-contract"
+        - title: Coins vs Tokens
+          url: "docs/blockchain/coins-and-tokens#coins-vs-tokens"
+        - title: Coins
+          url: "docs/blockchain/coins-and-tokens#coins"
+        - title: Tokens
+          url: "docs/blockchain/coins-and-tokens#tokens"
+
 - title: "Web"
   url: "docs/web/main-page"
   links:
