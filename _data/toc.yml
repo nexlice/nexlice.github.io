@@ -168,6 +168,30 @@
           url: "docs/blockchain/encryption-techniques#pki"
         - title: Schnorr Signature
           url: "docs/blockchain/encryption-techniques#schnorr-signature"
+    - title: "Wallets"
+      url: "docs/blockchain/wallets"
+      children:
+        - title: Hot Wallet
+          url: "docs/blockchain/wallets#hot-wallet"
+        - title: Cold Wallet
+          url: "docs/blockchain/wallets#cold-wallet"
+        - title: Hot Wallet vs Cold Wallet
+          url: "docs/blockchain/wallets#hot-wallet-vs-cold-wallet"
+        - title: Smart Contract Wallet
+          url: "docs/blockchain/wallets#smart-contract-wallet"
+        - title: Nondeterministic vs Seed Wallet
+          url: "docs/blockchain/wallets#nondeterministic-vs-seed-wallet"
+        - title: Further Study
+          url: "docs/blockchain/wallets#further-study"
+    - title: "Darkcoin and ZKP"
+      url: "docs/blockchain/darkcoin-and-zkp"
+      children:
+        - title: Zero Knowledge Proof
+          url: "docs/blockchain/wallets#zero-knowledge-proof"
+        - title: Prerequisites
+          url: "docs/blockchain/wallets#prerequisites"
+        - title: Annonymous Coin
+          url: "docs/blockchain/wallets#annonymous-coin"
 
 - title: "Web"
   url: "docs/web/main-page"
