@@ -201,6 +201,21 @@
           url: "docs/blockchain/de-fi#defi"
         - title: Uniswap
           url: "docs/blockchain/de-fi#uniswap"
+    - title: "The Risks of Cryptocurrency Investment"
+      url: "docs/blockchain/the-risks-of-cryptocurrency-investment"
+      children:
+        - title: Security Risk
+          url: "docs/blockchain/the-risks-of-cryptocurrency-investment#security-risk"
+        - title: Volatility Risk
+          url: "docs/blockchain/the-risks-of-cryptocurrency-investment#volatility-risk"
+        - title: Liquidity Risk
+          url: "docs/blockchain/the-risks-of-cryptocurrency-investment#liquidity-risk"
+        - title: Rug pull
+          url: "docs/blockchain/the-risks-of-cryptocurrency-investment#rug-pull"
+        - title: Regulatory Risk
+          url: "docs/blockchain/the-risks-of-cryptocurrency-investment#regulatory-risk"
+        - title: Tax Risk
+          url: "docs/blockchain/the-risks-of-cryptocurrency-investment#tax-risk"
 
 - title: "Web"
   url: "docs/web/main-page"
