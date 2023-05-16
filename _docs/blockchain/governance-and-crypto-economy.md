@@ -89,7 +89,7 @@ description: Learn about the concept of Governance and Crypto Economy!
 
 #### EOS
 가장 대표적인 온체인 거버넌스에는 `EOS`가 있다.  
-EOS는 위임지분증명(DPoS, Delegated Proof of Stake) 함의 알고리즘을 사용하는 블록체인 네트워크로,  
+EOS는 위임지분증명(DPoS, Delegated Proof of Stake) 함의 알고리즘을 사용하는 블록체인 네트워크로, 
 투표를 통해 네트워크 트랜잭션 검증자를 선출한다.  
 이 투표에서는 EOS 코인 한개로 30명의 트랜잭션 검증 후보자에 투표를 할 수 있다.  
 직접 투표하고 싶지 않은 경우, 투표권을 다른 사람에게 위임할 수도 있다.  
