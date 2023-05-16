@@ -192,15 +192,15 @@
           url: "docs/blockchain/darkcoin-and-zkp#prerequisites"
         - title: Anonymous Coin
           url: "docs/blockchain/darkcoin-and-zkp#anonymous-coin"
-  - title: "De-Fi"
-      url: "docs/blockchain/de-fi"
-      children:
-        - title: Ce-Fi vs De-Fi
-          url: "docs/blockchain/de-fi#cefi-vs-defi"
-        - title: DeFi
-          url: "docs/blockchain/de-fi#defi"
-        - title: Uniswap
-          url: "docs/blockchain/de-fi#uniswap"
+    - title: "De-Fi"
+        url: "docs/blockchain/de-fi"
+        children:
+          - title: Ce-Fi vs De-Fi
+            url: "docs/blockchain/de-fi#cefi-vs-defi"
+          - title: DeFi
+            url: "docs/blockchain/de-fi#defi"
+          - title: Uniswap
+            url: "docs/blockchain/de-fi#uniswap"
 
 - title: "Web"
   url: "docs/web/main-page"
