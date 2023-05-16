@@ -216,6 +216,19 @@
           url: "docs/blockchain/the-risks-of-cryptocurrency-investment#regulatory-risk"
         - title: Tax Risk
           url: "docs/blockchain/the-risks-of-cryptocurrency-investment#tax-risk"
+    - title: "Trilemma"
+      url: "docs/blockchain/trilemma"
+      children:
+        - title: Background
+          url: "docs/blockchain/trilemma#background"
+        - title: Trilemma
+          url: "docs/blockchain/trilemma#trilemma"
+        - title: Scalability
+          url: "docs/blockchain/trilemma#scalability"
+        - title: Security
+          url: "docs/blockchain/trilemma#security"
+        - title: Decentralization
+          url: "docs/blockchain/trilemma#decentralization"
 
 - title: "Web"
   url: "docs/web/main-page"
