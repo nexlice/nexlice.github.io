@@ -54,6 +54,18 @@
           url: "docs/distributed-ledger/merkle-tree#with-blockchain"
         - title: Further Study
           url: "docs/distributed-ledger/merkle-tree#further-study"
+    - title: "Tap Root"
+      url: "docs/distributed-ledger/tap-root"
+    - title: "Bloom Filter"
+      url: "docs/distributed-ledger/bloom-filter"
+    - title: "DAG"
+      url: "docs/distributed-ledger/dag"
+    - title: "DHT"
+      url: "docs/distributed-ledger/dht"
+    - title: "IPFS"
+      url: "docs/distributed-ledger/ipfs"
+    - title: "Pruning"
+      url: "docs/distributed-ledger/pruning"
 
 - title: "Blockchain"
   url: "docs/blockchain/main-page"
