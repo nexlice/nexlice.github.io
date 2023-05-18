@@ -14,7 +14,7 @@ description: Learn about the Wallets!
 
 > 본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다.  
 
-# Wallet
+# Wallets
 다양한 형태의 암호화폐 지갑에 대해 알아보자.  
 
 ---

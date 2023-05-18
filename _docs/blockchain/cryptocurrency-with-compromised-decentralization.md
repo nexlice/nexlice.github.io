@@ -10,7 +10,11 @@ tags:
 
 > 본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다.  
 
-# READ ME
+# Cryptocurrency with Compromised Decentralization
+
+---
+
+## READ ME
 트릴레마를 극복하기 위한 시도는 아직 초기 단계이다.  
 따라서 생각지 못한 문제와 개선의 여지가 많을 수밖에 없다.  
 

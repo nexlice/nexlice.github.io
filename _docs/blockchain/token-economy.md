@@ -8,7 +8,7 @@ description: Learn about the concept of Token Economy!
 
 > 본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다.  
 
-# Read Me
+# Token Economy
 토큰 이코노미가 무엇인지 알아보고, 토큰 이코노미와 크립토 이코노미가 무엇이 다른지 알아보자.  
 
 ---

@@ -7,7 +7,11 @@ tags:
 
 > 본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다. 
 
-# Lightning Network
+# Off-Chain
+
+---
+
+## Lightning Network
 ![off-chain](../../assets/img/off-chain.png)  
 
 라이트닝 네트워크는 양방향 채널이라는 아이디어를 기반으로, 매우 저렴한 비용으로 거의 즉각적인 거래가 가능한 비트코인 ​​레이어(또는 레벨) 2의 솔루션이다.  

@@ -8,7 +8,11 @@ tags:
 
 > 본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다. 
 
-# READ ME
+# Cryptocurrency with Compromised Scability
+
+---
+
+## READ ME
 지금까지 발표된 대표적인 블록체인 플랫폼들을 트릴레마(Trilemma) 관점에서 바라보면,  
 1세대, 2세대, 3세대를 거치면서 합의 알고리즘(Consensus Algorithm), 데이터구조(Ledger Data format), H/W 보완 등 다양한 접근방식을 통해 트릴레마 문제를 해결하려 노력하고 있다 볼 수 있다.  
 <br>

@@ -12,6 +12,10 @@ description: Learn about the various Encryption Techniques!
 
 > 본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다.  
 
+# Encryption Techniques
+
+---
+
 ## SHA
 SHA는 Secure Hash Algorithm의 약자로, 해시함수를 이용해 만든 해시 암호화 알고리즘의 모음이다.  
 SHA는 미 국가보안국(NSA)에서 1993년 처음으로 설계하였으며,  

@@ -11,7 +11,7 @@ description: Learn about the concept of Token System!
 
 > 본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다.  
 
-# Read Me
+# Token Systems
 토큰은 블록체인 네트워크에 올라가 있는 스마트 컨트랙트를 통해 발행되기 떄문에,  
 블록체인에서 자체 발행하는 코인과 무관하게 토큰 그 자체로 새로운 생태계를 구성할 수 있다.  
 <br>

@@ -11,7 +11,11 @@ description: Learn about the concept of Hash Function!
 
 > 본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다.  
 
-# Hashing
+# Hash Function
+
+---
+
+## Hashing
 **해싱(Hashing)** 은 다양한 크기의 입력값을 고정된 크기의 출력값으로 생성해 내는 과정을 의미한다.  
 
 ---

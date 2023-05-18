@@ -11,7 +11,11 @@ description: Learn about the concept of Governance and Crypto Economy!
 
 > 본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다.  
 
-# Governance
+# Governance and Crypto Economy
+
+---
+
+## Governance
 **거버넌스**는 일반적으로 '과거의 리방적인 정부 주도적 경향에서 벗어나,  
 정부, 기업, 비정부기구 등 **다양한 행위자가 공동의 고나심사에 대한 네트워크를 구축하여 문제를 해결**하는 새로운 국정운영의 방식'을 뜻한다.  
 

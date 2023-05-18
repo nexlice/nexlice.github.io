@@ -10,7 +10,11 @@ description: Learn about the Dark Coin and ZKP!
 
 > 본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다.  
 
-# Read Me
+# Dark Coin and ZKP
+
+---
+
+## Read Me
 실크로드(Silk Road)는 마약 등 불법 물품을 판매하는 암시장 웹사이트이다.  
 실크로드는 다크 웹을 이용하기 때문에 일반 인터넷을 통해 접근할 수 없고,  
 `Tor`와 같은 익명 브라우저를 통해서만 이용할 수 있었다.  

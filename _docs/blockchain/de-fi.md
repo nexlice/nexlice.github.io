@@ -9,8 +9,11 @@ description: Learn about the De-Fi!
 
 > 본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다.  
 
+# De-Fi
 
-# Read Me
+---
+
+## Read Me
 De-Fi는 암호화폐의 등장과 함께, 금융 시스템의 탈중앙화를 꿈꾸는 플랫폼이다.  
 이 콘텐츠에서는 기존 금융 시스템인 Ce-Fi와 탈중앙화 암호화폐 기반의 De-Fi를 살펴본다.  
 
