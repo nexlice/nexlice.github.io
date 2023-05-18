@@ -242,15 +242,39 @@
         - title: Layer 2 Solution
           url: "docs/blockchain/resolving-trilemma#layer-2-solution"
     - title: "Cryptocurrency with Compromised Scability"
-      url: "docs/blockchain/cryptocurrency-with-compromised-scability"
+      url: "docs/blockchain/cryptocurrency-with-compromised-scalability"
+      children:
+        - title: Bitcoin
+          url: "docs/blockchain/cryptocurrency-with-compromised-scalability#bitcoin"
+        - title: Ethereum
+          url: "docs/blockchain/cryptocurrency-with-compromised-scalability#ethereum"
     - title: "Cryptocurrency with Compromised Decentralization"
       url: "docs/blockchain/cryptocurrency-with-compromised-decentralization"
+      children:
+        - title: EOS
+          url: "docs/blockchain/cryptocurrency-with-compromised-decentralization#eos"
+        - title: Hyperledger
+          url: "docs/blockchain/cryptocurrency-with-compromised-decentralization#hyperledger"
+        - title: Hybrid and Consortium
+          url: "docs/blockchain/cryptocurrency-with-compromised-decentralization#hybrid-and-consortium"
+        - title: Wrap up
+          url: "docs/blockchain/cryptocurrency-with-compromised-decentralization#wrap-up"
     - title: "Altcoin"
       url: "docs/blockchain/altcoin"
+      children:
+        - title: Bitcoin Cash
+          url: "docs/blockchain/altcoin#bitcoin-cash"
+        - title: Implications
+          url: "docs/blockchain/altcoin#implications"
     - title: "Off-Chain"
       url: "docs/blockchain/off-chain"
     - title: "Platforms"
       url: "docs/blockchain/platforms"
+      children:
+        - title: Cardano
+          url: "docs/blockchain/platforms#cardano"
+        - title: Algorand
+          url: "docs/blockchain/platforms#algorand"
 
 - title: "Web"
   url: "docs/web/main-page"

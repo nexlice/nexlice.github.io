@@ -1,3 +1,13 @@
+---
+title: Cryptocurrency with Compromised Scability
+tags: 
+ - Bitcoin
+ - Ethereum
+
+---
+
+> 본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다. 
+
 # READ ME
 지금까지 발표된 대표적인 블록체인 플랫폼들을 트릴레마(Trilemma) 관점에서 바라보면,  
 1세대, 2세대, 3세대를 거치면서 합의 알고리즘(Consensus Algorithm), 데이터구조(Ledger Data format), H/W 보완 등 다양한 접근방식을 통해 트릴레마 문제를 해결하려 노력하고 있다 볼 수 있다.  
@@ -7,7 +17,7 @@
 ---
 
 ## Bitcoin
-![bitcoin]()  
+![bitcoin](../../assets/img/bitcoin.png)  
 <br>
 비트코인은 높은 탈중앙화와 보안을 갖추고 있다.  
 그러나 확장성의 한계로 인해 트릴레마를 극복하지 못했다.  
@@ -31,7 +41,7 @@
 ---
 
 ## Ethereum
-![ethereum]()  
+![ethereum](../../assets/img/ethereum.png)  
 <br>
 비트코인의 다음 세대로 불리는 이더리움 또한 확장성 문제에 부딪혔다.  
 현재 이더리움은 이더리움 플랫폼 위의 dApp 상에서 이루어지는 거래를 1초에 약 20건밖에 처리할 수 없는 속도를 가지고 있다.  
@@ -57,6 +67,8 @@
 > 샤딩(Sharding)은 '조각내다'라는 뜻을 가지고 있으며, 데이터베이스 저장기법 중 하나이다.  
 > 하나의 데이터를 조각내고, 네트워크를 통해 분산하여 저장한다.
 
+---
+
 ### Scalability Problem of Ethereum
 이더리움의 거래처리 속도는 20TPS이다.  
 이 수치도 정상적인 네트워크 환경에서 성능이라고 하나, 비자카드와 같이 초당 6,000건 이상 처리할 수 있는 지불수단과 비교가 불가능하다.  
@@ -74,7 +86,7 @@
 리소스 할당에 상응하는 한계를 정해 놓기 위해 수수료 명목으로 그 최대치(GasLimit)가 670만으로 정해져 있다.  
 
 
-![ethereum-gaslimit]()  
+![ethereum-gaslimit](../../assets/img/ethereum-gaslimit.png)  
 
 그렇지만, 가스 수수료로 모든 문제를 해결할 수는 없었다.  
 2017년 11월, 이더리움 플랫폼 위에서 구현한 고양이 NFT 수집 게임 크립토키티는,  
@@ -93,7 +105,7 @@
 또한 채굴 노드들은 여러 트랜잭션 중 가스 수수료를 많이 받을 수 있는 트랜잭션을 우선적으로 처리하려 하므로,  
 가스 수수료에 인플레이션이 발생한다.  
 
-![pending-ethereum-transaction-after-cryptokitties-release]()  
+![pending-ethereum-transaction-after-cryptokitties-release](../../assets/img/pending-ethereum-transaction-after-cryptokitties-release.png)  
 <br>
 이더리움의 노드는 약 500,000개(출처: beaconcha.in)로,  
 비트코인의 11,000여 개와 비교해 보더라도 2배 가까이 많은 노드가 운영되고 있다. (2018년 6월 7일 기준)  
@@ -105,7 +117,7 @@
 위에서 설명한 바와 같이 dApp이 활성화되면 될수록,  
 스마트 컨트랙트의 증가와 수수료의 가중문제는 이더리움 확장성에 치명적인 장애물로 인식될 수 있다.
 
-![ethereums-trilemma]()  
+![ethereums-trilemma](../../assets/img/ethereums-trilemma.png)  
 <br>
 이더리움은 확장성 확보와 dApp 생태계 조성이라는 딜레마적 상황에 부딪혀 있다.  
 이를 극복하기 위해 이더리움 재단은 다양한 시도를 차근차근 준비하면서 진행해가고 있으며,  
@@ -132,4 +144,4 @@
 Raiden과 Plasma는 On-Offchain 방식, 하위체인 생성 방식으로 메인넷에 등록하는 거래량을 줄일 수 있고,  
 Truebit은 컴퓨팅 연산에 대한 부담을 Offchain의 여러 노드가 분산하여 처리하는 방식으로 메인넷의 리소스 할당의 한계를 극복하려고 한다.
 
-![ethereums-trilemma-solutions]()  
+![ethereums-trilemma-solutions](../../assets/img/ethereums-trilemma-solutions.png)  

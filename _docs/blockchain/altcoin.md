@@ -1,3 +1,12 @@
+---
+title: Altcoin
+tags: 
+ - Bitcoin Cash
+
+---
+
+> 본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다. 
+
 # Altcoin
 알트코인(Altcoin)은 대안(Alternative)과 화폐(Coin)의 합성어로, 비트코인을 개량한 암호화폐 전체를 의미한다.  
 비트코인은 프로그램 소스 코드를 공개하는 오픈소스이기 때문에, 이를 참고해 새로운 암호화폐를 누구라도 개발할 수 있다.  
@@ -5,12 +14,12 @@
 알트코인은 비트코인의 문제를 해결하기 위해, 비트코인을 하드포크하거나 제네시스 블록에서부터 새롭게 시작하여 만들어진다.  
 
 ## Bitcoin Cash
-![bitcoin-cash]()  
+![bitcoin-cash](../../assets/img/bitcoin-cash.png)  
 
 ---
 
 ### Background
-![bitcoin-cash-trilemma]()  
+![bitcoin-cash-trilemma](../../assets/img/bitcoin-cash-trilemma.png)  
 
 비트코인의 트랜잭션 속도가 느려지는 이유는,  
 시간에 흐름에 따라 일정한 간격으로 생성되는 블록의 크기(사이즈)와 그 블록에 담을 수 있는 트랜잭션 개수가 한정되어 있기 때문이다.  
@@ -19,12 +28,14 @@
 비트코인 캐시는 기존에 비트코인이 가지고 있는 탈중앙화 구조를 유지하고,  
 10분이라는 블록 생성 주기를 조정하지 않은 상태에서 트랜잭션 속도를 올릴 수 있는 효율적인 방법이었다.
 
+---
+
 ### Problems
 **Restricted Scalability**  
 그러나, 기존 구조를 거의 변경하지 않았다는 점에서 그 확장성의 효과는 제한적일 수밖에 없다.  
 블록체인에 참여하는 노드의 수가 증가하고 앞으로 더 많은 트랜잭션이 나타나게 되면,  
 거래처리 속도는 지금의 지연상태와 같이 수 시간 또는 수일 동안 거래가 처리되지 않을 가능성이 높다.  
-![bitcoin-cash-trilemma-1]()  
+![bitcoin-cash-trilemma-1](../../assets/img/bitcoin-cash-trilemma-1.png)  
 
 **Centralization of Resources**  
 비트코인, 그리고 비트코인에서 하드포크한 알트코인인 비트코인 캐시는, 비교적 탈중앙 구조를 유지하고 있지만,  
@@ -48,7 +59,7 @@
 채굴 농장에서 유효하지 않은 트랜잭션을 블록에 담아 합의에 도달할 수도 있기 때문에,  
 블록체인 네트워크의 무결성이 깨진다.  
 
-![latest-bitcoin-cash-blocks-by-mining-pool]()  
+![latest-bitcoin-cash-blocks-by-mining-pool](../../assets/img/latest-bitcoin-cash-blocks-by-mining-pool.png)  
 
 실제로 이러한 우려가 현실로 나타나고 있다.  
 <br>
@@ -71,6 +82,8 @@
 채굴 노드를 운영하는 집단의 수익 지향적 채굴정책으로 말미암아, 건전하게 운영되어야 하는 비트코인 거버넌스에 균열이 생겼으며, 비트코인 캐시와 같은 체인 분기가 이루어졌다.  
 앞으로도 체인분기는 얼마든지 있을 수 있으며, 그때마다 새로운 수익 지향적 권력층이 나타날 수 있다.  
 이 모든 것들은 결국 자본과 수익을 좇는 인간의 욕망이 그대로 투영되어 나타난 결과라 볼 수 있습니다.
+
+---
 
 ## Implications
 건전한 블록체인 생태계를 만들기 위해서는 자본과 수익지향 중심적인 인간의 욕망을 제어할 수 있는 기재가 블록체인 생태계 시스템에 반영되어 있어야 한다.  
