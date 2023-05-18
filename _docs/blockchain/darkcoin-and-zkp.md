@@ -58,6 +58,7 @@ description: Learn about the Dark Coin and ZKP!
 위 실험을 여러 번에 걸쳐 수행하더라도,  
 증명자가 검증자의 지시를 계속 따르게 된다면,  
 검증자는 증명자가 열쇠를 가지고 있다고 납득할 수 있다.  
+<br>
 - **건전성(Soundness)**  
 어떤 조건이 거짓이면,  
 신뢰할 수 없는 증명자(Dishonest Prover)는,  
@@ -65,6 +66,7 @@ description: Learn about the Dark Coin and ZKP!
 증명자가 사실은 열쇠가 없지만, 있다고 거짓말을 한 경우,  
 언젠가 한 번은 검증자의 지시에 따르지 못하는 경우가 생기기 때문에,  
 검증자에게 열쇠가 있다는 것을 증명할 수 없다.  
+<br>
 - **영지식성(Zero-knowledge)**  
 어떤 조건이 참일 때,  
 검증자는 이 조건이 참이라는 사실 이외의 아무 정보를 알 수 없다.  
