@@ -229,6 +229,18 @@
           url: "docs/blockchain/trilemma#security"
         - title: Decentralization
           url: "docs/blockchain/trilemma#decentralization"
+    - title: "Interactions among Three Elements and Their Limitations"
+      url: "docs/blockchain/interactions-among-three-elements-and-their-limitations"
+      children:
+        - title: Pros and Cons
+          url: "docs/blockchain/interactions-among-three-elements-and-their-limitations#pros-and-cons"
+    - title: "Resolving Trilemma"
+      url: "docs/blockchain/resolving-trilemma"
+      children:
+        - title: Layer 1 Solution
+          url: "docs/blockchain/resolving-trilemma#layer-1-solution"
+        - title: Layer 2 Solution
+          url: "docs/blockchain/resolving-trilemma#layer-2-solution"
 
 - title: "Web"
   url: "docs/web/main-page"

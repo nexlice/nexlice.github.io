@@ -1,5 +1,16 @@
+---
+title: Resolving Trilemma
+tags: 
+ - Layer 1
+ - Layer 2
+
+
+---
+
+> 본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다.  
+
 # READ ME
-![blockstream]()  
+![blockstream](../../assets/img/blockstream.png)  
 <br>
 블록체인과 암호화폐에 대한 관심이 높아지며 사용자와 거래 건수도 증가하고 있다.  
 이처럼 증가하는 수요를 안정적으로 감당하려면 **확장성 문제**에 직면할 수밖에 없다.  

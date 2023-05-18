@@ -31,7 +31,7 @@ tags:
 이용자는 빠른 트랜잭션 처리를 위해서 수수료를 계속 추가하기 때문에, 수수료 또한 비싸진다.  
 반면, 리플은 탈중앙성보다 보안성과 확장성을 선택했고, 이오스는 탈중앙성과 보안성을 희생하고 확장성을 선택했다.  
 
-![trilemma-priority]()  
+![trilemma-priority](../../assets/img/trilemma-priority.png)  
 
 ## Pros and Cons
 
@@ -46,6 +46,8 @@ tags:
 
 **단점**  
 - 확장성은 탈중앙성을 희생해야 한다.  
+
+---
 
 ### Security Focused Networks
 
@@ -69,6 +71,7 @@ tags:
 > 다시 말해, 이 4,000개 블록에 담긴 이더리움 클래식의 가치는,  
 > 공격자가 사용한 2백만 달러보다 훨씬 많은 가치를 가지고 있었기 때문이다.
 
+---
 
 ### Decentralizaed Networks
 **장점**  
