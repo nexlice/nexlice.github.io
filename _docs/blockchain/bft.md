@@ -1,5 +1,22 @@
-# READ ME
+---
+title: Byzantine Falut Tolerance
+tags: 
+ - FLP
+ - Safety
+ - Liveness
+
+---
+
+> 본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다.  
+
+# Byzantine Falut Tolerance
+
+---
+
+## READ ME
 분산 네트워크 분야에서 가장 오래된 이슈이며 풀어야 할 대표적인 문제가 “비잔틴 장군의 딜레마"이다.  
+
+---
 
 ## Byzantine Generals Problem  
 전쟁 중이라고 가정해 보자.
@@ -19,7 +36,7 @@
 위에서의 예처럼 분산 네트워크 환경에서 악의적인 노드(배신자)가 존재할 때,  
 이를 어떻게 극복하고 합의에 도달할 수 있느냐가 “비잔틴 장군의 딜레마"이다.  
 
-![byzantine-1]()  
+![byzantine-1](../../assets/img/byzantine-1.png)  
 
 다시 쉽게 위의 예시를 기반으로 설명한다.  
 4개의 부대 중 최소 3개 부대 이상이 동시에 공격해야 적군의 도시를 함락시킬 수 있다고 가정한다.  
@@ -33,8 +50,8 @@
 이러한 문제점을 해결하기 위해 메시지를 전송하는 방법을 바꿔보자.  
 각 부대가 모든 부대에서 메시지를 전파하는 방법이다.  
 
-![byzantine-2]()  
-![byzantine-3]()  
+![byzantine-2](../../assets/img/byzantine-2.png)  
+![byzantine-3](../../assets/img/byzantine-3.png)  
 
 - **A → B, C, D** : 3시에 공격하자  
 - **B → A, C, D** : 6시에 공격하자  
@@ -68,6 +85,8 @@ A, C, D 셋 다 다수결에 의해 **“3시 공격"**으로 판단하게 된�
 소규모 노드라면 크게 문제가 없겠지만, 노드가 늘어날수록 통신량은 기하급수적으로 늘어나게 된다.  
 따라서 PBFT 방식은 Public 블록체인에는 적합한 방식이 아니라고 할 수 있다.  
 
+---
+
 ## Issues With The Existing Consensus 
 작업증명 알고리즘과 지분증명 알고리즘이 적용된 블록체인이 작동하기 위해서는 내부 가상 화폐 등의 보상 시스템이 꼭 필요하다.  
 블록체인의 노드들이 작업증명 알고리즘에서 사용하는 에너지 낭비 방식의 채굴을 수행하는 이유는,  
@@ -87,6 +106,8 @@ A, C, D 셋 다 다수결에 의해 **“3시 공격"**으로 판단하게 된�
 <br>
 기존 확률적 합의 알고리즘의 문제점을 개선하고자 기존 분산시스템에서 상태 기계 복제(State Machine Replication)를 위해 활용한 BFT (Byzantine Fault Tolerance) 합의 알고리즘 방식을 소개합니다.
 
+---
+
 ### CFT vs BFT
 CFT(Crash Fault Tolerance)는 분산시스템에서 노드가 비정상적인 충돌에 의해 문제가 생기더라도,  
 나머지 시스템에서 서비스를 할 수 있게 하는 작동방식을 말한다.  
@@ -98,6 +119,8 @@ CFT(Crash Fault Tolerance)는 분산시스템에서 노드가 비정상적인 �
 <br>
 컨소시엄형 블록체인 시스템(하이퍼레저 패브릭 등)에서는 보통 조직들이 이미 신원확인 등을 통해 허가받은 상태에서 참여하기 때문에, 악의적인 행위를 하지 않을 것이라 믿고 서비스한다.  
 따라서, 특정 상황에, 노드에 문제가 생기는 경우에 대해서만 염두에 둔 CFT 기반의 오더링 알고리즘이 우선되고 있다.  
+
+---
 
 ### BFT(Byzantine Fault Tolerance)
 ![bft]()  
@@ -114,6 +137,8 @@ CFT(Crash Fault Tolerance)는 분산시스템에서 노드가 비정상적인 �
 > 번역에 따라 ‘Tolerance’를 ‘내성’이라고 번역하는 경우도 있다.  
 > 이는 비잔티움 장군 중 배신자를 ‘허용한다’가 아니라 “배신자가 있어도 견딘다”라는 의미를 나타내기도 한다. 
 
+---
+
 #### The Situation of the Byzantine Generals Problem
 n개의 비잔틴 부대가 적의 도시를 포위하고 있고, 각 부대는 부대마다 배치된 장군의 명령에 따른다.  
 한 명의 장군은 나머지 n-1명의 장군과 통신할 때 각각의 장군에게 전령을 보내는 것으로만 통신할 수 있다.  
@@ -122,8 +147,10 @@ n개의 비잔틴 부대가 적의 도시를 포위하고 있고, 각 부대는 
 그러나 장군 중 배신자가 있을 수 있고, 배신자들은 근거 없이 아무 의견이나 제시할 수 있다.  
 배신한 장군들의 방해를 뚫고 공격 여부를 합의할 방법(알고리즘)이 필요하게 된다.  
 
+---
+
 #### The Process
-![bft-the-process]()  
+![bft-the-process](../../assets/img/bft-the-process.png)  
 <br>
 우선 클라이언트가 모든 노드에 요청을 브로드캐스팅한다.  
 리더가 처음 순차적으로 명령을 다른 노드에 전달한다.  
@@ -144,6 +171,7 @@ PoW나 PoS와는 달리 다수결로 의사 결정한 뒤 블록을 만들기 �
 반면 언제나 참가자 전원과 의사소통해야 하므로 참가자가 증가하면 통신량이 증가하고 처리량이 저하된다.  
 따라서 PoW나 PoS는 수천 개의 노드를 만들 수 있지만 BFT는 수십 개의 노드가 한계이다.  
 
+---
 
 ### PBFT
 PBFT(Practical Byzantine Fault Tolerance)는 분산시스템이 약속된 행동을 하지 않는, 비잔틴 노드가 존재할 수 있는 비동기 시스템일 때,  
@@ -152,7 +180,7 @@ PBFT(Practical Byzantine Fault Tolerance)는 분산시스템이 약속된 행동
 PBFT는 기존의 BFT 합의 알고리즘이 동기식 네트워크에서만 합의할 수 있었던 문제를 해결하여,  
 비잔틴 노드가 있는 비동기 네트워크에서 합의를 이룰 수 있게 하였다.
 
-![pbft]()  
+![pbft](../../assets/img/pbft.png)  
 
 위의 그림은 PBFT 알고리즘이 동작하는 방식을 나타낸 것이다.  
 이러한 기존 분산 시스템에서 사용하던 합의 알고리즘은 Primary 혹은 Leader라 불리는 특별한 노드가 존재한다.  
@@ -169,6 +197,8 @@ PBFT는 두 번의 브로드캐스팅 과정을 이용해,
 네트워크의 모든 노드는 같은 메시지를 가질 수 있게 하였다.  
 이러한 PBFT 알고리즘은 IBM Fabric 0.6v이나 1.0v의 Orderer서비스, R3 Corda의 Notary와 같은 프라이빗 블록체인에서 사용하고 있다.
 
+---
+
 #### Pros
 - **트랜잭션 완결성과 빠른 거래 확정**  
  PBFT는 다음 블록 합의가 이루어진다면 제안된 블록의 합의 내용이 확정되어서,  
@@ -176,8 +206,10 @@ PBFT는 두 번의 브로드캐스팅 과정을 이용해,
 - **저에너지로 비용 감소**  
 PBFT는 작업증명방식(PoW)이 아니고 지분증명방식(PoS)을 기본으로 하여 에너지 사용량이 적고, 따라서 거래 비용이 적다.
 
+---
+
 ### Tendermint
-![tendermint]()  
+![tendermint](../../assets/img/tendermint.jpeg)  
 
 Tendermint는 Cosmos에서 사용하는 합의 알고리즘으로 PBFT 알고리즘을 공개 및 비공개 블록체인에 맞도록 개량한 합의 알고리즘이다.  
 Tendermint는 전통적인 합의 알고리즘이 블록체인에 적용된 의미 있는 사례이며 DPoS(Delegated Proof-of-Stake) 개념과 PBFT 개념을 섞어 공개 및 비공개 블록체인에서 사용할 수 있도록 한 합의 알고리즘이다.
@@ -191,13 +223,17 @@ Tendermint는 앞에서 언급하였듯이 PBFT에 DPoS개념을 추가하여 �
 Tendermint는 투표할 때 Locking 메커니즘을 통해 투표에 참여한 지분을 네트워크에 동결시키고 이를 해제하는 메커니즘을 통해 이중 투표 문제를 막고 지분으로 네트워크를 유지하게 한다.  
 또한 이중 투표 시도와 같은 블록체인을 공격하려는 악의적인 행위를 하면 지분을 빼앗는 방법으로 기존의 블록체인이 네트워크 공격 노드에 아무런 처벌을 하지 않던 문제(Nothing of Stake) 문제를 해결하였다.  
 
+---
+
 #### Pros
 1. Tendemint는 블록을 노드들에게 전파(Gossip)하는 방식을 단순화하고 노드의 수를 늘릴 수 있게 했다.
 2. Tendermint는 블록제안자를 수시로 교체할 수 있게 하여 안정성을 높였다.
 3. Tendermint는 비잔티움 노드를 쉽게 발견하여 처벌할 수 있도록 했다.
 
+---
+
 #### Limitations of PBFT
-![limitations-of-pbft]()  
+![limitations-of-pbft](../../assets/img/limitations-of-pbft.jpeg)  
 <br>
 PBFT는 합의 그룹 크기가 커짐에 따라 합의 속도가 느려지는 문제가 있다.  
 100개 이상의 노드를 운영하기는 쉽지 않다.  
@@ -209,13 +245,15 @@ PBFT는 합의 그룹 크기가 커짐에 따라 합의 속도가 느려지는 �
 100개 노드로 합의를 이루려면 16,434번의 통신이 필요하고,  
 49개 노드로 합의를 이루려면 3,888번의 통신이 필요하다.
 
+---
 
 ### DBFT(Delegated Byzantine Fault Tolerant)
-![dbft]()  
+![dbft](../../assets/img/dbft.png)  
 
 - Pros : 빠른 처리 속도, 포크가 일어나지 않고 완료성이 좋다.
 - Cons : 특정 노드에 권력 집중, 노드 간의 단합 위험.
 
+---
 
 ## Further Study
 - DBFT (Delegated Byzantine Fault Tolerant)

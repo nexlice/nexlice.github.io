@@ -1,4 +1,18 @@
-# READ ME
+---
+title: Safety and Liveness
+tags: 
+ - FLP
+ - Safety
+ - Liveness
+
+---
+
+> 본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다.  
+
+# Safety and Liveness
+
+---
+## READ ME
 이상적인 합의 알고리즘 다음의 두 속성을 만족시켜야 한다.  
 - **Safety**  
 시스템에 나쁜 일이 발생하지 않는다는 의미이며, 모든 정상적인 참여자는 같은 상태에 동의하여야 하고, 그 상태는 유효해야 한다.  

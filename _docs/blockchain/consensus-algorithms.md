@@ -1,4 +1,30 @@
-# READ ME
+---
+title: Consensus Algorithms
+tags: 
+ - public
+ - private
+ - consortium
+ - liveness
+ - safety
+ - pow
+ - pos
+ - dpos
+ - dpoet
+ - pbft
+ - poa
+ - paxos
+ - raft
+ - sieve
+
+---
+
+> 본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다.  
+
+# Consensus Algorithms
+
+---
+
+## READ ME
 합의 프로토콜은 Safety와 Liveness를 모두 만족시켜야 한다.  
 
 > **Liveness over Safety**  
@@ -25,6 +51,8 @@
 - Finality Problem (완결성 문제)
 - 51% Attack/BTF (51% 공격과 비잔틴 결함)
 - Transaction Cost (트랜잭션 수수료)
+
+---
 
 ## Types with Pros and Cons
 이전에 합의 알고리즘을 학습하며 제공된 장단점 표이다.  

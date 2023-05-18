@@ -275,6 +275,31 @@
           url: "docs/blockchain/platforms#cardano"
         - title: Algorand
           url: "docs/blockchain/platforms#algorand"
+    - title: "Safety and Liveness"
+      url: "docs/blockchain/safety-and-liveness"
+      children:
+        - title: FLP Impossibility
+          url: "docs/blockchain/safety-and-liveness#flp-impossibility"
+        - title: Liveness over Safety
+          url: "docs/blockchain/safety-and-liveness#liveness-over-safety"
+        - title: Safety over Liveness
+          url: "docs/blockchain/safety-and-liveness#safety-over-liveness"
+    - title: "Byzantine Fault Tolerance"
+      url: "docs/blockchain/bft"
+      children:
+        - title: Byzantine Generals Problem
+          url: "docs/blockchain/bft#byzantine-generals-problem"
+        - title: Issues With The Existing Consensus 
+          url: "docs/blockchain/bft#issues-with-existing-consensus"
+        - title: Further Study
+          url: "docs/blockchain/bft#further-study"
+    - title: "Consensus Algorithms"
+      url: "docs/blockchain/consensus-algorithms"
+      children:
+        - title: Criteria
+          url: "docs/blockchain/consensus-algorithms#criteria"
+        - title: Types with Pros and Cons
+          url: "docs/blockchain/consensus-algorithms#types-with-pros-and-cons"
 
 - title: "Web"
   url: "docs/web/main-page"
