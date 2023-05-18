@@ -11,7 +11,10 @@ description: Learn about the difference between Coins and Tokens!
 
 > 본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다.  
 
-# Read Me
+# Coins and Tokens
+
+---
+## Read Me
 블록체인을 공부하다 보면, '코인' 또는 '토큰'이라는 단어를 자주 접하게 된다.  
 또 우리가 암호화폐에 투자한다고 햇을 때 다음과 같은 말을 듣기도 한다.  
 > 'OO 코인에 투자했다', 'OO 토큰의 가치가 올랐다'  
