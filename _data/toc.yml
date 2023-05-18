@@ -241,6 +241,16 @@
           url: "docs/blockchain/resolving-trilemma#layer-1-solution"
         - title: Layer 2 Solution
           url: "docs/blockchain/resolving-trilemma#layer-2-solution"
+    - title: "Cryptocurrency with Compromised Scability"
+      url: "docs/blockchain/cryptocurrency-with-compromised-scability"
+    - title: "Cryptocurrency with Compromised Decentralization"
+      url: "docs/blockchain/cryptocurrency-with-compromised-decentralization"
+    - title: "Altcoin"
+      url: "docs/blockchain/altcoin"
+    - title: "Off-Chain"
+      url: "docs/blockchain/off-chain"
+    - title: "Platforms"
+      url: "docs/blockchain/platforms"
 
 - title: "Web"
   url: "docs/web/main-page"
