@@ -1,4 +1,16 @@
-# READ ME
+---
+title: Miners
+tags: 
+ - hash rate
+ - mining pool
+ - PoW
+ - PoS
+
+---
+
+> 본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다.  
+
+# Miners
 채굴(mining)이란, **블록체인 네트워크에서 노드로 트랜잭션을 검증하여 분산원장(블록)에 기록하고, 보상으로 암호화폐를 얻는 것**을 뜻한다.  
 <br>
 새로운 블록을 만드는 것이 바로 채굴의 핵심이며, 블록을 생성하여 체인에 연결한 노드는 행위에 대한 보상을 받는다.  
@@ -14,13 +26,15 @@
 > 통상적으로 PoW 합의 알고리즘에서의 블록 생성 및 보상을 수령하는 노드를 채굴자(miner)라고 하고,  
 > PoS방식 등 전력 소모를 통해 블록을 생성하지 않는 다른 합의 알고리즘에서는 블록 제안자(proposer)라고 한다.  
 
-![mining-pow-award]()  
+![mining-pow-award](../../assets/img/mining-pow-award.png)  
 
 왜 채굴자(Miner)들은 설명만 들어도 복잡한 과정을 진행하며 채굴할까?  
 이는 채굴을 하는 행위가 채굴자들에게 이익이 되기 때문이다.  
 이 부분은 앞에서 배운 **토큰 이코노미(Token Economy)**와 **크립토 이코노미(Crypto Economy)**의 생태계를 통해 파악할 수 있다.  
 
-## What Miners Do
+---
+
+## What Does Miners Do
 토큰 이코노미(Token Economy)와 크립토 이코노미(Crypto Economy)를 통하여 채굴(Mining)하는 행위는 **블록체인 네트워크를 유지**하면서 개인에게는 이익을 줄 수 있다.  
 그렇다면, 비트코인에서는 채굴자가 **어떤 작업을 통해 채굴하는지**, 또한 **보상은 어떻게 받는지** 알아보자.  
 <br>
@@ -113,7 +127,7 @@
 아래 그래프는 연도에 따른 테라 해시율을 보여줍니다.  
 예를 들어 150M TH/s는 초당 150,000,000,000,000,000,000개의 해시값이 계산됨을 의미한다.  
 
-![total-hash-rate]()  
+![total-hash-rate](../../assets/img/total-hash-rate.png)  
 
 ---
 
@@ -163,7 +177,7 @@ A와 C의 해시파워가 도합 25가 되어 B의 해시파워를 넘는다.
 오늘날 다양한 네트워크에 여러 채굴 풀이 존재한다.  
 이러한 채굴 풀들은 네트워크에서 다른 노드들과 동일하게 채굴 경쟁을 한다.  
 
-![why-mining-pool]()  
+![why-mining-pool](../../assets/img/why-mining-pool.png)  
 
 ---
 
@@ -171,7 +185,7 @@ A와 C의 해시파워가 도합 25가 되어 B의 해시파워를 넘는다.
 비트코인 채굴 풀 중 하나인 [BTC.com](https://btc.com/)의 홈페이지를 보면 아래와 같은 각 채굴 풀의 해시레이트를 확인할 수 있다.  
 > 우리나라 사람이 만든 채굴조합에는 마이닝풀 허브(Mining Pool Hub, 약칭 '마풀허')가 있다.
 
-![kinds-of-mining-pools]()  
+![kinds-of-mining-pools](../../assets/img/kinds-of-mining-pool.png)  
 
 ---
 
@@ -231,7 +245,7 @@ A와 C의 해시파워가 도합 25가 되어 B의 해시파워를 넘는다.
 채굴 공장 성행으로 목표의 6배에 달하는 1억 8,000만t을 더 쓰게 될 것 같다”며,  
 지역 내 모든 채굴 공장에 영업 정지령을 내렸다.  
 
-![annual-electricity-consumption]()  
+![annual-electricity-consumption](../../assets/img/annual-electricity-consumption.jpg)  
 
 전 세계 비트코인 채굴 순위 6위인 이란도,  
 2020년 말부터 2021년 초까지 채굴 공장 때문에 대규모 정전 손해를 입었다.  
