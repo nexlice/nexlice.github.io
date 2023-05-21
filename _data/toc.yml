@@ -56,16 +56,45 @@
           url: "docs/distributed-ledger/merkle-tree#further-study"
     - title: "Tap Root"
       url: "docs/distributed-ledger/tap-root"
+      children:
+        - title: Schnorr Signatures
+          url: "docs/distributed-ledger/tap-root#schnorr-signatures"
+        - title: Pros
+          url: "docs/distributed-ledger/tap-root#pros"
     - title: "Bloom Filter"
       url: "docs/distributed-ledger/bloom-filter"
+      children:
+        - title: Operations
+          url: "docs/distributed-ledger/bloom-filter#operations"
+        - title: Implementations
+          url: "docs/distributed-ledger/bloom-filter#implementations"
     - title: "DAG"
       url: "docs/distributed-ledger/dag"
+      children:
+        - title: Operations
+          url: "docs/distributed-ledger/dag#operations"
+        - title: Features
+          url: "docs/distributed-ledger/dag#features"
+        - title: Further Study
+          url: "docs/distributed-ledger/dag#further-study"
     - title: "DHT"
       url: "docs/distributed-ledger/dht"
     - title: "IPFS"
       url: "docs/distributed-ledger/ipfs"
+      children:
+        - title: Features
+          url: "docs/distributed-ledger/ipfs#features"
+        - title: Operations
+          url: "docs/distributed-ledger/ipfs#operations"
+        - title: References
+          url: "docs/distributed-ledger/ipfs#references"
     - title: "Pruning"
       url: "docs/distributed-ledger/pruning"
+      children:
+        - title: Bitcoin
+          url: "docs/distributed-ledger/pruning#bitcoin"
+        - title: Ethereum
+          url: "docs/distributed-ledger/pruning#ethereum"
 
 - title: "Blockchain"
   url: "docs/blockchain/main-page"

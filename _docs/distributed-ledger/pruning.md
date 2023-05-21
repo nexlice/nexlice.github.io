@@ -1,3 +1,13 @@
+---
+title: Pruning
+tags: 
+ - Block File Pruning
+ - State Trie Pruning
+
+---
+
+> 본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다.  
+
 # Pruning
 **프루닝(Pruning)**은 경량화 기법의 하나로, 
 인공 지능(딥러닝) 분야에서 검색 모델을 학습한 후에 불필요하거나 중요도가 낮은 노드 등을 제거하는 기술을 일컫는다.  
@@ -11,7 +21,9 @@
 이에 따라 성능의 저하를 최소화하고, 정확도를 높이는 일에 기여한다.  
 프루닝은 블록체인에서 오래된 블록체인 데이터를 자동으로 삭제하기 위해 사용한다.  
 
-## Pruning in BitCoin
+---
+
+## Bitcoin
 비트코인의 노드는 블록체인의 사본을 보관하고 네트워크를 실행하는 데에 필요한 여러 태스크를 수행한다.  
 그러나 하나의 문제가 있다면, 많은 스토리지를 낭비한다는 것이다.  
 <br>
@@ -48,7 +60,7 @@
 
 ---
 
-## Pruning in Ethereum
+## Ethereum
 이더리움에서는 프루닝을 `State Trie Pruning`이라고 한다.  
 <br>
 State Trie Pruning은 현재 상태를 Prefix Tree의 일종인 Modified Merkle Patricia Trie(MPT, 상태전이 일반 머클 확장 페트리샤 트리)로 저장한다.  
@@ -66,7 +78,7 @@ State Trie Pruning은 현재 상태를 Prefix Tree의 일종인 Modified Merkle 
 MPT는 State Root의 Hash를 계산하기 위해 전체를 볼 필요가 없다.  
 수정된 브랜치의 Hash만 다시 계산하기에, 빠르게 root Hash를 찾을 수 있다.  
 
-![state-trie-pruning]()  
+![state-trie-pruning](../../assets/img/state-trie-pruning.png)  
 
 MPT는 새로 삽입되는 노드의 수를 최소화한다.  
 예를 들어, 위의 그림에서 Block N과 Block N + 1의 차이는 A의 오른쪽 자식의 값이 10에서 20으로 변경된 것뿐이다.  

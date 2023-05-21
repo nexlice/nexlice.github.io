@@ -1,3 +1,15 @@
+---
+title: Bloom Filter
+
+tags: 
+ - False Positive
+ - lookup
+ - irremovable
+
+---
+
+> 본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다.  
+
 # Bloom Filter
 블룸필터(Bloom Filter)는 특정 원소가 집합에 속하는지 검사하는 데 사용할 수 있는 확률형 자료 구조이다.  
 <br>
@@ -33,23 +45,23 @@ SPV 노드는 블룸필터를 사용해 이웃 노드들에게 특정 거래를 
 1. 블랙리스트 로그에 x의 IP를 저장한다.  
 2. IP x를 가져와 3개의 해싱함수(f1, f2, f3)로 해싱한다.  
 3. 각 해싱 값에 해당하는 배열 인덱스값을 1로 수정한다.  
-![bloom-filter-1]()  
+![bloom-filter-1](../../assets/img/bloom-filter-1.png)  
 4. IP y로 1~3번 과정을 반복한다.  
-![bloom-filter-2]()  
+![bloom-filter-2](../../assets/img/bloom-filter-2.png)  
 5. IP z로 1~3번 과정을 반복한다.  
 (혹, 이전 인덱스값이 0이 아닌 1인 경우 수정 없이 1로 유지한다.)  
-![bloom-filter-3]()  
+![bloom-filter-3](../../assets/img/bloom-filter-3.png)  
 
 
 ---
 
 ### Comparison Orders of Blacklist and IP Address
 1. w라는 IP를 가진 패킷을 받습니다.  
-![bloom-filter-4]()  
+![bloom-filter-4](../../assets/img/bloom-filter-4.png)  
 2. IP w를 위의 방식과 같이 3개의 해싱함수(f1, f2, f3)로 해싱한다.  
 3. `4`, `13` 인덱스값은 1이지만 `15`의 인덱스값은 0이므로 w라는 IP는 블랙리스트 IP가 아니다.  
 (만약 `4`, `13`, `15` 모두 1이라면 블랙리스트 IP입니다 → False Positive)  
-![bloom-filter-5]()  
+![bloom-filter-5](../../assets/img/bloom-filter-5.png)  
 
 ---
 
