@@ -23,7 +23,7 @@ tags:
 SPV 노드는 블룸필터를 사용해 이웃 노드들에게 특정 거래를 제공해 달라고 요청하는데,  
 이때 노드는 검색 중인 주소가 정확히 어떤 주소인지 밝힐 필요는 없다.  
 
-> **SPV(Simplified Payment Verification) 노드**
+> **SPV(Simplified Payment Verification) 노드**  
 > 블록체인의 모든 정보를 저장하는 대신, 블록 헤더만을 저장하여 거래의 유효성을 검사하는 노드를 의미한다.  
 
 ---
@@ -56,11 +56,11 @@ SPV 노드는 블룸필터를 사용해 이웃 노드들에게 특정 거래를 
 ---
 
 ### Comparison Orders of Blacklist and IP Address
-1. w라는 IP를 가진 패킷을 받습니다.  
+1. w라는 IP를 가진 패킷을 받는다.  
 ![bloom-filter-4](../../assets/img/bloom-filter-4.png)  
 2. IP w를 위의 방식과 같이 3개의 해싱함수(f1, f2, f3)로 해싱한다.  
 3. `4`, `13` 인덱스값은 1이지만 `15`의 인덱스값은 0이므로 w라는 IP는 블랙리스트 IP가 아니다.  
-(만약 `4`, `13`, `15` 모두 1이라면 블랙리스트 IP입니다 → False Positive)  
+(만약 `4`, `13`, `15` 모두 1이라면 블랙리스트 IP이다 → False Positive)  
 ![bloom-filter-5](../../assets/img/bloom-filter-5.png)  
 
 ---

@@ -13,7 +13,8 @@ tags:
 > 본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다.  
 
 # IPFS
-IPFS(InterPlanetary File System)는 Git, BitTorrent, Kademlia, Bitcoin 등과 같은 서비스에서 영감을 받아 시작한 무료 오픈 소스 프로젝트이다.  
+IPFS(InterPlanetary File System)는 Git, BitTorrent, Kademlia, Bitcoin 등과 같은 서비스에서 영감을 받아 시작한  
+무료 오픈 소스 프로젝트이다.  
 <br>
 “인터넷과 웹의 인프라를 발전시키자"라는 비전으로 현재 약 수천 명의 컨트리뷰터와 함께 운영되고 있다.  
 <br>
