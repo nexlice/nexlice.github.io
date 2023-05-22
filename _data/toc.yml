@@ -357,7 +357,7 @@
         - title: Mining Pool
           url: "docs/blockchain/miners#mining-pool"
         - title: The Kinds of Mining Pools
-          url: "docs/blockchain/miners#the-kinds-of-the-mining-pools"
+          url: "docs/blockchain/miners#the-kinds-of-mining-pools"
         - title: Custody Service
           url: "docs/blockchain/miners#custody-service"
         - title: Problems of PoW Mining
