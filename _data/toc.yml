@@ -343,6 +343,25 @@
           url: "docs/blockchain/consensus-algorithms#types-with-pros-and-cons"
     - title: "Miners"
       url: "docs/blockchain/miners"
+      children:
+        - title: What Does the Miners Do?
+          url: "docs/blockchain/minders#what-does-the-miners-do"
+        - title: Rewards
+          url: "docs/blockchain/minders#rewards"
+        - title: Transaction Fee
+          url: "docs/blockchain/minders#transaction-fee"
+        - title: Hashrate
+          url: "docs/blockchain/minders#hashrate"
+        - title: TPS
+          url: "docs/blockchain/minders#tps"
+        - title: Mining Pool
+          url: "docs/blockchain/minders#mining-pool"
+        - title: The Kinds of Mining Pools
+          url: "docs/blockchain/minders#the-kinds-of-the-mining-pools"
+        - title: Custody Service
+          url: "docs/blockchain/minders#custody-service"
+        - title: Problems of PoW Mining
+          url: "docs/blockchain/minders#problems-of-pow-mining"
     - title: "Mining Hardwares"
       url: "docs/blockchain/mining-hardwares"
     - title: "PoW"

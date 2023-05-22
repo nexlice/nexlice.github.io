@@ -34,7 +34,7 @@ tags:
 
 ---
 
-## What Does Miners Do
+## What Does the Miners Do
 토큰 이코노미(Token Economy)와 크립토 이코노미(Crypto Economy)를 통하여 채굴(Mining)하는 행위는 **블록체인 네트워크를 유지**하면서 개인에게는 이익을 줄 수 있다.  
 그렇다면, 비트코인에서는 채굴자가 **어떤 작업을 통해 채굴하는지**, 또한 **보상은 어떻게 받는지** 알아보자.  
 <br>
