@@ -381,7 +381,7 @@
         - title: Bitcoin Mining Algorithm
           url: "docs/blockchain/pow#bitcoin-mining-algorithm"
     - title: "PoS"
-      url: "docs/blockchain/PoS"
+      url: "docs/blockchain/pos"
       children:
         - title: Cons
           url: "docs/blockchain/pos#cons"
