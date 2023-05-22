@@ -345,23 +345,23 @@
       url: "docs/blockchain/miners"
       children:
         - title: What Does the Miners Do?
-          url: "docs/blockchain/minders#what-does-the-miners-do"
+          url: "docs/blockchain/miners#what-does-the-miners-do"
         - title: Rewards
-          url: "docs/blockchain/minders#rewards"
+          url: "docs/blockchain/miners#rewards"
         - title: Transaction Fee
-          url: "docs/blockchain/minders#transaction-fee"
+          url: "docs/blockchain/miners#transaction-fee"
         - title: Hashrate
-          url: "docs/blockchain/minders#hashrate"
+          url: "docs/blockchain/miners#hashrate"
         - title: TPS
-          url: "docs/blockchain/minders#tps"
+          url: "docs/blockchain/miners#tps"
         - title: Mining Pool
-          url: "docs/blockchain/minders#mining-pool"
+          url: "docs/blockchain/miners#mining-pool"
         - title: The Kinds of Mining Pools
-          url: "docs/blockchain/minders#the-kinds-of-the-mining-pools"
+          url: "docs/blockchain/miners#the-kinds-of-the-mining-pools"
         - title: Custody Service
-          url: "docs/blockchain/minders#custody-service"
+          url: "docs/blockchain/miners#custody-service"
         - title: Problems of PoW Mining
-          url: "docs/blockchain/minders#problems-of-pow-mining"
+          url: "docs/blockchain/miners#problems-of-pow-mining"
     - title: "Mining Hardwares"
       url: "docs/blockchain/mining-hardwares"
     - title: "PoW"
