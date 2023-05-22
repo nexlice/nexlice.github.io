@@ -1,8 +1,8 @@
 ---
-title: PoW
+title: PoS
 tags: 
- - Nonce
- - Bitcoin
+ - Ethereum
+ - Casper
 
 ---
 
@@ -91,7 +91,7 @@ Casper는 오늘날 기업과 개발자의 블록체인 기술 채택을 가속�
 
 ---
 
-## Popular PoS Model  
+## Popular PoS Models  
 
 |Ethereum|ZCash|Quantum(QTUM)|AD(Cardano)|Peercoin|Cosmos|
 |:---:|:---:|:---:|:---:|:---:|:---:|

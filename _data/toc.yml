@@ -379,9 +379,16 @@
         - title: Nonce Value
           url: "docs/blockchain/pow#nonce-value"
         - title: Bitcoin Mining Algorithm
-          url: "docs/blockchain/pow#bitcoin-mining-algorithm
+          url: "docs/blockchain/pow#bitcoin-mining-algorithm"
     - title: "PoS"
       url: "docs/blockchain/PoS"
+      children:
+        - title: Cons
+          url: "docs/blockchain/pos#cons"
+        - title: Ethereum's PoW to PoS Transition
+          url: "docs/blockchain/pos#ehtereums-pow-to-pos-transition"
+        - title: Popular PoS Models
+          url: "docs/blockchain/pos#popular-pos-models"
     - title: "DPoS"
       url: "docs/blockchain/dpos"
     - title: "Governance"
