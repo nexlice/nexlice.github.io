@@ -11,6 +11,7 @@ tags:
 # PoW
 작업 증명(PoW)은 Proof of Work의 약자이며, 유효한 블록을 만드는 데 충분한 계산 자원을 소모했다는 증명이다.  
 PoW의 대표적인 코인에는 비트코인, 비트코인 캐시 등이 있다.  
+<br>
 ![bitcoin-thumbnail](../../assets/img/bitcoin-thumbnail.png)  
 
 ---
@@ -73,12 +74,14 @@ H(N || P_hast || Tx || Tx || ...Tx) < Target
 PoW 성공 시 발견된 블록은 네트워크에 브로드캐스팅되고 보상받는다.  
 5. 결과 해시값이 현재의 타깃 난이도보다 높지 않다면, 위 과정을 반복하며 논스값을 증가시킨다.  
 
-난이도 레벨은 비트코인 CLI를 통해 확인할 수 있다.
+난이도 레벨은 비트코인 CLI를 통해 확인할 수 있다.  
+<br>
 ![getdifficulty](../../assets/img/getdifficulty.png)  
 <br>
 이 숫자는 비트코인 네트워크상의 난이도를 나타낸다.  
 타깃 난이도보다 낮은 해시값을 찾기가 얼마나 어려운지를 알려준다.  
 이 숫자는 2,016블록마다(약 2주) 평균적으로 10분마다 새로운 블록이 발생하도록 조정하기 위해 변경된다.  
+<br>
 ![bitcoin-network-difficulty-graph](../../assets/img/bitcoin-network-difficulty-graph.png)  
 
 ---
