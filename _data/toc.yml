@@ -331,7 +331,7 @@
         - title: Byzantine Generals Problem
           url: "docs/blockchain/bft#byzantine-generals-problem"
         - title: Issues With The Existing Consensus 
-          url: "docs/blockchain/bft#issues-with-existing-consensus"
+          url: "docs/blockchain/bft#issues-with-the-existing-consensus"
         - title: Further Study
           url: "docs/blockchain/bft#further-study"
     - title: "Consensus Algorithms"
