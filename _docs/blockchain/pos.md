@@ -1,5 +1,15 @@
+---
+title: PoW
+tags: 
+ - Nonce
+ - Bitcoin
+
+---
+
+> 본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다.  
+
 # PoS
-![pow-pos]()  
+![pow-pos](../../assets/img/pow-pos.png)  
 지분 증명(PoS)은 Proof of Stake의 약자이며, 해당 암호화폐를 보유하고 있는 지분율에 비례하여 채굴을 할 수 있게 해주는 합의 알고리즘이다.  
 PoS는 컴퓨팅 파워 낭비가 심한 PoW와는 달리 자신의 지분(Stake),  
 즉 **스테이킹(Staking)**한 자산의 양에 비례하여 블록을 생성(채굴)할 권리를 가질 수 있다.  
@@ -77,7 +87,7 @@ Casper는 오늘날 기업과 개발자의 블록체인 기술 채택을 가속�
 검증인들이 Nothing at Stake 문제와 같이 체인을 어지럽히는 악한 행위를 하면 처벌받는다.  
 > 여기서 처벌이란 검증인들이 자신이 걸어 놓았던 지분을 몰수당하는 것을 의미한다.  
 
-![nothing-at-stake]()  
+![nothing-at-stake](../../assets/img/nothing-at-stake.png)  
 
 ---
 
@@ -85,4 +95,4 @@ Casper는 오늘날 기업과 개발자의 블록체인 기술 채택을 가속�
 
 |Ethereum|ZCash|Quantum(QTUM)|AD(Cardano)|Peercoin|Cosmos|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|![ethereum-thumbnail]()|![zcash-thumbnail]()|![quantum-thumbnail]()|![ada-thumbnail]()|![peercoin-thumbnail]()|![cosmos-thumbnail]()|
+|![ethereum-thumbnail](../../assets/img/ethereum-thumbnail.png)|![zcash-thumbnail](../../assets/img//zcash-thumbnail.png)|![quantum-thumbnail](../../assets/img/quantum-thumbnail.png)|![ada-thumbnail](../../assets/img/ada-thumbnail.png)|![peercoin-thumbnail](../../assets/img/peercoin-thumbnail.png)|![cosmos-thumbnail](../../assets/img/cosmos-thumbnail.png)|

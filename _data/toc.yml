@@ -364,8 +364,22 @@
           url: "docs/blockchain/miners#problems-of-pow-mining"
     - title: "Mining Hardwares"
       url: "docs/blockchain/mining-hardwares"
+      children:
+        - title: CPU
+          url: "docs/blockchain/mining-hardwares#cpu"
+        - title: GPU
+          url: "docs/blockchain/mining-hardwares#gpu"
+        - title: FPGA
+          url: "docs/blockchain/mining-hardwares#fpga"
+        - title: ASICs
+          url: "docs/blockchain/mining-hardwares#asics"
     - title: "PoW"
       url: "docs/blockchain/pow"
+      children:
+        - title: Nonce Value
+          url: "docs/blockchain/pow#nonce-value"
+        - title: Bitcoin Mining Algorithm
+          url: "docs/blockchain/pow#bitcoin-mining-algorithm
     - title: "PoS"
       url: "docs/blockchain/PoS"
     - title: "DPoS"

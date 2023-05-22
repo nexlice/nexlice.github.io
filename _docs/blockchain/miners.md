@@ -129,7 +129,7 @@ tags:
 그러나, 전문 마이닝풀과 Application Specific Integrated Circuits(ASICs)가 도입되며,  
 해시율은 기하급수적으로 증가하였으며, 그 결과 비트코인 난이도도 급격하게 증가하였다.  
 <br>
-아래 그래프는 연도에 따른 테라 해시율을 보여줍니다.  
+아래 그래프는 연도에 따른 테라 해시율을 보여준다.  
 예를 들어 150M TH/s는 초당 150,000,000,000,000,000,000개의 해시값이 계산됨을 의미한다.  
 
 ![total-hash-rate](../../assets/img/total-hash-rate.png)  
