@@ -1,4 +1,22 @@
+---
+title: Mining Algorithms
+tags: 
+ - SHA256
+ - X11
+ - X13
+ - X16R
+ - Grostl
+ - NeoScrypt
+ - Scrypt
+ - Ethash
+
+---
+
+> 본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다.  
+
 # Mining Algorithms
+
+---
 
 ## SHA256
 SHA-256은 현재 블록체인에서 가장 많이 채택하여 사용되고 있는 암호 방식이다.  

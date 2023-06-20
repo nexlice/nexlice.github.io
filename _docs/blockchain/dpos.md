@@ -1,3 +1,12 @@
+---
+title: DPoS
+tags: 
+ - EOS
+
+---
+
+> 본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다.  
+
 # DPoS
 위임지분증명(DPoS, Delegated Proof of Stake)이란,  
 암호화폐 소유자들이 각자의 지분율에 비례하여 투표권을 행사하여 자신의 대표자를 선정하고,  
@@ -21,7 +30,7 @@
 선출된 대표자들은 블록을 생성하고, 블록을 확정하기 위해선 2/3 이상의 승인이 필요하다.  
 대표자의 지위는 일정 시간 이내에 블록 셋업에 참여해야 유지된다.  
 
-![pos-vs-dpos]()  
+![pos-vs-dpos](../../assets/img/pos-vs-dpos.png)  
 
 ---
 
@@ -51,4 +60,4 @@
 ## Popular DPos Models  
 
 |이오스|스팀|비트셰어|엘프|테조스|
-|![eos-thumbnail]()|![steem-thumbnail]()|![bitshares-thumbnail]()|![aelf-thumbnail]()|![tezos-thumbnail]()|  
+|![eos-thumbnail](../../assets/img/eos-thumbnail.png)|![steem-thumbnail](../../assets/img/steem-thumbnail.png)|![bitshares-thumbnail](../../assets/img/bitshares-thumbnail.png)|![aelf-thumbnail](../../assets/img/aelf-thumbnail.png)|![tezos-thumbnail](../../assets/img/tezos-thumbnail.png)|  

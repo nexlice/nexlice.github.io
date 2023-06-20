@@ -1,3 +1,13 @@
+---
+title: Governanve
+tags: 
+ - Kalytn
+ - IBFT
+
+---
+
+> 본 글은 Codestates BEB 코스의 자료에서 내용을 가져와 작성하였음을 알립니다.  
+
 # Governance Blockchain  
 블록체인 네트워크는 기존의 네트워크와 달리,  
 통제 없이 모든 사람이 연결할 수 있고 동시에 분산화된 형태로 독립적으로 존재할 수 있다.  
@@ -32,7 +42,7 @@ Klaytn에는 컨센서스 노드(CN), 프록시 노드(PN) 및 엔드포인트 �
 <br>
 컨센서스 노드는 CCO(Core Cell Operators)에 의해 관리되며 블록 생성을 담당한다.  
 
-![klaytn-network-topology]()  
+![klaytn-network-topology](../../assets/img/klaytn-network-topology.png)  
 
 ---
 

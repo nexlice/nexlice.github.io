@@ -393,8 +393,30 @@
       url: "docs/blockchain/dpos"
     - title: "Governance"
       url: "docs/blockchain/governance"
+      children:
+        - title: Consensus Mechanism of Klaytn
+          url: "docs/blockchain/governance#consensus-mechanism-of-klaytn"
+        - title: IBFT
+          url: "docs/blockchain/governance#ibft"
     - title: "Mining Algorithms"
       url: "docs/blockchain/mining-algorithms"
+      children:
+        - title: SHA256
+          url: "docs/blockchain/mining-algorithms#sha256"
+        - title: X11
+          url: "docs/blockchain/mining-algorithms#x11"
+        - title: X13
+          url: "docs/blockchain/mining-algorithms#x13"
+        - title: X16R
+          url: "docs/blockchain/mining-algorithms#x16r"
+        - title: Grostl
+          url: "docs/blockchain/mining-algorithms#grostl"
+        - title: NeoScrypt
+          url: "docs/blockchain/mining-algorithms#neoscrypt"
+        - title: Scrypt
+          url: "docs/blockchain/mining-algorithms#scrypt"
+        - title: Ethash
+          url: "docs/blockchain/mining-algorithms#ethash"
     - title: "Bitcoin Block Structure"
       url: "docs/blockchain/bitcoin-block-structure"
     - title: "Difficulty and Nonce"
