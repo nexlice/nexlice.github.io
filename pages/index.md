@@ -4,22 +4,20 @@ title: Nexlice's Dev Blog
 permalink: /
 ---
 
-# Welcome!
+# Welcome
 
 **환영합니다!**  
-공부하면서 남기고 싶은 것들을 정리한 블로그입니다!  
-제 사진을 올리기엔 망측한 사진 밖에 없으니 닮은 무언가를 올립니다.  
-이 생명체가 무엇인지 아는 사람은 속으로 기뻐하십시오.  
+This is a blog where I've compiled some thoughts and concepts that I want to keep while studying.  
 ![](../assets/img/quaxly.jpg)  
 
-저에 대한 소개가 궁금하신 분들은 [여기](about.md)를 둘러보세요! ^0^ !
-## 추후 추가 내용
-- 컴퓨터 네트워크
-- 블록체인 기초 
+For more information about me, click the link [here](about.md) ^0^ !
 
-본래 영어로 번역한 글도 올릴 계획이었으나 너무 방대한 양으로 일단 미루는 중...  
+## To be posted
 
->   이 블로그는 [vsoch님의 Docsy Jekyll](https://vsoch.github.io/docsy-jekyll/)의 포맷을 그대로 사용하였음을 알립니다.  
+- Computer Network
+- Translation to English
+
+> This blog used [vsoch's Docsy Jekyll](https://vsoch.github.io/docsy-jekyll/) template.
 
 <!-- ---
 layout: page
