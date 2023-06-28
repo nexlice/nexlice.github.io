@@ -2,70 +2,70 @@
 title: About
 permalink: /about/
 ---
+
 # About
-- 이름 : 나원후
-- 성별 : 남자
-- 이메일 : auspiciouswho47@gmail.com
+
+- Name : Wonwhoo Nah, 나원후
+- Preferred Name : Andrew
+- Gender : Male (He/Him/His)
+- Email : auspiciouswho47@gmail.com
 - instagram : _1who_nah
+- LinkedIn : [link](www.linkedin.com/in/wonwhoo-andrew-nah-1ba0b4248)
 
-![](../assets/img/profile.JPG) 
->   사진을 찍어준 궁딩이와 후리약에게 감사드립니다.
+![](../assets/img/profile.JPG)  
+> 사진을 찍어준 궁딩이와 후리약에게 감사드립니다.
 
-## 주인장 소개
-- 좌우명 : 모험하지 않는 자, 행운을 얻지 못한다.
-- 현재 Codestates BEB 9기 수강중
-- 대학원 소식을 기다리는 중
-    - (2023.04.18) UCI MSWE에 합격
-    - (2023.05.31) UWB CSSE에 합격
+---
 
-- 현대고등학교 졸업
-- 중앙대학교 소프트웨어학부 17학번
-- 여러가지 찍먹해보고 아직은 꿈을 찾는 중
-- 37사단 사단 직할대 정보통신대대에서 무선장비운용병으로 근무
-    - 하지만 행정병으로 근무함
+- Motto : The one who does not venture, cannot gain fortune. (모험하지 않는 자, 행운을 얻지 못한다.)  
+- Trying various things an still in process of finding my area
 
-#### 성격
-- 모든 묻는 말에는 대부분 답변하는 성격
-- 스스로 매우 럭키가이라 생각하고 있음
-    - 모든 일에는 다 그만한 이유가 있다.
-- 꽤나 긍정적으로 사는 성격
-    - 그래서 본인은 항상 꿀빠는 인생을 살았다 믿고있음
-- 꽤나 무던한 성격
-    - E 출신 ISTJ
-    - 일할 때 만큼은 E가 된다
-    - 이 사람 평생동안 소리지른 적 단 한번밖에 없다
-    - 자기 자신에게 T인 경향이 있음
-    - 남에게는 F인척 하지만 남들은 T인걸 모두 알고 있음
+---
 
-#### 취미
-- 망해가는 **이터널 리턴**을 좋아함
-    - 내심 국산 게임으로써 리그오브레전드를 제치고 주류 게임이 되었으면 하는 바람이 있다
-        <!-- - ~~되겠냐고~~ -->
-    - 듀오를 원한다면 **"변이됨" 친추 바람**
-- **리그 오브 레전드** 계정을 2개 삭제후 분조장 치유한 상태
-    - 미드, 서포터를 즐겨함
-    - 탑, 원딜도 연습중 
-    - 현 골드 티어
-    - 본인은 플레 정도의 실력이라 생각함 ^0^
-    - 언제든지 **"Nexlice"로 친추 바람**
-- 뿌요뿌요와 테트리스 모두 좋아하지만, 정작 둘다 잘 하지는 못한다
-- 포켓몬스터 4세대를 가장 명작으로 생각하고 있다
-    - 스토리, 음악, 그리고 초등학교 때의 플레이로 인한 추억보정까지 모두 완벽한 상태
-- 좋아하는 소설은 해리포터와 트와일라잇 시리즈
-- 취미로 타로 리딩을 즐겨함
-    - 나름 신기가 있다고 믿고 있음
-    - 카드류 소품을 좋아함
-- 아르누보 스타일을 좋아함
+- (2016.02.03) Graduated Hyundai High School (Seoul)
+- (2019.09.17 - 2021.04.06) Republic of Korea Army 37사단 사단 직할대 정보통신대대에서 무선장비운용병으로 근무 (행정병)
+- (2017.03.02 - 2023.08.??) Bachelor of Science in Computer Science and Engineering at Chung-Ang University
+- 하지만 행정병으로 근무함
+- (2023.03.06 - 05.22) Codestates BEB 9th cohort : not completed
+- (2023.04.18) Accepted from UCI MSWE program
+- (2023.05.31) Accepted from UWB CSSE program
 
-#### 특이사항
-- 상당히 약한 위장을 가짐
-    - 그런 것치곤 떡볶이를 가장 좋아함
-    - 할배 입맛이다
-    - 신 것은 싫어하지만 레몬은 좋아한다
-    - 김치 중에 가장 좋아하는 김치는 고들빼기 김치
-- 궁금한 정보가 있다면 document issue로 제보 바람
-    
+---
+
+## Personality
+
+- likes to answer to various questions
+- I consider myself lucky :star2:
+  - grateful for every happenings.
+  - There is always a reason behind everything.
+- positive, yet easygoing
+  - ISTJ in general
+  - Changes into E while working
+
+### Hobbies
+
+- Eternal Return
+  - 변이됨
+- League of Legends
+  - KOR server : Nexlice
+    - Gold 3
+    - Mid, Sup, ADC
+  - NA server : ISO E Super
+    - unranked
+  - Learned anger management after deleting two accounts :joy:
+  - Feel free to add me!
+- I like puyopuyo and tetris but not good at them
+- Pokemon 4th gen is the best.
+- Love to read Tarot card with friends.
+
+### Trivials
+
+- I have irritable bowel syndrome and also am lactose intolerant
+- I have quite sophisticated palate (does not like too sugary foods)
+- dislikes sour taste, but love lemons and limes.
+
 ## Resumé
+
 ![](../assets/img/Resumé.pdf)
 
 <!-- ---
