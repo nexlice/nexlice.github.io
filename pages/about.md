@@ -8,6 +8,7 @@ permalink: /about/
 - Name : Wonwhoo Nah, 나원후
 - Preferred Name : Andrew
 - Gender : Male (He/Him/His)
+- Currently in relationship with my awesome man
 - Email : auspiciouswho47@gmail.com
 - instagram : _1who_nah
 - LinkedIn : [link](www.linkedin.com/in/wonwhoo-andrew-nah-1ba0b4248)
@@ -24,8 +25,8 @@ permalink: /about/
 
 - (2016.02.03) Graduated Hyundai High School (Seoul)
 - (2019.09.17 - 2021.04.06) Republic of Korea Army 37사단 사단 직할대 정보통신대대에서 무선장비운용병으로 근무 (행정병)
-- (2017.03.02 - 2023.08.??) Bachelor of Science in Computer Science and Engineering at Chung-Ang University
 - 하지만 행정병으로 근무함
+- (2017.03.02 - 2023.08.??) Bachelor of Science in Computer Science and Engineering at Chung-Ang University
 - (2023.03.06 - 05.22) Codestates BEB 9th cohort : not completed
 - (2023.04.18) Accepted from UCI MSWE program
 - (2023.05.31) Accepted from UWB CSSE program
@@ -34,8 +35,9 @@ permalink: /about/
 
 ## Personality
 
-- likes to answer to various questions
-- I consider myself lucky :star2:
+- Stutters whenever I meet new people
+- I like to answer to various questions
+- I consider myself lucky (>_<)
   - grateful for every happenings.
   - There is always a reason behind everything.
 - positive, yet easygoing
