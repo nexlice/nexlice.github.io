@@ -3,7 +3,7 @@ title: About
 permalink: /about/
 ---
 
-# About
+# About 
 
 - Name : Wonwhoo Nah, 나원후
 - Preferred Name : Andrew
