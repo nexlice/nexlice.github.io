@@ -24,8 +24,8 @@ permalink: /about/
 ---
 
 - (2016.02.03) Graduated Hyundai High School (Seoul)
-- (2019.09.17 - 2021.04.06) Republic of Korea Army 37사단 사단 직할대 정보통신대대에서 무선장비운용병으로 근무 (행정병)
-- 하지만 행정병으로 근무함
+- (2019.09.17 - 2021.04.06) Republic of Korea Army
+  - 37사단 사단 직할대 정보통신대대에서 무선장비운용병으로 근무 (행정병)
 - (2017.03.02 - 2023.08.??) Bachelor of Science in Computer Science and Engineering at Chung-Ang University
 - (2023.03.06 - 05.22) Codestates BEB 9th cohort : not completed
 - (2023.04.18) Accepted from UCI MSWE program
