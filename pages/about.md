@@ -19,7 +19,7 @@ permalink: /about/
 ---
 
 - Motto : The one who does not venture, cannot gain fortune. (모험하지 않는 자, 행운을 얻지 못한다.)  
-- Trying various things an still in process of finding my area
+- Trying various things and still in process of finding my area
 
 ---
 
