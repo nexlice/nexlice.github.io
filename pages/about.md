@@ -11,7 +11,7 @@ permalink: /about/
 - Currently in relationship with my awesome man
 - Email : auspiciouswho47@gmail.com
 - instagram : _1who_nah
-- LinkedIn : [link](www.linkedin.com/in/wonwhoo-andrew-nah-1ba0b4248)
+- LinkedIn : [link](http://www.linkedin.com/in/wonwhoo-andrew-nah-1ba0b4248)
 
 ![](../assets/img/profile.JPG)  
 > 사진을 찍어준 궁딩이와 후리약에게 감사드립니다.
