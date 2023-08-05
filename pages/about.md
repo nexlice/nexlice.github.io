@@ -8,7 +8,6 @@ permalink: /about/
 - Name : Wonwhoo Nah, 나원후
 - Preferred Name : Andrew
 - Gender : Male (He/Him/His)
-- Currently in relationship with my awesome man
 - Email : auspiciouswho47@gmail.com
 - instagram : _1who_nah
 - LinkedIn : [link](http://www.linkedin.com/in/wonwhoo-andrew-nah-1ba0b4248)
